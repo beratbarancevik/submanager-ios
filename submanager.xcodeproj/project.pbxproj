@@ -28,8 +28,8 @@
 		F4ACCCE3256197520059063A /* SubscriptionDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACCCE2256197520059063A /* SubscriptionDetailController.swift */; };
 		F4ACCCEB2561975C0059063A /* SubscriptionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACCCEA2561975C0059063A /* SubscriptionDetailViewModel.swift */; };
 		F4ACCCF025619A520059063A /* SubscriptionDetailControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACCCEF25619A520059063A /* SubscriptionDetailControllerUITests.swift */; };
-		F4ACCD162561A3B00059063A /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD152561A3B00059063A /* SwiftPackageProductDependency */; };
-		F4ACCD4F2561A4D80059063A /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD4E2561A4D80059063A /* SwiftPackageProductDependency */; };
+		F4ACCD162561A3B00059063A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD152561A3B00059063A /* SnapKit */; };
+		F4ACCD4F2561A4D80059063A /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD4E2561A4D80059063A /* Nuke */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4ACCD4F2561A4D80059063A /* BuildFile in Frameworks */,
-				F4ACCD162561A3B00059063A /* BuildFile in Frameworks */,
+				F4ACCD4F2561A4D80059063A /* Nuke in Frameworks */,
+				F4ACCD162561A3B00059063A /* SnapKit in Frameworks */,
 				B7947CB3764C176E8618E3F0 /* Pods_submanager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,7 +301,6 @@
 				5637460C6CEED2691FA7DFC8 /* Pods-submanagerTests.debug.xcconfig */,
 				A1D576524A62787D4BCD1C1F /* Pods-submanagerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -316,6 +315,7 @@
 				F4A417A025611539009B92C7 /* Sources */,
 				F4A417A125611539009B92C7 /* Frameworks */,
 				F4A417A225611539009B92C7 /* Resources */,
+				F64A561CA29843883B3D2361 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,8 +323,8 @@
 			);
 			name = submanager;
 			packageProductDependencies = (
-				F4ACCD152561A3B00059063A /* SwiftPackageProductDependency */,
-				F4ACCD4E2561A4D80059063A /* SwiftPackageProductDependency */,
+				F4ACCD152561A3B00059063A /* SnapKit */,
+				F4ACCD4E2561A4D80059063A /* Nuke */,
 			);
 			productName = submanager;
 			productReference = F4A417A425611539009B92C7 /* SM Debug.app */;
@@ -338,6 +338,7 @@
 				F4A417B62561153C009B92C7 /* Sources */,
 				F4A417B72561153C009B92C7 /* Frameworks */,
 				F4A417B82561153C009B92C7 /* Resources */,
+				EBB277625B345C6B38784337 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,6 +358,7 @@
 				F4A417C12561153C009B92C7 /* Sources */,
 				F4A417C22561153C009B92C7 /* Frameworks */,
 				F4A417C32561153C009B92C7 /* Resources */,
+				422D648A8719F5817FA4281A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -404,8 +406,8 @@
 			);
 			mainGroup = F4A4179B25611539009B92C7;
 			packageReferences = (
-				F4ACCD142561A3B00059063A /* RemoteSwiftPackageReference */,
-				F4ACCD4D2561A4D80059063A /* RemoteSwiftPackageReference */,
+				F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F4ACCD4D2561A4D80059063A /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = F4A417A525611539009B92C7 /* Products */;
 			projectDirPath = "";
@@ -470,6 +472,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		422D648A8719F5817FA4281A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-submanager-submanagerUITests/Pods-submanager-submanagerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-submanager-submanagerUITests/Pods-submanager-submanagerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-submanager-submanagerUITests/Pods-submanager-submanagerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		513C8EE497CE060CA90B8B6F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,6 +531,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBB277625B345C6B38784337 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-submanagerTests/Pods-submanagerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-submanagerTests/Pods-submanagerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-submanagerTests/Pods-submanagerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64A561CA29843883B3D2361 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-submanager/Pods-submanager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-submanager/Pods-submanager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-submanager/Pods-submanager-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -767,7 +820,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5637460C6CEED2691FA7DFC8 /* Pods-submanagerTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -792,7 +845,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1D576524A62787D4BCD1C1F /* Pods-submanagerTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -816,7 +869,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79EBC94E91195C420A12CAF5 /* Pods-submanager-submanagerUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3978A7VN36;
@@ -839,7 +892,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9AC6EEFCDE835FE0806C595D /* Pods-submanager-submanagerUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3978A7VN36;
@@ -899,7 +952,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F4ACCD142561A3B00059063A /* RemoteSwiftPackageReference */ = {
+		F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -907,7 +960,7 @@
 				version = 5.0.1;
 			};
 		};
-		F4ACCD4D2561A4D80059063A /* RemoteSwiftPackageReference */ = {
+		F4ACCD4D2561A4D80059063A /* XCRemoteSwiftPackageReference "Nuke" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kean/Nuke.git";
 			requirement = {
@@ -918,14 +971,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F4ACCD152561A3B00059063A /* SwiftPackageProductDependency */ = {
+		F4ACCD152561A3B00059063A /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F4ACCD142561A3B00059063A /* RemoteSwiftPackageReference */;
+			package = F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		F4ACCD4E2561A4D80059063A /* SwiftPackageProductDependency */ = {
+		F4ACCD4E2561A4D80059063A /* Nuke */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F4ACCD4D2561A4D80059063A /* RemoteSwiftPackageReference */;
+			package = F4ACCD4D2561A4D80059063A /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = Nuke;
 		};
 /* End XCSwiftPackageProductDependency section */

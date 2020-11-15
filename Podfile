@@ -6,10 +6,15 @@ target 'submanager' do
   use_frameworks!
 
   # Pods for submanager
+  pod 'RxCocoa', '6.0.0-rc.1'
+  pod 'RxRelay', '6.0.0-rc.1'
+  pod 'RxSwift', '6.0.0-rc.1'
 
   target 'submanagerTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking', '6.0.0-rc.1'
+    pod 'RxTest', '6.0.0-rc.1'
   end
 
   target 'submanagerUITests' do
