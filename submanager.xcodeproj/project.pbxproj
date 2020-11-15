@@ -315,6 +315,7 @@
 				F4A417A025611539009B92C7 /* Sources */,
 				F4A417A125611539009B92C7 /* Frameworks */,
 				F4A417A225611539009B92C7 /* Resources */,
+				F4E1D5EB2561C6D400FBEB29 /* SwiftLint */,
 				F64A561CA29843883B3D2361 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -549,6 +550,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-submanagerTests/Pods-submanagerTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F4E1D5EB2561C6D400FBEB29 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		F64A561CA29843883B3D2361 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
