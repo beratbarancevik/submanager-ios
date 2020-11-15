@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F436F992256119E300B2667D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436F991256119E300B2667D /* HomeController.swift */; };
+		F458ADEF25611D880016EEDC /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADEE25611D880016EEDC /* HomeViewModelTests.swift */; };
+		F458ADF725611D9A0016EEDC /* HomeControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */; };
+		F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADFE25611DC40016EEDC /* HomeViewModel.swift */; };
 		F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A417A725611539009B92C7 /* AppDelegate.swift */; };
-		F4A417AC25611539009B92C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A417AB25611539009B92C7 /* ViewController.swift */; };
 		F4A417B12561153B009B92C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A417B02561153B009B92C7 /* Assets.xcassets */; };
 		F4A417B42561153B009B92C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */; };
-		F4A417BF2561153C009B92C7 /* submanagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A417BE2561153C009B92C7 /* submanagerTests.swift */; };
-		F4A417CA2561153C009B92C7 /* submanagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A417C92561153C009B92C7 /* submanagerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,17 +34,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F436F991256119E300B2667D /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		F458ADEE25611D880016EEDC /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerUITests.swift; sourceTree = "<group>"; };
+		F458ADFE25611DC40016EEDC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F4A417A425611539009B92C7 /* submanager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = submanager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A417A725611539009B92C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4A417AB25611539009B92C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F4A417B02561153B009B92C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A417B32561153B009B92C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4A417B52561153B009B92C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A417BA2561153C009B92C7 /* submanagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = submanagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4A417BE2561153C009B92C7 /* submanagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = submanagerTests.swift; sourceTree = "<group>"; };
 		F4A417C02561153C009B92C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A417C52561153C009B92C7 /* submanagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = submanagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4A417C92561153C009B92C7 /* submanagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = submanagerUITests.swift; sourceTree = "<group>"; };
 		F4A417CB2561153C009B92C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F436F98F256119C400B2667D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F436F990256119D800B2667D /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F436F990256119D800B2667D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F436F991256119E300B2667D /* HomeController.swift */,
+				F458ADFE25611DC40016EEDC /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		F4A4179B25611539009B92C7 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +114,8 @@
 		F4A417A625611539009B92C7 /* submanager */ = {
 			isa = PBXGroup;
 			children = (
+				F436F98F256119C400B2667D /* Controller */,
 				F4A417A725611539009B92C7 /* AppDelegate.swift */,
-				F4A417AB25611539009B92C7 /* ViewController.swift */,
 				F4A417B02561153B009B92C7 /* Assets.xcassets */,
 				F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */,
 				F4A417B52561153B009B92C7 /* Info.plist */,
@@ -107,7 +126,7 @@
 		F4A417BD2561153C009B92C7 /* submanagerTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4A417BE2561153C009B92C7 /* submanagerTests.swift */,
+				F458ADEE25611D880016EEDC /* HomeViewModelTests.swift */,
 				F4A417C02561153C009B92C7 /* Info.plist */,
 			);
 			path = submanagerTests;
@@ -116,7 +135,7 @@
 		F4A417C82561153C009B92C7 /* submanagerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F4A417C92561153C009B92C7 /* submanagerUITests.swift */,
+				F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */,
 				F4A417CB2561153C009B92C7 /* Info.plist */,
 			);
 			path = submanagerUITests;
@@ -193,10 +212,12 @@
 					};
 					F4A417B92561153C009B92C7 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 						TestTargetID = F4A417A325611539009B92C7;
 					};
 					F4A417C42561153C009B92C7 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 						TestTargetID = F4A417A325611539009B92C7;
 					};
 				};
@@ -252,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A417AC25611539009B92C7 /* ViewController.swift in Sources */,
+				F436F992256119E300B2667D /* HomeController.swift in Sources */,
+				F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */,
 				F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,7 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A417BF2561153C009B92C7 /* submanagerTests.swift in Sources */,
+				F458ADEF25611D880016EEDC /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A417CA2561153C009B92C7 /* submanagerUITests.swift in Sources */,
+				F458ADF725611D9A0016EEDC /* HomeControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +487,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				INFOPLIST_FILE = submanagerTests/Info.plist;
@@ -476,6 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beratbarancevik.submanagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/submanager.app/submanager";
@@ -487,6 +511,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				INFOPLIST_FILE = submanagerTests/Info.plist;
@@ -508,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				INFOPLIST_FILE = submanagerUITests/Info.plist;
@@ -518,6 +544,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.beratbarancevik.submanagerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = submanager;
@@ -528,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				INFOPLIST_FILE = submanagerUITests/Info.plist;
