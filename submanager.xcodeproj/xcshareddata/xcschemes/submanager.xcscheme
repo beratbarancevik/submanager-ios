@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F4A417A325611539009B92C7"
-               BuildableName = "submanager.app"
+               BuildableName = "Sub Manager.app"
                BlueprintName = "submanager"
                ReferencedContainer = "container:submanager.xcodeproj">
             </BuildableReference>
@@ -86,7 +86,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4A417A325611539009B92C7"
-            BuildableName = "submanager.app"
+            BuildableName = "Sub Manager.app"
             BlueprintName = "submanager"
             ReferencedContainer = "container:submanager.xcodeproj">
          </BuildableReference>
@@ -107,7 +107,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4A417A325611539009B92C7"
-            BuildableName = "submanager.app"
+            BuildableName = "Sub Manager.app"
             BlueprintName = "submanager"
             ReferencedContainer = "container:submanager.xcodeproj">
          </BuildableReference>
