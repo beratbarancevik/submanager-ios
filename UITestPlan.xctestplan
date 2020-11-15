@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "D8BAE3E6-E581-418D-9759-2DD36A0F6915",
+      "name" : "English (US)",
+      "options" : {
+        "language" : "en",
+        "region" : "US",
+        "uiTestingScreenshotsLifetime" : "deleteOnSuccess"
+      }
+    },
+    {
+      "id" : "9D74257C-37B6-4EC5-9A26-98A226D45DE2",
+      "name" : "English (UK)",
+      "options" : {
+        "language" : "en-GB",
+        "region" : "GB",
+        "uiTestingScreenshotsLifetime" : "deleteOnSuccess"
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:submanager.xcodeproj",
+        "identifier" : "F4A417C42561153C009B92C7",
+        "name" : "submanagerUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

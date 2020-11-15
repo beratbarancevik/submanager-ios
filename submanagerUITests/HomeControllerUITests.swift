@@ -13,6 +13,7 @@ class HomeControllerUITests: XCTestCase {
     var app: XCUIApplication!
     
     override func setUpWithError() throws {
+        super.setUp()
         continueAfterFailure = false
         app = XCUIApplication()
         app.launch()
@@ -20,10 +21,11 @@ class HomeControllerUITests: XCTestCase {
 
     override func tearDownWithError() throws {
         app.terminate()
+        super.tearDown()
     }
     
     func testNavigationBarTitle() {
-        let navigationBarTitleExists = app.navigationBars["home_navigation_bar"].staticTexts["Home"].exists
+        let navigationBarTitleExists = app.navigationBars["home_navigation_bar".localized].staticTexts["home".localized].exists
         XCTAssert(navigationBarTitleExists)
     }
 }
