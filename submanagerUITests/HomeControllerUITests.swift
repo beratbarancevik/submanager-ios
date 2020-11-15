@@ -28,4 +28,9 @@ class HomeControllerUITests: XCTestCase {
         let navigationBarTitleExists = app.navigationBars["home_navigation_bar".localized].staticTexts["home".localized].exists
         XCTAssert(navigationBarTitleExists)
     }
+    
+    func testRightBarButtonItem() {
+        let rightBarButtonItemExists = app.navigationBars["home_navigation_bar".localized].buttons["add".localized].exists
+        XCTAssert(rightBarButtonItemExists)
+    }
 }

@@ -10,5 +10,6 @@
 app_name = "Sub Manager";
 
 // MARK: - HomeController
-home = "Ev";
+add = "Add";
+home = "Home";
 home_navigation_bar = "Home Navigation Bar";
