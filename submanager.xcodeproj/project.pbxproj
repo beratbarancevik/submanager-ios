@@ -3,14 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A417A725611539009B92C7 /* AppDelegate.swift */; };
-		F4A417AA25611539009B92C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A417A925611539009B92C7 /* SceneDelegate.swift */; };
 		F4A417AC25611539009B92C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A417AB25611539009B92C7 /* ViewController.swift */; };
-		F4A417AF25611539009B92C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A417AD25611539009B92C7 /* Main.storyboard */; };
 		F4A417B12561153B009B92C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A417B02561153B009B92C7 /* Assets.xcassets */; };
 		F4A417B42561153B009B92C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */; };
 		F4A417BF2561153C009B92C7 /* submanagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A417BE2561153C009B92C7 /* submanagerTests.swift */; };
@@ -37,9 +35,7 @@
 /* Begin PBXFileReference section */
 		F4A417A425611539009B92C7 /* submanager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = submanager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A417A725611539009B92C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4A417A925611539009B92C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4A417AB25611539009B92C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4A417AE25611539009B92C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4A417B02561153B009B92C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A417B32561153B009B92C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4A417B52561153B009B92C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,9 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				F4A417A725611539009B92C7 /* AppDelegate.swift */,
-				F4A417A925611539009B92C7 /* SceneDelegate.swift */,
 				F4A417AB25611539009B92C7 /* ViewController.swift */,
-				F4A417AD25611539009B92C7 /* Main.storyboard */,
 				F4A417B02561153B009B92C7 /* Assets.xcassets */,
 				F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */,
 				F4A417B52561153B009B92C7 /* Info.plist */,
@@ -192,6 +186,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Berat Baran Cevik";
 				TargetAttributes = {
 					F4A417A325611539009B92C7 = {
 						CreatedOnToolsVersion = 12.2;
@@ -207,7 +202,7 @@
 				};
 			};
 			buildConfigurationList = F4A4179F25611539009B92C7 /* Build configuration list for PBXProject "submanager" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -233,7 +228,6 @@
 			files = (
 				F4A417B42561153B009B92C7 /* LaunchScreen.storyboard in Resources */,
 				F4A417B12561153B009B92C7 /* Assets.xcassets in Resources */,
-				F4A417AF25611539009B92C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +254,6 @@
 			files = (
 				F4A417AC25611539009B92C7 /* ViewController.swift in Sources */,
 				F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */,
-				F4A417AA25611539009B92C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F4A417AD25611539009B92C7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4A417AE25611539009B92C7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,16 +422,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				INFOPLIST_FILE = submanager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beratbarancevik.submanager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,16 +444,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				INFOPLIST_FILE = submanager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.beratbarancevik.submanager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
