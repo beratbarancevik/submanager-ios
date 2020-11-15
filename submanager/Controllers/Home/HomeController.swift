@@ -22,5 +22,12 @@ private extension HomeController {
     func setUpUI() {
         navigationController?.navigationBar.accessibilityIdentifier = "home_navigation_bar".localized
         navigationItem.title = "home".localized
+        let addBarButtonItem = UIBarButtonItem(image: Images.add.image, style: .plain, target: self, action: #selector(addDidTap))
+        addBarButtonItem.accessibilityIdentifier = "add".localized
+        navigationItem.rightBarButtonItem = addBarButtonItem
+    }
+    
+    @objc func addDidTap() {
+        
     }
 }

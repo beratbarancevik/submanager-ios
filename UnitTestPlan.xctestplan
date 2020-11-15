@@ -12,7 +12,13 @@
 
   },
   "testTargets" : [
-
+    {
+      "target" : {
+        "containerPath" : "container:submanager.xcodeproj",
+        "identifier" : "F4A417B92561153C009B92C7",
+        "name" : "submanagerTests"
+      }
+    }
   ],
   "version" : 1
 }
