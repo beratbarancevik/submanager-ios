@@ -21,6 +21,6 @@ class HomeController: UIViewController {
 private extension HomeController {
     func setUpUI() {
         navigationController?.navigationBar.accessibilityLabel = "home_navigation_bar"
-        navigationItem.title = "Home"
+        navigationItem.title = "home".localized
     }
 }
