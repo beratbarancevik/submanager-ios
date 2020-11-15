@@ -6,4 +6,11 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
-import Foundation
+import XCTest
+@testable import submanager
+
+class StringExtensionsTests: XCTestCase {
+    func testLocalized() {
+        XCTAssertEqual("app_name".localized, "Sub Manager")
+    }
+}

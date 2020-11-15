@@ -7,9 +7,10 @@
 //
 
 import Foundation
+@testable import submanager
 
 extension String {
     var localized: String {
-        return NSLocalizedString(self, tableName: nil, bundle: Bundle(for: HomeControllerUITests.self), value: "", comment: "")
+        return NSLocalizedString(self, bundle: Bundle(for: HomeControllerUITests.self), comment: "")
     }
 }

@@ -20,7 +20,7 @@ class HomeController: UIViewController {
 // MARK: - Private Functions
 private extension HomeController {
     func setUpUI() {
-        navigationController?.navigationBar.accessibilityLabel = "home_navigation_bar"
+        navigationController?.navigationBar.accessibilityIdentifier = "home_navigation_bar".localized
         navigationItem.title = "home".localized
     }
 }

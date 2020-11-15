@@ -6,5 +6,9 @@
   Copyright © 2020 Berat Baran Cevik. All rights reserved.
 */
 
+// MARK: - App
+app_name = "Sub Manager";
+
 // MARK: - HomeController
-home = "Home";
+home = "Ev";
+home_navigation_bar = "Home Navigation Bar";

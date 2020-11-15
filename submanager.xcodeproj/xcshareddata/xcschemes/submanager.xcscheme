@@ -28,6 +28,15 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:UITestPlan.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+         <TestPlanReference
+            reference = "container:UnitTestPlan.xctestplan">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -36,6 +45,16 @@
                BlueprintIdentifier = "F4A417B92561153C009B92C7"
                BuildableName = "submanagerTests.xctest"
                BlueprintName = "submanagerTests"
+               ReferencedContainer = "container:submanager.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F4A417C42561153C009B92C7"
+               BuildableName = "submanagerUITests.xctest"
+               BlueprintName = "submanagerUITests"
                ReferencedContainer = "container:submanager.xcodeproj">
             </BuildableReference>
          </TestableReference>
