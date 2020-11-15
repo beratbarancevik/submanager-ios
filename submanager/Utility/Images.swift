@@ -10,6 +10,7 @@ import UIKit
 
 enum Images: String, CaseIterable {
     case add
+    case dismiss
     
     var image: UIImage {
         return UIImage(named: self.rawValue)!
