@@ -30,6 +30,7 @@
 		F4ACCD0C2561A0A10059063A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD0B2561A0A10059063A /* RxRelay */; };
 		F4ACCD0E2561A0A10059063A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD0D2561A0A10059063A /* RxCocoa */; };
 		F4ACCD102561A0A10059063A /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD0F2561A0A10059063A /* RxBlocking */; };
+		F4ACCD162561A3B00059063A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD152561A3B00059063A /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 				F4ACCD0C2561A0A10059063A /* RxRelay in Frameworks */,
 				F4ACCD0A2561A0A10059063A /* RxTest in Frameworks */,
 				F4ACCD0E2561A0A10059063A /* RxCocoa in Frameworks */,
+				F4ACCD162561A3B00059063A /* SnapKit in Frameworks */,
 				F4ACCD082561A0A10059063A /* RxSwift in Frameworks */,
 				F4ACCD102561A0A10059063A /* RxBlocking in Frameworks */,
 			);
@@ -292,6 +294,7 @@
 				F4ACCD0B2561A0A10059063A /* RxRelay */,
 				F4ACCD0D2561A0A10059063A /* RxCocoa */,
 				F4ACCD0F2561A0A10059063A /* RxBlocking */,
+				F4ACCD152561A3B00059063A /* SnapKit */,
 			);
 			productName = submanager;
 			productReference = F4A417A425611539009B92C7 /* submanager.app */;
@@ -370,6 +373,7 @@
 			mainGroup = F4A4179B25611539009B92C7;
 			packageReferences = (
 				F4ACCD062561A0A10059063A /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = F4A417A525611539009B92C7 /* Products */;
 			projectDirPath = "";
@@ -795,6 +799,14 @@
 				version = 5.1.1;
 			};
 		};
+		F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -822,6 +834,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4ACCD062561A0A10059063A /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxBlocking;
+		};
+		F4ACCD152561A3B00059063A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
