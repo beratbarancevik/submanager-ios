@@ -22,6 +22,9 @@
 		F4A417B42561153B009B92C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */; };
 		F4ACCCC82561951B0059063A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACCCC72561951B0059063A /* Images.swift */; };
 		F4ACCCD4256195520059063A /* ImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACCCD3256195520059063A /* ImagesTests.swift */; };
+		F4ACCCE3256197520059063A /* SubscriptionDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACCCE2256197520059063A /* SubscriptionDetailController.swift */; };
+		F4ACCCEB2561975C0059063A /* SubscriptionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACCCEA2561975C0059063A /* SubscriptionDetailViewModel.swift */; };
+		F4ACCCF025619A520059063A /* SubscriptionDetailControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ACCCEF25619A520059063A /* SubscriptionDetailControllerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		F4A417CB2561153C009B92C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4ACCCC72561951B0059063A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		F4ACCCD3256195520059063A /* ImagesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTests.swift; sourceTree = "<group>"; };
+		F4ACCCE2256197520059063A /* SubscriptionDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetailController.swift; sourceTree = "<group>"; };
+		F4ACCCEA2561975C0059063A /* SubscriptionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetailViewModel.swift; sourceTree = "<group>"; };
+		F4ACCCEF25619A520059063A /* SubscriptionDetailControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetailControllerUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				F436F990256119D800B2667D /* Home */,
+				F4ACCCE12561973B0059063A /* Subscription Detail */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -221,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */,
+				F4ACCCEF25619A520059063A /* SubscriptionDetailControllerUITests.swift */,
 				F47F40E0256134BC008C0A6A /* Extensions */,
 				F47F40E1256134CD008C0A6A /* Supporting Files */,
 			);
@@ -241,6 +249,15 @@
 				F4ACCCD3256195520059063A /* ImagesTests.swift */,
 			);
 			path = UtilityTests;
+			sourceTree = "<group>";
+		};
+		F4ACCCE12561973B0059063A /* Subscription Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F4ACCCE2256197520059063A /* SubscriptionDetailController.swift */,
+				F4ACCCEA2561975C0059063A /* SubscriptionDetailViewModel.swift */,
+			);
+			path = "Subscription Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,8 +397,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */,
+				F4ACCCEB2561975C0059063A /* SubscriptionDetailViewModel.swift in Sources */,
 				F436F992256119E300B2667D /* HomeController.swift in Sources */,
 				F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */,
+				F4ACCCE3256197520059063A /* SubscriptionDetailController.swift in Sources */,
 				F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */,
 				F4ACCCC82561951B0059063A /* Images.swift in Sources */,
 			);
@@ -402,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47F40D3256133E7008C0A6A /* String+Extensions.swift in Sources */,
+				F4ACCCF025619A520059063A /* SubscriptionDetailControllerUITests.swift in Sources */,
 				F458ADF725611D9A0016EEDC /* HomeControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
