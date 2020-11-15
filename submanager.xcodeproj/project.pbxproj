@@ -31,6 +31,7 @@
 		F4ACCD0E2561A0A10059063A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD0D2561A0A10059063A /* RxCocoa */; };
 		F4ACCD102561A0A10059063A /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD0F2561A0A10059063A /* RxBlocking */; };
 		F4ACCD162561A3B00059063A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD152561A3B00059063A /* SnapKit */; };
+		F4ACCD4F2561A4D80059063A /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD4E2561A4D80059063A /* Nuke */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 			files = (
 				F4ACCD0C2561A0A10059063A /* RxRelay in Frameworks */,
 				F4ACCD0A2561A0A10059063A /* RxTest in Frameworks */,
+				F4ACCD4F2561A4D80059063A /* Nuke in Frameworks */,
 				F4ACCD0E2561A0A10059063A /* RxCocoa in Frameworks */,
 				F4ACCD162561A3B00059063A /* SnapKit in Frameworks */,
 				F4ACCD082561A0A10059063A /* RxSwift in Frameworks */,
@@ -295,6 +297,7 @@
 				F4ACCD0D2561A0A10059063A /* RxCocoa */,
 				F4ACCD0F2561A0A10059063A /* RxBlocking */,
 				F4ACCD152561A3B00059063A /* SnapKit */,
+				F4ACCD4E2561A4D80059063A /* Nuke */,
 			);
 			productName = submanager;
 			productReference = F4A417A425611539009B92C7 /* submanager.app */;
@@ -374,6 +377,7 @@
 			packageReferences = (
 				F4ACCD062561A0A10059063A /* XCRemoteSwiftPackageReference "RxSwift" */,
 				F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F4ACCD4D2561A4D80059063A /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = F4A417A525611539009B92C7 /* Products */;
 			projectDirPath = "";
@@ -807,6 +811,14 @@
 				version = 5.0.1;
 			};
 		};
+		F4ACCD4D2561A4D80059063A /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = exactVersion;
+				version = 9.1.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -839,6 +851,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		F4ACCD4E2561A4D80059063A /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4ACCD4D2561A4D80059063A /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
