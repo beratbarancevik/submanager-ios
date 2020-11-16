@@ -10,6 +10,7 @@
 		2B9003B9D5EE7D55A0A863D1 /* Pods_submanager_submanagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF459DF1D4A0EEF2DD820F7 /* Pods_submanager_submanagerUITests.framework */; };
 		AFD96C0E5B81C304C1AC8E2A /* Pods_submanagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7EE3270A0982043627FAD7 /* Pods_submanagerTests.framework */; };
 		B7947CB3764C176E8618E3F0 /* Pods_submanager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CCDDC7E835D8DA4A5368B5 /* Pods_submanager.framework */; };
+		F4110C532562D0C600BD77A5 /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */; };
 		F436F992256119E300B2667D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436F991256119E300B2667D /* HomeController.swift */; };
 		F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */; };
 		F458ADEF25611D880016EEDC /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADEE25611D880016EEDC /* HomeViewModelTests.swift */; };
@@ -56,6 +57,7 @@
 		9AC6EEFCDE835FE0806C595D /* Pods-submanager-submanagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-submanager-submanagerUITests.release.xcconfig"; path = "Target Support Files/Pods-submanager-submanagerUITests/Pods-submanager-submanagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A1D576524A62787D4BCD1C1F /* Pods-submanagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-submanagerTests.release.xcconfig"; path = "Target Support Files/Pods-submanagerTests/Pods-submanagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAF459DF1D4A0EEF2DD820F7 /* Pods_submanager_submanagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_submanager_submanagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
 		F436F991256119E300B2667D /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		F4555B93256148ED00473135 /* UITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
@@ -133,6 +135,7 @@
 		F4115C2825624AEF00A78E70 /* Keys */ = {
 			isa = PBXGroup;
 			children = (
+				F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */,
 			);
 			path = Keys;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				F47F40C025612BB2008C0A6A /* InfoPlist.strings in Resources */,
 				F458AE182561278C0016EEDC /* Localizable.strings in Resources */,
 				F4A417B12561153B009B92C7 /* Assets.xcassets in Resources */,
+				F4110C532562D0C600BD77A5 /* GoogleService-Info-Debug.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +581,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "PATH_TO_GOOGLE_PLISTS=\"${PROJECT_DIR}/submmanager/Supporting Files/Keys\"\n\ncase \"${CONFIGURATION}\" in\n\n   \"Debug\" )\n        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Debug.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n   \"Release\" )\n        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n    *)\n        ;;\nesac\n";
+			shellScript = "PATH_TO_GOOGLE_PLISTS=\"${PROJECT_DIR}/submanager/Supporting Files/Keys\"\n\ncase \"${CONFIGURATION}\" in\n\n   \"Debug\" )\n        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Debug.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n   \"Release\" )\n        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n    *)\n        ;;\nesac\n";
 		};
 		F4115C2A25624B7300A78E70 /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
