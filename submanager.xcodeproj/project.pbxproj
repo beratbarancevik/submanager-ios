@@ -130,6 +130,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F4115C2825624AEF00A78E70 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
 		F436F98F256119C400B2667D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +180,7 @@
 				F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */,
 				F458AE1A2561278C0016EEDC /* Localizable.strings */,
 				F47F40A625612A5A008C0A6A /* Assets */,
+				F4115C2825624AEF00A78E70 /* Keys */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -316,6 +324,8 @@
 				F4A417A125611539009B92C7 /* Frameworks */,
 				F4A417A225611539009B92C7 /* Resources */,
 				F4E1D5EB2561C6D400FBEB29 /* SwiftLint */,
+				F4115C2925624B4A00A78E70 /* Firebase */,
+				F4115C2A25624B7300A78E70 /* Crashlytics */,
 				F64A561CA29843883B3D2361 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -550,6 +560,44 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-submanagerTests/Pods-submanagerTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F4115C2925624B4A00A78E70 /* Firebase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Firebase;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH_TO_GOOGLE_PLISTS=\"${PROJECT_DIR}/submmanager/Supporting Files/Keys\"\n\ncase \"${CONFIGURATION}\" in\n\n   \"Debug\" )\n        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Debug.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n   \"Release\" )\n        cp -r \"$PATH_TO_GOOGLE_PLISTS/GoogleService-Info-Release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n    *)\n        ;;\nesac\n";
+		};
+		F4115C2A25624B7300A78E70 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 		F4E1D5EB2561C6D400FBEB29 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
