@@ -18,10 +18,12 @@
 		F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADFE25611DC40016EEDC /* HomeViewModel.swift */; };
 		F458AE182561278C0016EEDC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
 		F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458AE2A256128D00016EEDC /* String+Extensions.swift */; };
+		F4759D4725636A3B00C0B374 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4759D4625636A3B00C0B374 /* Subscription.swift */; };
+		F4759D4F25636D3200C0B374 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4759D4E25636D3200C0B374 /* RealmManager.swift */; };
+		F4759D57256370A600C0B374 /* RealmManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4759D56256370A600C0B374 /* RealmManagerTests.swift */; };
 		F47F40C025612BB2008C0A6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F47F40C225612BB2008C0A6A /* InfoPlist.strings */; };
 		F47F40CA25613030008C0A6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
 		F47F40D3256133E7008C0A6A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F40D2256133E7008C0A6A /* String+Extensions.swift */; };
-		F49960D225630B99003E44DC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F49960D125630B99003E44DC /* RealmSwift */; };
 		F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A417A725611539009B92C7 /* AppDelegate.swift */; };
 		F4A417B12561153B009B92C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A417B02561153B009B92C7 /* Assets.xcassets */; };
 		F4A417B42561153B009B92C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */; };
@@ -71,6 +73,9 @@
 		F458AE1E256127900016EEDC /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F458AE22256127D60016EEDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F458AE2A256128D00016EEDC /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F4759D4625636A3B00C0B374 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		F4759D4E25636D3200C0B374 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		F4759D56256370A600C0B374 /* RealmManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManagerTests.swift; sourceTree = "<group>"; };
 		F47F40AD25612B73008C0A6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47F40C125612BB2008C0A6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F47F40C625612BB3008C0A6A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -98,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49960D225630B99003E44DC /* RealmSwift in Frameworks */,
 				F4ACCD4F2561A4D80059063A /* Nuke in Frameworks */,
 				F4ACCD162561A3B00059063A /* SnapKit in Frameworks */,
 				B7947CB3764C176E8618E3F0 /* Pods_submanager.framework in Frameworks */,
@@ -198,6 +202,30 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F4759D3E256369F600C0B374 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F4759D4E25636D3200C0B374 /* RealmManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F4759D4525636A2D00C0B374 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4759D4625636A3B00C0B374 /* Subscription.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4759D552563709300C0B374 /* ManagersTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4759D56256370A600C0B374 /* RealmManagerTests.swift */,
+			);
+			path = ManagersTests;
+			sourceTree = "<group>";
+		};
 		F47F40A625612A5A008C0A6A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,9 +277,11 @@
 		F4A417A625611539009B92C7 /* submanager */ = {
 			isa = PBXGroup;
 			children = (
+				F4759D4525636A2D00C0B374 /* Models */,
 				F436F98F256119C400B2667D /* Controllers */,
+				F4759D3E256369F600C0B374 /* Managers */,
 				F458AE26256128A30016EEDC /* Extensions */,
-				F4ACCCC62561950D0059063A /* Utility */,
+				F4ACCCC62561950D0059063A /* Utilities */,
 				F458AE092561263E0016EEDC /* Supporting Files */,
 			);
 			path = submanager;
@@ -261,7 +291,8 @@
 			isa = PBXGroup;
 			children = (
 				F458ADEE25611D880016EEDC /* HomeViewModelTests.swift */,
-				F4ACCCD2256195440059063A /* UtilityTests */,
+				F4759D552563709300C0B374 /* ManagersTests */,
+				F4ACCCD2256195440059063A /* UtilitiesTests */,
 				F4555B7325613BE200473135 /* ExtensionTests */,
 				F4555B7225613BA100473135 /* Supporting Files */,
 			);
@@ -279,20 +310,20 @@
 			path = submanagerUITests;
 			sourceTree = "<group>";
 		};
-		F4ACCCC62561950D0059063A /* Utility */ = {
+		F4ACCCC62561950D0059063A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				F4ACCCC72561951B0059063A /* Images.swift */,
 			);
-			path = Utility;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		F4ACCCD2256195440059063A /* UtilityTests */ = {
+		F4ACCCD2256195440059063A /* UtilitiesTests */ = {
 			isa = PBXGroup;
 			children = (
 				F4ACCCD3256195520059063A /* ImagesTests.swift */,
 			);
-			path = UtilityTests;
+			path = UtilitiesTests;
 			sourceTree = "<group>";
 		};
 		F4ACCCE12561973B0059063A /* Subscription Detail */ = {
@@ -341,7 +372,6 @@
 			packageProductDependencies = (
 				F4ACCD152561A3B00059063A /* SnapKit */,
 				F4ACCD4E2561A4D80059063A /* Nuke */,
-				F49960D125630B99003E44DC /* RealmSwift */,
 			);
 			productName = submanager;
 			productReference = F4A417A425611539009B92C7 /* SM Debug.app */;
@@ -355,7 +385,6 @@
 				F4A417B62561153C009B92C7 /* Sources */,
 				F4A417B72561153C009B92C7 /* Frameworks */,
 				F4A417B82561153C009B92C7 /* Resources */,
-				EBB277625B345C6B38784337 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -425,7 +454,6 @@
 			packageReferences = (
 				F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F4ACCD4D2561A4D80059063A /* XCRemoteSwiftPackageReference "Nuke" */,
-				F49960D025630B99003E44DC /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = F4A417A525611539009B92C7 /* Products */;
 			projectDirPath = "";
@@ -552,23 +580,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EBB277625B345C6B38784337 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-submanagerTests/Pods-submanagerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-submanagerTests/Pods-submanagerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-submanagerTests/Pods-submanagerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F4115C2925624B4A00A78E70 /* Firebase */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -651,8 +662,10 @@
 			files = (
 				F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */,
 				F4ACCCEB2561975C0059063A /* SubscriptionDetailViewModel.swift in Sources */,
+				F4759D4725636A3B00C0B374 /* Subscription.swift in Sources */,
 				F436F992256119E300B2667D /* HomeController.swift in Sources */,
 				F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */,
+				F4759D4F25636D3200C0B374 /* RealmManager.swift in Sources */,
 				F4ACCCE3256197520059063A /* SubscriptionDetailController.swift in Sources */,
 				F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */,
 				F4ACCCC82561951B0059063A /* Images.swift in Sources */,
@@ -664,6 +677,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4ACCCD4256195520059063A /* ImagesTests.swift in Sources */,
+				F4759D57256370A600C0B374 /* RealmManagerTests.swift in Sources */,
 				F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */,
 				F458ADEF25611D880016EEDC /* HomeViewModelTests.swift in Sources */,
 			);
@@ -912,7 +926,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/submanager.app/submanager";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SM Debug.app/SM Debug";
 			};
 			name = Debug;
 		};
@@ -936,7 +950,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/submanager.app/submanager";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SM Debug.app/SM Debug";
 			};
 			name = Release;
 		};
@@ -1027,14 +1041,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F49960D025630B99003E44DC /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-cocoa";
-			requirement = {
-				kind = exactVersion;
-				version = 10.1.3;
-			};
-		};
 		F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -1054,11 +1060,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F49960D125630B99003E44DC /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F49960D025630B99003E44DC /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = RealmSwift;
-		};
 		F4ACCD152561A3B00059063A /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */;

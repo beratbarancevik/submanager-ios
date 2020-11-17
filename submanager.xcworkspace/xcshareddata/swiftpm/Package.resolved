@@ -11,24 +11,6 @@
         }
       },
       {
-        "package": "Realm",
-        "repositoryURL": "https://github.com/realm/realm-cocoa",
-        "state": {
-          "branch": null,
-          "revision": "4c68272afd2f8e34f6c78a351138327e7c8bcff5",
-          "version": "10.1.3"
-        }
-      },
-      {
-        "package": "RealmCore",
-        "repositoryURL": "https://github.com/realm/realm-core",
-        "state": {
-          "branch": null,
-          "revision": "63b42fc6835efdd27b706a6a6b629edc36018d43",
-          "version": "10.1.1"
-        }
-      },
-      {
         "package": "SnapKit",
         "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
         "state": {

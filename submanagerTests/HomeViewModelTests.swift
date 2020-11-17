@@ -7,6 +7,6 @@
 //
 
 import XCTest
-@testable import submanager
+@testable import SM_Debug
 
 class HomeViewModelTests: XCTestCase {}
