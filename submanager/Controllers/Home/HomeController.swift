@@ -15,6 +15,18 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "dd/mm/yyyy"
+//        let startDate = dateFormatter.date(from: "15/10/2020")!
+//        let subscription = Subscription(subId: "1", name: "Test Subscription", price: 9.99, startDate: startDate, interval: 30)
+//        CoreDataManager.shared.saveSubscription(subscription) { result in
+//            switch result {
+//            case .success():
+//                print("Done")
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
     }
 }
 
