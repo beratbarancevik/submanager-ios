@@ -23,3 +23,15 @@ platform :ios do
     upload_to_testflight
   end
 end
+
+platform :ios do
+  desc "Push a new beta build to Firebase App Distribution"
+  lane :firebasedev do
+    increment_build_number(xcodeproj: "submanager.xcodeproj")
+    build_app(workspace: "submanager.xcworkspace", scheme: "submanager")
+    firebase_app_distribution(
+      groups: "engineering",
+      release_notes: "Fastlane upload."
+    )
+  end
+end
