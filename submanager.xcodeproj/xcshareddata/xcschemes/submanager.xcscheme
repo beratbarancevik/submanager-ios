@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F4A417A325611539009B92C7"
-               BuildableName = "submanager.app"
+               BuildableName = "Sub Manager.app"
                BlueprintName = "submanager"
                ReferencedContainer = "container:submanager.xcodeproj">
             </BuildableReference>
@@ -30,11 +30,11 @@
       codeCoverageEnabled = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:UITestPlan.xctestplan"
-            default = "YES">
+            reference = "container:UITestPlan.xctestplan">
          </TestPlanReference>
          <TestPlanReference
-            reference = "container:UnitTestPlan.xctestplan">
+            reference = "container:UnitTestPlan.xctestplan"
+            default = "YES">
          </TestPlanReference>
       </TestPlans>
       <Testables>
@@ -86,7 +86,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4A417A325611539009B92C7"
-            BuildableName = "submanager.app"
+            BuildableName = "Sub Manager.app"
             BlueprintName = "submanager"
             ReferencedContainer = "container:submanager.xcodeproj">
          </BuildableReference>
@@ -97,7 +97,7 @@
       </LocationScenarioReference>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -107,7 +107,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4A417A325611539009B92C7"
-            BuildableName = "submanager.app"
+            BuildableName = "Sub Manager.app"
             BlueprintName = "submanager"
             ReferencedContainer = "container:submanager.xcodeproj">
          </BuildableReference>
@@ -117,7 +117,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

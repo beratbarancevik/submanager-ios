@@ -10,5 +10,10 @@
 app_name = "Sub Manager";
 
 // MARK: - HomeController
+add = "Add";
 home = "Home";
 home_navigation_bar = "Home Navigation Bar";
+
+// MARK: - SubscriptionDetailController
+dismiss = "Dismiss";
+subscription_detail_navigation_bar = "Home Navigation Bar";
