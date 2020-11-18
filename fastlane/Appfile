@@ -1,6 +1,6 @@
-app_identifier("com.beratbarancevik.submanager") # The bundle identifier of your app
+app_identifier("com.beratbarancevik.submanager.debug") # The bundle identifier of your app
 apple_id("beratbarancevik@gmail.com") # Your Apple email address
-
+f
 itc_team_id("122344375") # App Store Connect Team ID
 team_id("3978A7VN36") # Developer Portal Team ID
 
