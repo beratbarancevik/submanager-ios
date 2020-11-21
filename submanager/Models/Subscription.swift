@@ -8,19 +8,28 @@
 
 import CoreData
 
-struct Subscription {
+protocol CoreDataInterface {
+    var managedObject: NSManagedObject { get set }
+    init(managedObject: NSManagedObject)
+    func generateManagedObject(from managedObject: NSManagedObject) -> NSManagedObject
+}
+
+struct Subscription: CoreDataInterface {
+    var managedObject: NSManagedObject
+    
     var subId: String?
     var name: String?
     var price: Double?
     var startDate: Date?
     var interval: Int32?
     
-    init(subId: String, name: String, price: Double, startDate: Date, interval: Int32) {
+    init(subId: String, name: String, price: Double, startDate: Date, interval: Int32, managedObject: NSManagedObject) {
         self.subId = subId
         self.name = name
         self.price = price
         self.startDate = startDate
         self.interval = interval
+        self.managedObject = managedObject
     }
     
     init(managedObject: NSManagedObject) {
@@ -29,6 +38,7 @@ struct Subscription {
         price = managedObject.value(forKey: CodingKeys.price.rawValue) as? Double
         startDate = managedObject.value(forKey: CodingKeys.startDate.rawValue) as? Date
         interval = managedObject.value(forKey: CodingKeys.interval.rawValue) as? Int32
+        self.managedObject = managedObject
     }
     
     private enum CodingKeys: String, CodingKey {
@@ -40,12 +50,11 @@ struct Subscription {
     }
     
     func generateManagedObject(from managedObject: NSManagedObject) -> NSManagedObject {
-        let newManagedObject = managedObject
-        newManagedObject.setValue(subId, forKey: CodingKeys.subId.rawValue)
-        newManagedObject.setValue(name, forKey: CodingKeys.name.rawValue)
-        newManagedObject.setValue(price, forKey: CodingKeys.price.rawValue)
-        newManagedObject.setValue(startDate, forKey: CodingKeys.startDate.rawValue)
-        newManagedObject.setValue(interval, forKey: CodingKeys.interval.rawValue)
-        return newManagedObject
+        managedObject.setValue(subId, forKey: CodingKeys.subId.rawValue)
+        managedObject.setValue(name, forKey: CodingKeys.name.rawValue)
+        managedObject.setValue(price, forKey: CodingKeys.price.rawValue)
+        managedObject.setValue(startDate, forKey: CodingKeys.startDate.rawValue)
+        managedObject.setValue(interval, forKey: CodingKeys.interval.rawValue)
+        return managedObject
     }
 }

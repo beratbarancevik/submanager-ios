@@ -48,20 +48,13 @@ class CoreDataManager {
         }
     }
     
-    func updateSubscription(_ subscription: Subscription, completion: @escaping CoreDataResult) {
+    func deleteSubscription(_ subscription: Subscription, completion: @escaping CoreDataResult) {
         let context = container.newBackgroundContext()
-        // TODO: update
+        let newSubscription = subscription.managedObject
+        context.delete(newSubscription)
         saveChanges(context: context) { result in
             completion(result)
         }
-    }
-    
-    func deleteSubscription(_ subscription: Subscription, completion: @escaping CoreDataResult) {
-//        let context = container.newBackgroundContext()
-//        context.delete(subscription)
-//        saveChanges(context: context) { result in
-//            completion(result)
-//        }
     }
     
     func saveChanges(context: NSManagedObjectContext, completion: @escaping CoreDataResult) {
