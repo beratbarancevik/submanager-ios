@@ -12,8 +12,13 @@
 		B7947CB3764C176E8618E3F0 /* Pods_submanager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CCDDC7E835D8DA4A5368B5 /* Pods_submanager.framework */; };
 		F4110C532562D0C600BD77A5 /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */; };
 		F436F992256119E300B2667D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436F991256119E300B2667D /* HomeController.swift */; };
+		F4379C7225641FA100477E61 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4379C7125641FA100477E61 /* HomeViewModelTests.swift */; };
+		F44B57B925615B530011D20C /* Subscriptions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F44B57B725615B530011D20C /* Subscriptions.xcdatamodeld */; };
+		F44B57BF25615B720011D20C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57BE25615B720011D20C /* CoreDataManager.swift */; };
+		F44B57C825615C8B0011D20C /* CoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57C725615C8B0011D20C /* CoreDataManagerTests.swift */; };
+		F44B57D225615DA30011D20C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57D125615DA30011D20C /* Constants.swift */; };
+		F44B57DB25615ED30011D20C /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57DA25615ED30011D20C /* Subscription.swift */; };
 		F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */; };
-		F458ADEF25611D880016EEDC /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADEE25611D880016EEDC /* HomeViewModelTests.swift */; };
 		F458ADF725611D9A0016EEDC /* HomeControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */; };
 		F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADFE25611DC40016EEDC /* HomeViewModel.swift */; };
 		F458AE182561278C0016EEDC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
@@ -21,7 +26,7 @@
 		F47F40C025612BB2008C0A6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F47F40C225612BB2008C0A6A /* InfoPlist.strings */; };
 		F47F40CA25613030008C0A6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
 		F47F40D3256133E7008C0A6A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F40D2256133E7008C0A6A /* String+Extensions.swift */; };
-		F49960D225630B99003E44DC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F49960D125630B99003E44DC /* RealmSwift */; };
+		F48BABED2566D24B007324D1 /* GoogleService-Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = F48BABEC2566D24B007324D1 /* GoogleService-Info-Release.plist */; };
 		F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A417A725611539009B92C7 /* AppDelegate.swift */; };
 		F4A417B12561153B009B92C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A417B02561153B009B92C7 /* Assets.xcassets */; };
 		F4A417B42561153B009B92C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */; };
@@ -60,10 +65,15 @@
 		BAF459DF1D4A0EEF2DD820F7 /* Pods_submanager_submanagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_submanager_submanagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
 		F436F991256119E300B2667D /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		F4379C7125641FA100477E61 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		F44B57B825615B530011D20C /* Subscriptions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Subscriptions.xcdatamodel; sourceTree = "<group>"; };
+		F44B57BE25615B720011D20C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		F44B57C725615C8B0011D20C /* CoreDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTests.swift; sourceTree = "<group>"; };
+		F44B57D125615DA30011D20C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F44B57DA25615ED30011D20C /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		F4555B93256148ED00473135 /* UITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
 		F4555B9A2561499A00473135 /* UnitTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
-		F458ADEE25611D880016EEDC /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerUITests.swift; sourceTree = "<group>"; };
 		F458ADFE25611DC40016EEDC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F458AE12256127650016EEDC /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -75,6 +85,7 @@
 		F47F40C125612BB2008C0A6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F47F40C625612BB3008C0A6A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F47F40D2256133E7008C0A6A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F48BABEC2566D24B007324D1 /* GoogleService-Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Release.plist"; sourceTree = "<group>"; };
 		F4A417A425611539009B92C7 /* SM Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SM Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A417A725611539009B92C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4A417B02561153B009B92C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,7 +109,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49960D225630B99003E44DC /* RealmSwift in Frameworks */,
 				F4ACCD4F2561A4D80059063A /* Nuke in Frameworks */,
 				F4ACCD162561A3B00059063A /* SnapKit in Frameworks */,
 				B7947CB3764C176E8618E3F0 /* Pods_submanager.framework in Frameworks */,
@@ -138,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */,
+				F48BABEC2566D24B007324D1 /* GoogleService-Info-Release.plist */,
 			);
 			path = Keys;
 			sourceTree = "<group>";
@@ -160,6 +171,46 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		F44B57BD25615B610011D20C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F44B57BE25615B720011D20C /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F44B57C625615C790011D20C /* ManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F44B57C725615C8B0011D20C /* CoreDataManagerTests.swift */,
+			);
+			path = ManagerTests;
+			sourceTree = "<group>";
+		};
+		F44B57CF25615C920011D20C /* ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F44B57D025615C9A0011D20C /* HomeTests */,
+			);
+			path = ControllerTests;
+			sourceTree = "<group>";
+		};
+		F44B57D025615C9A0011D20C /* HomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4379C7125641FA100477E61 /* HomeViewModelTests.swift */,
+			);
+			path = HomeTests;
+			sourceTree = "<group>";
+		};
+		F44B57D925615EC90011D20C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F44B57DA25615ED30011D20C /* Subscription.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F4555B7225613BA100473135 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,10 +231,12 @@
 			isa = PBXGroup;
 			children = (
 				F4A417A725611539009B92C7 /* AppDelegate.swift */,
+				F44B57D125615DA30011D20C /* Constants.swift */,
 				F47F40AD25612B73008C0A6A /* Info.plist */,
 				F47F40C225612BB2008C0A6A /* InfoPlist.strings */,
 				F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */,
 				F458AE1A2561278C0016EEDC /* Localizable.strings */,
+				F44B57B725615B530011D20C /* Subscriptions.xcdatamodeld */,
 				F47F40A625612A5A008C0A6A /* Assets */,
 				F4115C2825624AEF00A78E70 /* Keys */,
 			);
@@ -249,7 +302,9 @@
 		F4A417A625611539009B92C7 /* submanager */ = {
 			isa = PBXGroup;
 			children = (
+				F44B57D925615EC90011D20C /* Models */,
 				F436F98F256119C400B2667D /* Controllers */,
+				F44B57BD25615B610011D20C /* Managers */,
 				F458AE26256128A30016EEDC /* Extensions */,
 				F4ACCCC62561950D0059063A /* Utility */,
 				F458AE092561263E0016EEDC /* Supporting Files */,
@@ -260,9 +315,10 @@
 		F4A417BD2561153C009B92C7 /* submanagerTests */ = {
 			isa = PBXGroup;
 			children = (
-				F458ADEE25611D880016EEDC /* HomeViewModelTests.swift */,
-				F4ACCCD2256195440059063A /* UtilityTests */,
+				F44B57CF25615C920011D20C /* ControllerTests */,
+				F44B57C625615C790011D20C /* ManagerTests */,
 				F4555B7325613BE200473135 /* ExtensionTests */,
+				F4ACCCD2256195440059063A /* UtilityTests */,
 				F4555B7225613BA100473135 /* Supporting Files */,
 			);
 			path = submanagerTests;
@@ -341,7 +397,6 @@
 			packageProductDependencies = (
 				F4ACCD152561A3B00059063A /* SnapKit */,
 				F4ACCD4E2561A4D80059063A /* Nuke */,
-				F49960D125630B99003E44DC /* RealmSwift */,
 			);
 			productName = submanager;
 			productReference = F4A417A425611539009B92C7 /* SM Debug.app */;
@@ -425,7 +480,6 @@
 			packageReferences = (
 				F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F4ACCD4D2561A4D80059063A /* XCRemoteSwiftPackageReference "Nuke" */,
-				F49960D025630B99003E44DC /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = F4A417A525611539009B92C7 /* Products */;
 			projectDirPath = "";
@@ -447,6 +501,7 @@
 				F47F40C025612BB2008C0A6A /* InfoPlist.strings in Resources */,
 				F458AE182561278C0016EEDC /* Localizable.strings in Resources */,
 				F4A417B12561153B009B92C7 /* Assets.xcassets in Resources */,
+				F48BABED2566D24B007324D1 /* GoogleService-Info-Release.plist in Resources */,
 				F4110C532562D0C600BD77A5 /* GoogleService-Info-Debug.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,9 +704,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44B57BF25615B720011D20C /* CoreDataManager.swift in Sources */,
+				F44B57B925615B530011D20C /* Subscriptions.xcdatamodeld in Sources */,
+				F44B57DB25615ED30011D20C /* Subscription.swift in Sources */,
 				F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */,
 				F4ACCCEB2561975C0059063A /* SubscriptionDetailViewModel.swift in Sources */,
 				F436F992256119E300B2667D /* HomeController.swift in Sources */,
+				F44B57D225615DA30011D20C /* Constants.swift in Sources */,
 				F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */,
 				F4ACCCE3256197520059063A /* SubscriptionDetailController.swift in Sources */,
 				F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */,
@@ -665,7 +724,8 @@
 			files = (
 				F4ACCCD4256195520059063A /* ImagesTests.swift in Sources */,
 				F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */,
-				F458ADEF25611D880016EEDC /* HomeViewModelTests.swift in Sources */,
+				F44B57C825615C8B0011D20C /* CoreDataManagerTests.swift in Sources */,
+				F4379C7225641FA100477E61 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,7 +910,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-debug";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/submanager/Supporting Files/Info.plist";
@@ -873,7 +933,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-release";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/submanager/Supporting Files/Info.plist";
@@ -912,7 +972,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/submanager.app/submanager";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SM Debug.app/SM Debug";
 			};
 			name = Debug;
 		};
@@ -936,7 +996,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/submanager.app/submanager";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SM Debug.app/SM Debug";
 			};
 			name = Release;
 		};
@@ -1027,14 +1087,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F49960D025630B99003E44DC /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-cocoa";
-			requirement = {
-				kind = exactVersion;
-				version = 10.1.3;
-			};
-		};
 		F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -1048,17 +1100,12 @@
 			repositoryURL = "https://github.com/kean/Nuke.git";
 			requirement = {
 				kind = exactVersion;
-				version = 9.1.2;
+				version = 9.1.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F49960D125630B99003E44DC /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F49960D025630B99003E44DC /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = RealmSwift;
-		};
 		F4ACCD152561A3B00059063A /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */;
@@ -1070,6 +1117,19 @@
 			productName = Nuke;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F44B57B725615B530011D20C /* Subscriptions.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F44B57B825615B530011D20C /* Subscriptions.xcdatamodel */,
+			);
+			currentVersion = F44B57B825615B530011D20C /* Subscriptions.xcdatamodel */;
+			path = Subscriptions.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F4A4179C25611539009B92C7 /* Project object */;
 }

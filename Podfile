@@ -16,9 +16,11 @@ target 'submanager' do
 
   target 'submanagerTests' do
     inherit! :search_paths
+    
     # Pods for testing
     pod 'RxBlocking', '6.0.0-rc.1'
     pod 'RxTest', '6.0.0-rc.1'
+    
   end
 
   target 'submanagerUITests' do
