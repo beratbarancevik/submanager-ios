@@ -20,6 +20,7 @@
 		F458AE182561278C0016EEDC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
 		F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458AE2A256128D00016EEDC /* String+Extensions.swift */; };
 		F45F6A2025690386001C7718 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A1F25690386001C7718 /* Alamofire */; };
+		F45F6A262569043D001C7718 /* AlamofireNetworkActivityIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A252569043D001C7718 /* AlamofireNetworkActivityIndicator */; };
 		F47F40C025612BB2008C0A6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F47F40C225612BB2008C0A6A /* InfoPlist.strings */; };
 		F47F40CA25613030008C0A6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
 		F47F40D3256133E7008C0A6A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F40D2256133E7008C0A6A /* String+Extensions.swift */; };
@@ -104,6 +105,7 @@
 			files = (
 				F4ACCD4F2561A4D80059063A /* Nuke in Frameworks */,
 				F45F6A2025690386001C7718 /* Alamofire in Frameworks */,
+				F45F6A262569043D001C7718 /* AlamofireNetworkActivityIndicator in Frameworks */,
 				F4ACCD162561A3B00059063A /* SnapKit in Frameworks */,
 				B7947CB3764C176E8618E3F0 /* Pods_submanager.framework in Frameworks */,
 			);
@@ -388,6 +390,7 @@
 				F4ACCD152561A3B00059063A /* SnapKit */,
 				F4ACCD4E2561A4D80059063A /* Nuke */,
 				F45F6A1F25690386001C7718 /* Alamofire */,
+				F45F6A252569043D001C7718 /* AlamofireNetworkActivityIndicator */,
 			);
 			productName = submanager;
 			productReference = F4A417A425611539009B92C7 /* SM Debug.app */;
@@ -472,6 +475,7 @@
 				F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F4ACCD4D2561A4D80059063A /* XCRemoteSwiftPackageReference "Nuke" */,
 				F45F6A1E25690386001C7718 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F45F6A242569043D001C7718 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */,
 			);
 			productRefGroup = F4A417A525611539009B92C7 /* Products */;
 			projectDirPath = "";
@@ -1083,6 +1087,14 @@
 				version = 5.4.0;
 			};
 		};
+		F45F6A242569043D001C7718 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireNetworkActivityIndicator";
+			requirement = {
+				kind = exactVersion;
+				version = 3.1.0;
+			};
+		};
 		F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -1106,6 +1118,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F45F6A1E25690386001C7718 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		F45F6A252569043D001C7718 /* AlamofireNetworkActivityIndicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F45F6A242569043D001C7718 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */;
+			productName = AlamofireNetworkActivityIndicator;
 		};
 		F4ACCD152561A3B00059063A /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
