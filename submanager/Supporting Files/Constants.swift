@@ -7,5 +7,5 @@
 //
 
 class Constants {
-    static let coreDataSubsciptionsContainer = "Subscriptions"
+    
 }

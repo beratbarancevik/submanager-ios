@@ -6,6 +6,7 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
+import AlamofireNetworkActivityIndicator
 import Firebase
 import UIKit
 
@@ -15,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setUpFirebase()
+        setUpUI()
         displayHome()
         return true
     }
@@ -24,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 private extension AppDelegate {
     func setUpFirebase() {
         FirebaseApp.configure()
+    }
+    
+    func setUpUI() {
+        NetworkActivityIndicatorManager.shared.isEnabled = true
     }
     
     func displayHome() {

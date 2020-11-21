@@ -13,16 +13,15 @@
 		F4110C532562D0C600BD77A5 /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */; };
 		F436F992256119E300B2667D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436F991256119E300B2667D /* HomeController.swift */; };
 		F4379C7225641FA100477E61 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4379C7125641FA100477E61 /* HomeViewModelTests.swift */; };
-		F44B57B925615B530011D20C /* Subscriptions.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F44B57B725615B530011D20C /* Subscriptions.xcdatamodeld */; };
-		F44B57BF25615B720011D20C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57BE25615B720011D20C /* CoreDataManager.swift */; };
-		F44B57C825615C8B0011D20C /* CoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57C725615C8B0011D20C /* CoreDataManagerTests.swift */; };
 		F44B57D225615DA30011D20C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57D125615DA30011D20C /* Constants.swift */; };
-		F44B57DB25615ED30011D20C /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57DA25615ED30011D20C /* Subscription.swift */; };
 		F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */; };
 		F458ADF725611D9A0016EEDC /* HomeControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */; };
 		F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADFE25611DC40016EEDC /* HomeViewModel.swift */; };
 		F458AE182561278C0016EEDC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
 		F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458AE2A256128D00016EEDC /* String+Extensions.swift */; };
+		F45F6A2025690386001C7718 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A1F25690386001C7718 /* Alamofire */; };
+		F45F6A262569043D001C7718 /* AlamofireNetworkActivityIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A252569043D001C7718 /* AlamofireNetworkActivityIndicator */; };
+		F45F6A5F256905BA001C7718 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */; };
 		F47F40C025612BB2008C0A6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F47F40C225612BB2008C0A6A /* InfoPlist.strings */; };
 		F47F40CA25613030008C0A6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
 		F47F40D3256133E7008C0A6A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F40D2256133E7008C0A6A /* String+Extensions.swift */; };
@@ -66,11 +65,7 @@
 		F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
 		F436F991256119E300B2667D /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F4379C7125641FA100477E61 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
-		F44B57B825615B530011D20C /* Subscriptions.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Subscriptions.xcdatamodel; sourceTree = "<group>"; };
-		F44B57BE25615B720011D20C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		F44B57C725615C8B0011D20C /* CoreDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerTests.swift; sourceTree = "<group>"; };
 		F44B57D125615DA30011D20C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F44B57DA25615ED30011D20C /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		F4555B93256148ED00473135 /* UITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
 		F4555B9A2561499A00473135 /* UnitTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
@@ -81,6 +76,7 @@
 		F458AE1E256127900016EEDC /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F458AE22256127D60016EEDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F458AE2A256128D00016EEDC /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		F47F40AD25612B73008C0A6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47F40C125612BB2008C0A6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F47F40C625612BB3008C0A6A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -110,6 +106,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4ACCD4F2561A4D80059063A /* Nuke in Frameworks */,
+				F45F6A2025690386001C7718 /* Alamofire in Frameworks */,
+				F45F6A262569043D001C7718 /* AlamofireNetworkActivityIndicator in Frameworks */,
 				F4ACCD162561A3B00059063A /* SnapKit in Frameworks */,
 				B7947CB3764C176E8618E3F0 /* Pods_submanager.framework in Frameworks */,
 			);
@@ -174,7 +172,6 @@
 		F44B57BD25615B610011D20C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				F44B57BE25615B720011D20C /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -182,7 +179,6 @@
 		F44B57C625615C790011D20C /* ManagerTests */ = {
 			isa = PBXGroup;
 			children = (
-				F44B57C725615C8B0011D20C /* CoreDataManagerTests.swift */,
 			);
 			path = ManagerTests;
 			sourceTree = "<group>";
@@ -206,7 +202,6 @@
 		F44B57D925615EC90011D20C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F44B57DA25615ED30011D20C /* Subscription.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,7 +231,6 @@
 				F47F40C225612BB2008C0A6A /* InfoPlist.strings */,
 				F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */,
 				F458AE1A2561278C0016EEDC /* Localizable.strings */,
-				F44B57B725615B530011D20C /* Subscriptions.xcdatamodeld */,
 				F47F40A625612A5A008C0A6A /* Assets */,
 				F4115C2825624AEF00A78E70 /* Keys */,
 			);
@@ -249,6 +243,14 @@
 				F458AE2A256128D00016EEDC /* String+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F45F6A5D256905A5001C7718 /* SupportingFilesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */,
+			);
+			path = SupportingFilesTests;
 			sourceTree = "<group>";
 		};
 		F47F40A625612A5A008C0A6A /* Assets */ = {
@@ -319,6 +321,7 @@
 				F44B57C625615C790011D20C /* ManagerTests */,
 				F4555B7325613BE200473135 /* ExtensionTests */,
 				F4ACCCD2256195440059063A /* UtilityTests */,
+				F45F6A5D256905A5001C7718 /* SupportingFilesTests */,
 				F4555B7225613BA100473135 /* Supporting Files */,
 			);
 			path = submanagerTests;
@@ -397,6 +400,8 @@
 			packageProductDependencies = (
 				F4ACCD152561A3B00059063A /* SnapKit */,
 				F4ACCD4E2561A4D80059063A /* Nuke */,
+				F45F6A1F25690386001C7718 /* Alamofire */,
+				F45F6A252569043D001C7718 /* AlamofireNetworkActivityIndicator */,
 			);
 			productName = submanager;
 			productReference = F4A417A425611539009B92C7 /* SM Debug.app */;
@@ -480,6 +485,8 @@
 			packageReferences = (
 				F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F4ACCD4D2561A4D80059063A /* XCRemoteSwiftPackageReference "Nuke" */,
+				F45F6A1E25690386001C7718 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F45F6A242569043D001C7718 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */,
 			);
 			productRefGroup = F4A417A525611539009B92C7 /* Products */;
 			projectDirPath = "";
@@ -704,9 +711,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44B57BF25615B720011D20C /* CoreDataManager.swift in Sources */,
-				F44B57B925615B530011D20C /* Subscriptions.xcdatamodeld in Sources */,
-				F44B57DB25615ED30011D20C /* Subscription.swift in Sources */,
 				F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */,
 				F4ACCCEB2561975C0059063A /* SubscriptionDetailViewModel.swift in Sources */,
 				F436F992256119E300B2667D /* HomeController.swift in Sources */,
@@ -722,9 +726,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45F6A5F256905BA001C7718 /* AppDelegateTests.swift in Sources */,
 				F4ACCCD4256195520059063A /* ImagesTests.swift in Sources */,
 				F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */,
-				F44B57C825615C8B0011D20C /* CoreDataManagerTests.swift in Sources */,
 				F4379C7225641FA100477E61 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1087,6 +1091,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F45F6A1E25690386001C7718 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.0;
+			};
+		};
+		F45F6A242569043D001C7718 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireNetworkActivityIndicator";
+			requirement = {
+				kind = exactVersion;
+				version = 3.1.0;
+			};
+		};
 		F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -1106,6 +1126,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F45F6A1F25690386001C7718 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F45F6A1E25690386001C7718 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F45F6A252569043D001C7718 /* AlamofireNetworkActivityIndicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F45F6A242569043D001C7718 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */;
+			productName = AlamofireNetworkActivityIndicator;
+		};
 		F4ACCD152561A3B00059063A /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F4ACCD142561A3B00059063A /* XCRemoteSwiftPackageReference "SnapKit" */;
@@ -1117,19 +1147,6 @@
 			productName = Nuke;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		F44B57B725615B530011D20C /* Subscriptions.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F44B57B825615B530011D20C /* Subscriptions.xcdatamodel */,
-			);
-			currentVersion = F44B57B825615B530011D20C /* Subscriptions.xcdatamodel */;
-			path = Subscriptions.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F4A4179C25611539009B92C7 /* Project object */;
 }
