@@ -7,21 +7,22 @@
 //
 
 import XCTest
-@testable import submanager
+@testable import SM_Debug
 
 class HomeControllerUITests: XCTestCase {
     var app: XCUIApplication!
     
-    override func setUpWithError() throws {
+    override func setUp() {
         super.setUp()
         continueAfterFailure = false
         app = XCUIApplication()
         app.launch()
     }
 
-    override func tearDownWithError() throws {
-        app.terminate()
+    override func tearDown() {
         super.tearDown()
+        app.terminate()
+        app = nil
     }
     
     func testNavigationBarTitle() {
