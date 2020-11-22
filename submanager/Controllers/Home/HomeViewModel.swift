@@ -7,5 +7,21 @@
 //
 
 class HomeViewModel {
-    
+    func getSubscriptions() {
+        sendGetSubscriptionsRequest()
+    }
+}
+
+// MARK: - Private Functions
+private extension HomeViewModel {
+    func sendGetSubscriptionsRequest() {
+        SubscriptionsService.getSubscriptions { result in
+            switch result {
+            case .success(let response):
+                break
+            case .failure(let error):
+                break
+            }
+        }
+    }
 }

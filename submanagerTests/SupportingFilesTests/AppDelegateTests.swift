@@ -12,8 +12,10 @@ import XCTest
 @testable import SM_Debug
 
 class AppDelegateTests: XCTestCase {
+    var sut = UIApplication.shared.delegate
+    
     func testAppDidFinishLaunchingWithOptions() {
-        XCTAssertNotNil(UIApplication.shared.delegate as? AppDelegate)
+        XCTAssertNotNil(sut as? AppDelegate)
         
         // Firebase
         XCTAssertNotNil(FirebaseApp.app())
