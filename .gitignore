@@ -92,5 +92,8 @@ iOSInjectionProject/
 # MacOS
 .DS_Store
 
+# IntelliJ
+.idea
+
 # Keys
 Keys/

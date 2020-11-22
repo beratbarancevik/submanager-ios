@@ -6,11 +6,12 @@ target 'submanager' do
   use_frameworks!
 
   # Pods for submanager
-  pod 'RxCocoa', '6.0.0-rc.1'
-  pod 'RxRelay', '6.0.0-rc.1'
-  pod 'RxSwift', '6.0.0-rc.1'
+  pod 'RxCocoa', '6.0.0-rc.2'
+  pod 'RxRelay', '6.0.0-rc.2'
+  pod 'RxSwift', '6.0.0-rc.2'
 
   pod 'Firebase/Analytics', '7.1.0'
+  pod 'Firebase/Auth', '7.1.0'
   pod 'Firebase/Crashlytics', '7.1.0'
   pod 'Firebase/Performance', '7.1.0'
 
@@ -18,8 +19,8 @@ target 'submanager' do
     inherit! :search_paths
     
     # Pods for testing
-    pod 'RxBlocking', '6.0.0-rc.1'
-    pod 'RxTest', '6.0.0-rc.1'
+    pod 'RxBlocking', '6.0.0-rc.2'
+    pod 'RxTest', '6.0.0-rc.2'
     
   end
 
