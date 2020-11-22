@@ -6,6 +6,9 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
+import AlamofireNetworkActivityIndicator
+import Firebase
+import SnapKit
 import UIKit
 
 @main
@@ -13,9 +16,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: HomeController())
-        window?.makeKeyAndVisible()
+        setUpFirebase()
+        setUpUI()
+        displayHome()
         return true
+    }
+}
+
+// MARK: - Private Functions
+private extension AppDelegate {
+    func setUpFirebase() {
+        FirebaseConfiguration.shared.setLoggerLevel(.min)
+        FirebaseApp.configure()
+    }
+    
+    func setUpUI() {
+        NetworkActivityIndicatorManager.shared.isEnabled = true
+    }
+    
+    func displayHome() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = SplashController()
+        window?.makeKeyAndVisible()
     }
 }

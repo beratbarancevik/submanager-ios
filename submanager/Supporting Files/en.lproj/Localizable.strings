@@ -13,3 +13,10 @@ app_name = "Sub Manager";
 add = "Add";
 home = "Home";
 home_navigation_bar = "Home Navigation Bar";
+
+// MARK: - SplashController
+splash_logo_image_view = "Logo Image";
+
+// MARK: - SubscriptionDetailController
+dismiss = "Dismiss";
+subscription_detail_navigation_bar = "Home Navigation Bar";

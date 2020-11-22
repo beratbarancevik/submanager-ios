@@ -7,11 +7,23 @@
 //
 
 import XCTest
-@testable import submanager
+@testable import SM_Debug
 
 class ImagesTests: XCTestCase {
+    var sut: Images.Type!
+    
+    override func setUp() {
+        super.setUp()
+        sut = Images.self
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+        sut = nil
+    }
+    
     func testStaticImages() {
-        Images.allCases.forEach {
+        sut.allCases.forEach {
             XCTAssertNotNil($0.image)
         }
     }

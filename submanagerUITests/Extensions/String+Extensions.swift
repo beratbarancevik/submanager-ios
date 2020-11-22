@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@testable import submanager
+@testable import SM_Debug
 
 extension String {
     var localized: String {

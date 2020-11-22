@@ -7,30 +7,31 @@
 //
 
 import XCTest
-@testable import submanager
+@testable import SM_Debug
 
 class HomeControllerUITests: XCTestCase {
     var app: XCUIApplication!
     
-    override func setUpWithError() throws {
+    override func setUp() {
         super.setUp()
         continueAfterFailure = false
         app = XCUIApplication()
         app.launch()
     }
 
-    override func tearDownWithError() throws {
-        app.terminate()
+    override func tearDown() {
         super.tearDown()
+        app.terminate()
+        app = nil
     }
     
     func testNavigationBarTitle() {
-        let navigationBarTitleExists = app.navigationBars["home_navigation_bar".localized].staticTexts["home".localized].exists
-        XCTAssert(navigationBarTitleExists)
+        let navigationBarTitle = app.navigationBars["home_navigation_bar".localized].staticTexts["home".localized]
+        XCTAssert(navigationBarTitle.exists)
     }
     
     func testRightBarButtonItem() {
-        let rightBarButtonItemExists = app.navigationBars["home_navigation_bar".localized].buttons["add".localized].exists
-        XCTAssert(rightBarButtonItemExists)
+        let rightBarButtonItem = app.navigationBars["home_navigation_bar".localized].buttons["add".localized]
+        XCTAssert(rightBarButtonItem.exists)
     }
 }
