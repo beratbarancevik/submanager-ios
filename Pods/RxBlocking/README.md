@@ -102,9 +102,9 @@ let searchResults = searchBar.rx.text.orEmpty
             return .just([])
         }
         return searchGitHub(query)
-            .catchErrorJustReturn([])
+            .catchAndReturn([])
     }
-    .observeOn(MainScheduler.instance)</pre></div></td>
+    .observe(on: MainScheduler.instance)</pre></div></td>
   </tr>
   <tr>
     <td>... then bind the results to your tableview</td>
@@ -127,7 +127,7 @@ searchResults
 * Xcode 12.x
 * Swift 5.x
 
-For Xcode 11 and below, [use RxSwift 5.x](https://github.com/ReactiveX/RxSwift/releases/tag/5.0.1).
+For Xcode 11 and below, [use RxSwift 5.x](https://github.com/ReactiveX/RxSwift/releases/tag/5.1.1).
 
 ## Installation
 
@@ -146,14 +146,14 @@ Open Rx.xcworkspace, choose `RxExample` and hit run. This method will build ever
 use_frameworks!
 
 target 'YOUR_TARGET_NAME' do
-    pod 'RxSwift', '6.0.0-rc.1'
-    pod 'RxCocoa', '6.0.0-rc.1'
+    pod 'RxSwift', '6.0.0-rc.2'
+    pod 'RxCocoa', '6.0.0-rc.2'
 end
 
 # RxTest and RxBlocking make the most sense in the context of unit/integration tests
 target 'YOUR_TESTING_TARGET' do
-    pod 'RxBlocking', '6.0.0-rc.1'
-    pod 'RxTest', '6.0.0-rc.1'
+    pod 'RxBlocking', '6.0.0-rc.2'
+    pod 'RxTest', '6.0.0-rc.2'
 end
 ```
 
@@ -163,14 +163,19 @@ Replace `YOUR_TARGET_NAME` and then, in the `Podfile` directory, type:
 $ pod install
 ```
 
-### [Carthage](https://github.com/Carthage/Carthage)
+### XCFrameworks
 
-Officially supported: Carthage 0.33 and up.
+Each release starting with RxSwift 6 includes `*.xcframework` framework binaries.
+Simply drag the needed framework binaries to your **Frameworks, Libraries, and Embedded Content** section under your target's **General** tab.
+
+<img src="https://raw.githubusercontent.com/ReactiveX/RxSwift/main/assets/xcframeworks.png" alt="XCFrameworks instructions" width="65%">
+
+### [Carthage](https://github.com/Carthage/Carthage)
 
 Add this to `Cartfile`
 
 ```
-github "ReactiveX/RxSwift" '6.0.0-rc.1'
+github "ReactiveX/RxSwift" "6.0.0-rc.2"
 ```
 
 ```bash
@@ -203,7 +208,7 @@ import PackageDescription
 let package = Package(
   name: "RxTestProject",
   dependencies: [
-    .package(url: "https://github.com/ReactiveX/RxSwift.git", .exact("6.0.0-rc.1"))
+    .package(url: "https://github.com/ReactiveX/RxSwift.git", .exact("6.0.0-rc.2"))
   ],
   targets: [
     .target(name: "RxTestProject", dependencies: ["RxSwift", "RxCocoa"])
