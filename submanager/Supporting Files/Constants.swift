@@ -6,6 +6,4 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
-class Constants {
-    
-}
+class Constants {}
