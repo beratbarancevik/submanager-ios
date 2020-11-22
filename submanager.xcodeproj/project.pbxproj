@@ -21,6 +21,10 @@
 		F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADFE25611DC40016EEDC /* HomeViewModel.swift */; };
 		F458AE182561278C0016EEDC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
 		F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458AE2A256128D00016EEDC /* String+Extensions.swift */; };
+		F459A49B256A85C6009C4ABE /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A49A256A85C6009C4ABE /* SplashController.swift */; };
+		F459A4A0256A85D1009C4ABE /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A49F256A85D1009C4ABE /* SplashViewModel.swift */; };
+		F459A4A6256A868A009C4ABE /* SplashViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4A5256A868A009C4ABE /* SplashViewModelTests.swift */; };
+		F459A4AE256A86C4009C4ABE /* SplashControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4AD256A86C4009C4ABE /* SplashControllerUITests.swift */; };
 		F45F6A2025690386001C7718 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A1F25690386001C7718 /* Alamofire */; };
 		F45F6A262569043D001C7718 /* AlamofireNetworkActivityIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A252569043D001C7718 /* AlamofireNetworkActivityIndicator */; };
 		F45F6A5F256905BA001C7718 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */; };
@@ -93,6 +97,10 @@
 		F458AE1E256127900016EEDC /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F458AE22256127D60016EEDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F458AE2A256128D00016EEDC /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F459A49A256A85C6009C4ABE /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		F459A49F256A85D1009C4ABE /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		F459A4A5256A868A009C4ABE /* SplashViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelTests.swift; sourceTree = "<group>"; };
+		F459A4AD256A86C4009C4ABE /* SplashControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashControllerUITests.swift; sourceTree = "<group>"; };
 		F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		F473E65B2569306A00440292 /* BaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceTests.swift; sourceTree = "<group>"; };
 		F47F40AD25612B73008C0A6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -186,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				F436F990256119D800B2667D /* Home */,
+				F459A496256A85B6009C4ABE /* Splash */,
 				F4ACCCE12561973B0059063A /* Subscription Detail */,
 			);
 			path = Controllers;
@@ -203,6 +212,7 @@
 		F44B57CF25615C920011D20C /* ControllerTests */ = {
 			isa = PBXGroup;
 			children = (
+				F459A4A4256A867E009C4ABE /* SplashTests */,
 				F44B57D025615C9A0011D20C /* HomeTests */,
 			);
 			path = ControllerTests;
@@ -271,6 +281,23 @@
 				F458AE2A256128D00016EEDC /* String+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F459A496256A85B6009C4ABE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F459A49A256A85C6009C4ABE /* SplashController.swift */,
+				F459A49F256A85D1009C4ABE /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		F459A4A4256A867E009C4ABE /* SplashTests */ = {
+			isa = PBXGroup;
+			children = (
+				F459A4A5256A868A009C4ABE /* SplashViewModelTests.swift */,
+			);
+			path = SplashTests;
 			sourceTree = "<group>";
 		};
 		F45F6A5D256905A5001C7718 /* SupportingFilesTests */ = {
@@ -363,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */,
+				F459A4AD256A86C4009C4ABE /* SplashControllerUITests.swift */,
 				F4ACCCEF25619A520059063A /* SubscriptionDetailControllerUITests.swift */,
 				F47F40E0256134BC008C0A6A /* Extensions */,
 				F47F40E1256134CD008C0A6A /* Supporting Files */,
@@ -824,9 +852,11 @@
 				F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */,
 				F4ACCCEB2561975C0059063A /* SubscriptionDetailViewModel.swift in Sources */,
 				F4EB85182569170E00ADF19C /* GetAllSubscriptionsRequest.swift in Sources */,
+				F459A4A0256A85D1009C4ABE /* SplashViewModel.swift in Sources */,
 				F4F2E19D25692EA800B3108B /* ServiceConstants.swift in Sources */,
 				F436F992256119E300B2667D /* HomeController.swift in Sources */,
 				F4EB84EA256912B600ADF19C /* SecretConstants.swift in Sources */,
+				F459A49B256A85C6009C4ABE /* SplashController.swift in Sources */,
 				F44B57D225615DA30011D20C /* Constants.swift in Sources */,
 				F4EB84E02569100D00ADF19C /* Subscription.swift in Sources */,
 				F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */,
@@ -848,6 +878,7 @@
 				F45F6A5F256905BA001C7718 /* AppDelegateTests.swift in Sources */,
 				F4ACCCD4256195520059063A /* ImagesTests.swift in Sources */,
 				F4EB84BC25690F4F00ADF19C /* ServiceManagerTests.swift in Sources */,
+				F459A4A6256A868A009C4ABE /* SplashViewModelTests.swift in Sources */,
 				F4BBAEB7256A370F0018544D /* TestConstants.swift in Sources */,
 				F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */,
 				F44ECD41256A6C4F008ED799 /* SubscriptionTests.swift in Sources */,
@@ -861,6 +892,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F459A4AE256A86C4009C4ABE /* SplashControllerUITests.swift in Sources */,
 				F47F40D3256133E7008C0A6A /* String+Extensions.swift in Sources */,
 				F4ACCCF025619A520059063A /* SubscriptionDetailControllerUITests.swift in Sources */,
 				F458ADF725611D9A0016EEDC /* HomeControllerUITests.swift in Sources */,
