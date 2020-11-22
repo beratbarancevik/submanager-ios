@@ -8,6 +8,7 @@
 
 import AlamofireNetworkActivityIndicator
 import Firebase
+import SnapKit
 import UIKit
 
 @main
@@ -35,7 +36,7 @@ private extension AppDelegate {
     
     func displayHome() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: HomeController())
+        window?.rootViewController = SplashController()
         window?.makeKeyAndVisible()
     }
 }

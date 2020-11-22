@@ -20,6 +20,12 @@ class SubscriptionDetailControllerUITests: XCTestCase {
         app.navigationBars["home_navigation_bar".localized].buttons["add".localized].tap()
     }
     
+    override func tearDown() {
+        super.tearDown()
+        app.terminate()
+        app = nil
+    }
+    
     func testLeftBarButtonItem() {
         let leftBarButtonItem = app.navigationBars["subscription_detail_navigation_bar".localized].buttons["dismiss".localized]
         XCTAssert(leftBarButtonItem.exists)
