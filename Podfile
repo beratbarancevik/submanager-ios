@@ -11,6 +11,7 @@ target 'submanager' do
   pod 'RxSwift', '6.0.0-rc.1'
 
   pod 'Firebase/Analytics', '7.1.0'
+  pod 'Firebase/Auth', '7.1.0'
   pod 'Firebase/Crashlytics', '7.1.0'
   pod 'Firebase/Performance', '7.1.0'
 
