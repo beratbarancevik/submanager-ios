@@ -10,7 +10,19 @@ import XCTest
 @testable import SM_Debug
 
 class KeysTests: XCTestCase {
+    var sut: SecretConstants.Type!
+    
+    override func setUp() {
+        super.setUp()
+        sut = SecretConstants.self
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+        sut = nil
+    }
+    
     func testBaseUrl() {
-        XCTAssertNotNil(URL(string: SecretConstants.baseUrl))
+        XCTAssertNotNil(URL(string: sut.baseUrl))
     }
 }

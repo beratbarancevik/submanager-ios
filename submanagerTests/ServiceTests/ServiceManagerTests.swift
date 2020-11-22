@@ -11,7 +11,17 @@ import XCTest
 @testable import SM_Debug
 
 class ServiceManagerTests: XCTestCase {
-    var sut = ServiceManager.self
+    var sut: ServiceManager.Type!
+    
+    override func setUp() {
+        super.setUp()
+        sut = ServiceManager.self
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+        sut = nil
+    }
     
     func testInvalidUrlError() {
         let expectation = XCTestExpectation(description: "Should result in invalid url error")

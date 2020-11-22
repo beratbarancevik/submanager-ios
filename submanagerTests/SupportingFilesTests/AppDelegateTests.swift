@@ -12,7 +12,17 @@ import XCTest
 @testable import SM_Debug
 
 class AppDelegateTests: XCTestCase {
-    var sut = UIApplication.shared.delegate
+    var sut: UIApplicationDelegate!
+    
+    override func setUp() {
+        super.setUp()
+        sut = UIApplication.shared.delegate
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+        sut = nil
+    }
     
     func testAppDidFinishLaunchingWithOptions() {
         XCTAssertNotNil(sut as? AppDelegate)

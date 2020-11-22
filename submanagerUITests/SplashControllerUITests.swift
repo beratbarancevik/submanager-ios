@@ -16,6 +16,7 @@ class SplashControllerUITests: XCTestCase {
         super.setUp()
         continueAfterFailure = false
         app = XCUIApplication()
+        app.launchEnvironment.updateValue("YES", forKey: "ShouldStopAtSplash")
         app.launch()
     }
     

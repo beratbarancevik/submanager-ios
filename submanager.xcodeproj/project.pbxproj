@@ -25,6 +25,12 @@
 		F459A4A0256A85D1009C4ABE /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A49F256A85D1009C4ABE /* SplashViewModel.swift */; };
 		F459A4A6256A868A009C4ABE /* SplashViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4A5256A868A009C4ABE /* SplashViewModelTests.swift */; };
 		F459A4AE256A86C4009C4ABE /* SplashControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4AD256A86C4009C4ABE /* SplashControllerUITests.swift */; };
+		F459A4B6256A8C42009C4ABE /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4B5256A8C42009C4ABE /* AuthenticationManager.swift */; };
+		F459A4BB256A8CAA009C4ABE /* AuthenticationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4BA256A8CAA009C4ABE /* AuthenticationManagerTests.swift */; };
+		F459A4DD256A9790009C4ABE /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4DC256A9790009C4ABE /* BaseManager.swift */; };
+		F459A4E6256A9B16009C4ABE /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4E5256A9B16009C4ABE /* BaseController.swift */; };
+		F459A4EE256A9B38009C4ABE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4ED256A9B38009C4ABE /* BaseViewModel.swift */; };
+		F459A4F3256A9C8F009C4ABE /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4F2256A9C8F009C4ABE /* BaseNavigationController.swift */; };
 		F45F6A2025690386001C7718 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A1F25690386001C7718 /* Alamofire */; };
 		F45F6A262569043D001C7718 /* AlamofireNetworkActivityIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A252569043D001C7718 /* AlamofireNetworkActivityIndicator */; };
 		F45F6A5F256905BA001C7718 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */; };
@@ -101,6 +107,12 @@
 		F459A49F256A85D1009C4ABE /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		F459A4A5256A868A009C4ABE /* SplashViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelTests.swift; sourceTree = "<group>"; };
 		F459A4AD256A86C4009C4ABE /* SplashControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashControllerUITests.swift; sourceTree = "<group>"; };
+		F459A4B5256A8C42009C4ABE /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		F459A4BA256A8CAA009C4ABE /* AuthenticationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManagerTests.swift; sourceTree = "<group>"; };
+		F459A4DC256A9790009C4ABE /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
+		F459A4E5256A9B16009C4ABE /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		F459A4ED256A9B38009C4ABE /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F459A4F2256A9C8F009C4ABE /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		F473E65B2569306A00440292 /* BaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceTests.swift; sourceTree = "<group>"; };
 		F47F40AD25612B73008C0A6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,6 +205,7 @@
 		F436F98F256119C400B2667D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F459A4E4256A9B0D009C4ABE /* Base */,
 				F436F990256119D800B2667D /* Home */,
 				F459A496256A85B6009C4ABE /* Splash */,
 				F4ACCCE12561973B0059063A /* Subscription Detail */,
@@ -298,6 +311,16 @@
 				F459A4A5256A868A009C4ABE /* SplashViewModelTests.swift */,
 			);
 			path = SplashTests;
+			sourceTree = "<group>";
+		};
+		F459A4E4256A9B0D009C4ABE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F459A4E5256A9B16009C4ABE /* BaseController.swift */,
+				F459A4F2256A9C8F009C4ABE /* BaseNavigationController.swift */,
+				F459A4ED256A9B38009C4ABE /* BaseViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		F45F6A5D256905A5001C7718 /* SupportingFilesTests */ = {
@@ -426,6 +449,8 @@
 		F4EB84A725690EB000ADF19C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				F459A4DC256A9790009C4ABE /* BaseManager.swift */,
+				F459A4B5256A8C42009C4ABE /* AuthenticationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -449,6 +474,7 @@
 		F4EB84BA25690F4000ADF19C /* ManagerTests */ = {
 			isa = PBXGroup;
 			children = (
+				F459A4BA256A8CAA009C4ABE /* AuthenticationManagerTests.swift */,
 			);
 			path = ManagerTests;
 			sourceTree = "<group>";
@@ -849,20 +875,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F459A4F3256A9C8F009C4ABE /* BaseNavigationController.swift in Sources */,
 				F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */,
+				F459A4EE256A9B38009C4ABE /* BaseViewModel.swift in Sources */,
 				F4ACCCEB2561975C0059063A /* SubscriptionDetailViewModel.swift in Sources */,
 				F4EB85182569170E00ADF19C /* GetAllSubscriptionsRequest.swift in Sources */,
 				F459A4A0256A85D1009C4ABE /* SplashViewModel.swift in Sources */,
+				F459A4B6256A8C42009C4ABE /* AuthenticationManager.swift in Sources */,
 				F4F2E19D25692EA800B3108B /* ServiceConstants.swift in Sources */,
 				F436F992256119E300B2667D /* HomeController.swift in Sources */,
 				F4EB84EA256912B600ADF19C /* SecretConstants.swift in Sources */,
 				F459A49B256A85C6009C4ABE /* SplashController.swift in Sources */,
 				F44B57D225615DA30011D20C /* Constants.swift in Sources */,
+				F459A4DD256A9790009C4ABE /* BaseManager.swift in Sources */,
 				F4EB84E02569100D00ADF19C /* Subscription.swift in Sources */,
 				F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */,
 				F4EB84A925690EBC00ADF19C /* ServiceManager.swift in Sources */,
 				F4ACCCE3256197520059063A /* SubscriptionDetailController.swift in Sources */,
 				F4EB85202569171800ADF19C /* GetAllSubscriptionsResponse.swift in Sources */,
+				F459A4E6256A9B16009C4ABE /* BaseController.swift in Sources */,
 				F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */,
 				F4EB84B325690F3200ADF19C /* BaseService.swift in Sources */,
 				F4BBAEBC256A3E640018544D /* SubscriptionsService.swift in Sources */,
@@ -880,6 +911,7 @@
 				F4EB84BC25690F4F00ADF19C /* ServiceManagerTests.swift in Sources */,
 				F459A4A6256A868A009C4ABE /* SplashViewModelTests.swift in Sources */,
 				F4BBAEB7256A370F0018544D /* TestConstants.swift in Sources */,
+				F459A4BB256A8CAA009C4ABE /* AuthenticationManagerTests.swift in Sources */,
 				F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */,
 				F44ECD41256A6C4F008ED799 /* SubscriptionTests.swift in Sources */,
 				F4379C7225641FA100477E61 /* HomeViewModelTests.swift in Sources */,
