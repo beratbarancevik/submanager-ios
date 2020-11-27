@@ -17,9 +17,9 @@ private extension HomeViewModel {
     func sendGetSubscriptionsRequest() {
         SubscriptionsService.getSubscriptions { result in
             switch result {
-            case .success(let response):
+            case .success:
                 break
-            case .failure(let error):
+            case .failure:
                 break
             }
         }

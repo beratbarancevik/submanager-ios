@@ -10,6 +10,10 @@ import Alamofire
 import Foundation
 
 class ServiceManager {
+    // MARK: - Init
+    private init() {}
+    
+    // MARK: - Service Request
     static func sendRequest<Req: Request, Res: Response>(_ request: Req, _ responseType: Res.Type, completion: @escaping (Result<Res, Error>) -> Void) {
         guard let url = getBaseUrl(from: request.path) else {
             completion(Result.failure(ServiceError.invalidUrl))
