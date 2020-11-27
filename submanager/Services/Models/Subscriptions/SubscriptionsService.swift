@@ -7,6 +7,10 @@
 //
 
 class SubscriptionsService {
+    // MARK: - Init
+    private init() {}
+    
+    // MARK: - Requests
     static func getSubscriptions(completion: @escaping (Result<GetAllSubscriptionsResponse, Error>) -> Void) {
         let request = GetAllSubscriptionsRequest()
         ServiceManager.sendRequest(request, GetAllSubscriptionsResponse.self, completion: completion)

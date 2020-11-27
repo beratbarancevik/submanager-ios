@@ -6,8 +6,6 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
-// swiftlint:disable force_try
-
 import XCTest
 @testable import SM_Debug
 
