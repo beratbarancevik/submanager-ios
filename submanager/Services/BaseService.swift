@@ -18,7 +18,7 @@ protocol Request {
 
 protocol Response: Codable {
     associatedtype T
-    var code: String { get}
+    var code: String { get }
     var message: String { get }
     var data: T { get }
 }

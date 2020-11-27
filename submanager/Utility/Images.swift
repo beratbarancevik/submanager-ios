@@ -6,6 +6,8 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
+// swiftlint:disable force_unwrapping
+
 import UIKit
 
 enum Images: String, CaseIterable {
