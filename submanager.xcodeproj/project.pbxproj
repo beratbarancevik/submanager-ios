@@ -16,11 +16,22 @@
 		F4110C532562D0C600BD77A5 /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */; };
 		F4197E2B256AC8D6003103C2 /* SubscriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4197E2A256AC8D6003103C2 /* SubscriptionViewModel.swift */; };
 		F4197E34256AC930003103C2 /* SubscriptionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4197E33256AC930003103C2 /* SubscriptionViewModelTests.swift */; };
-		F4197E7A256AD250003103C2 /* SubscribeDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4197E79256AD250003103C2 /* SubscribeDetailViewModelTests.swift */; };
+		F4197E7A256AD250003103C2 /* SubscriptionDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4197E79256AD250003103C2 /* SubscriptionDetailViewModelTests.swift */; };
 		F41EED442571FEF500BDF921 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F41EED432571FEF500BDF921 /* Kingfisher */; };
 		F41EED6525720A2F00BDF921 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = F41EED6425720A2F00BDF921 /* SwiftMessages */; };
 		F436F992256119E300B2667D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436F991256119E300B2667D /* HomeController.swift */; };
 		F4379C7225641FA100477E61 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4379C7125641FA100477E61 /* HomeViewModelTests.swift */; };
+		F4494B522572388B005A4FA4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B512572388B005A4FA4 /* SettingsController.swift */; };
+		F4494B5625723895005A4FA4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B5525723895005A4FA4 /* SettingsViewModel.swift */; };
+		F4494B5B2572390B005A4FA4 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B5A2572390B005A4FA4 /* SettingsViewModelTests.swift */; };
+		F4494B622572391B005A4FA4 /* BaseControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B612572391B005A4FA4 /* BaseControllerTests.swift */; };
+		F4494B6825723923005A4FA4 /* BaseControllerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B6725723923005A4FA4 /* BaseControllerViewModelTests.swift */; };
+		F4494B6C25723940005A4FA4 /* BaseNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B6B25723940005A4FA4 /* BaseNavigationControllerTests.swift */; };
+		F4494B7225723954005A4FA4 /* HomeControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B7125723954005A4FA4 /* HomeControllerTests.swift */; };
+		F4494B782572395F005A4FA4 /* SettingsControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B772572395F005A4FA4 /* SettingsControllerTests.swift */; };
+		F4494B7C25723968005A4FA4 /* SplashControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B7B25723968005A4FA4 /* SplashControllerTests.swift */; };
+		F4494B8425723977005A4FA4 /* SubscriptionDetailControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B8325723977005A4FA4 /* SubscriptionDetailControllerTests.swift */; };
+		F4494B8825723984005A4FA4 /* SubscriptionSelectionControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B8725723984005A4FA4 /* SubscriptionSelectionControllerTests.swift */; };
 		F44ECD41256A6C4F008ED799 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ECD40256A6C4F008ED799 /* SubscriptionTests.swift */; };
 		F44ECD4A256A6CC2008ED799 /* subscription.json in Resources */ = {isa = PBXBuildFile; fileRef = F44ECD49256A6CC2008ED799 /* subscription.json */; };
 		F44FB9B425720E4000C6F1DE /* SubscriptionSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44FB9B325720E4000C6F1DE /* SubscriptionSelectionController.swift */; };
@@ -141,9 +152,20 @@
 		F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
 		F4197E2A256AC8D6003103C2 /* SubscriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModel.swift; sourceTree = "<group>"; };
 		F4197E33256AC930003103C2 /* SubscriptionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModelTests.swift; sourceTree = "<group>"; };
-		F4197E79256AD250003103C2 /* SubscribeDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeDetailViewModelTests.swift; sourceTree = "<group>"; };
+		F4197E79256AD250003103C2 /* SubscriptionDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetailViewModelTests.swift; sourceTree = "<group>"; };
 		F436F991256119E300B2667D /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F4379C7125641FA100477E61 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		F4494B512572388B005A4FA4 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		F4494B5525723895005A4FA4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		F4494B5A2572390B005A4FA4 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		F4494B612572391B005A4FA4 /* BaseControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControllerTests.swift; sourceTree = "<group>"; };
+		F4494B6725723923005A4FA4 /* BaseControllerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControllerViewModelTests.swift; sourceTree = "<group>"; };
+		F4494B6B25723940005A4FA4 /* BaseNavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationControllerTests.swift; sourceTree = "<group>"; };
+		F4494B7125723954005A4FA4 /* HomeControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerTests.swift; sourceTree = "<group>"; };
+		F4494B772572395F005A4FA4 /* SettingsControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsControllerTests.swift; sourceTree = "<group>"; };
+		F4494B7B25723968005A4FA4 /* SplashControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashControllerTests.swift; sourceTree = "<group>"; };
+		F4494B8325723977005A4FA4 /* SubscriptionDetailControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetailControllerTests.swift; sourceTree = "<group>"; };
+		F4494B8725723984005A4FA4 /* SubscriptionSelectionControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionControllerTests.swift; sourceTree = "<group>"; };
 		F44ECD40256A6C4F008ED799 /* SubscriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTests.swift; sourceTree = "<group>"; };
 		F44ECD49256A6CC2008ED799 /* subscription.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = subscription.json; sourceTree = "<group>"; };
 		F44FB9B325720E4000C6F1DE /* SubscriptionSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionController.swift; sourceTree = "<group>"; };
@@ -306,12 +328,13 @@
 			path = ViewModelTests;
 			sourceTree = "<group>";
 		};
-		F4197E78256AD236003103C2 /* SubscribeDetailTests */ = {
+		F4197E78256AD236003103C2 /* SubscriptionDetailTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4197E79256AD250003103C2 /* SubscribeDetailViewModelTests.swift */,
+				F4494B8325723977005A4FA4 /* SubscriptionDetailControllerTests.swift */,
+				F4197E79256AD250003103C2 /* SubscriptionDetailViewModelTests.swift */,
 			);
-			path = SubscribeDetailTests;
+			path = SubscriptionDetailTests;
 			sourceTree = "<group>";
 		};
 		F436F98F256119C400B2667D /* Controllers */ = {
@@ -319,6 +342,7 @@
 			children = (
 				F459A4E4256A9B0D009C4ABE /* Base */,
 				F436F990256119D800B2667D /* Home */,
+				F4494B502572387B005A4FA4 /* Settings */,
 				F459A496256A85B6009C4ABE /* Splash */,
 				F4ACCCE12561973B0059063A /* Subscription Detail */,
 				F44FB9B225720E2A00C6F1DE /* Subscription Selection */,
@@ -335,12 +359,42 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		F4494B502572387B005A4FA4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F4494B512572388B005A4FA4 /* SettingsController.swift */,
+				F4494B5525723895005A4FA4 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F4494B59257238FB005A4FA4 /* SettingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4494B772572395F005A4FA4 /* SettingsControllerTests.swift */,
+				F4494B5A2572390B005A4FA4 /* SettingsViewModelTests.swift */,
+			);
+			path = SettingsTests;
+			sourceTree = "<group>";
+		};
+		F4494B6025723911005A4FA4 /* BaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4494B612572391B005A4FA4 /* BaseControllerTests.swift */,
+				F4494B6725723923005A4FA4 /* BaseControllerViewModelTests.swift */,
+				F4494B6B25723940005A4FA4 /* BaseNavigationControllerTests.swift */,
+			);
+			path = BaseTests;
+			sourceTree = "<group>";
+		};
 		F44B57CF25615C920011D20C /* ControllerTests */ = {
 			isa = PBXGroup;
 			children = (
+				F4494B6025723911005A4FA4 /* BaseTests */,
 				F44B57D025615C9A0011D20C /* HomeTests */,
+				F4494B59257238FB005A4FA4 /* SettingsTests */,
 				F459A4A4256A867E009C4ABE /* SplashTests */,
-				F4197E78256AD236003103C2 /* SubscribeDetailTests */,
+				F4197E78256AD236003103C2 /* SubscriptionDetailTests */,
 				F4D81DA4257229AE0060E81F /* SubscriptionSelectionTests */,
 			);
 			path = ControllerTests;
@@ -349,6 +403,7 @@
 		F44B57D025615C9A0011D20C /* HomeTests */ = {
 			isa = PBXGroup;
 			children = (
+				F4494B7125723954005A4FA4 /* HomeControllerTests.swift */,
 				F4379C7125641FA100477E61 /* HomeViewModelTests.swift */,
 			);
 			path = HomeTests;
@@ -437,6 +492,7 @@
 		F459A4A4256A867E009C4ABE /* SplashTests */ = {
 			isa = PBXGroup;
 			children = (
+				F4494B7B25723968005A4FA4 /* SplashControllerTests.swift */,
 				F459A4A5256A868A009C4ABE /* SplashViewModelTests.swift */,
 			);
 			path = SplashTests;
@@ -611,6 +667,7 @@
 		F4D81DA4257229AE0060E81F /* SubscriptionSelectionTests */ = {
 			isa = PBXGroup;
 			children = (
+				F4494B8725723984005A4FA4 /* SubscriptionSelectionControllerTests.swift */,
 				F4D81DA9257229CD0060E81F /* SubscriptionSelectionViewModelTests.swift */,
 			);
 			path = SubscriptionSelectionTests;
@@ -1108,9 +1165,11 @@
 				F459A4E6256A9B16009C4ABE /* BaseController.swift in Sources */,
 				F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */,
 				F4EB84B325690F3200ADF19C /* BaseService.swift in Sources */,
+				F4494B522572388B005A4FA4 /* SettingsController.swift in Sources */,
 				F40A8A5C257223030088DA4A /* SubscriptionType.swift in Sources */,
 				F4BBAEBC256A3E640018544D /* SubscriptionsService.swift in Sources */,
 				F4ACCCC82561951B0059063A /* Images.swift in Sources */,
+				F4494B5625723895005A4FA4 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1121,20 +1180,29 @@
 				F473E65C2569306A00440292 /* BaseServiceTests.swift in Sources */,
 				F4197E34256AC930003103C2 /* SubscriptionViewModelTests.swift in Sources */,
 				F45F6A5F256905BA001C7718 /* AppDelegateTests.swift in Sources */,
+				F4494B8425723977005A4FA4 /* SubscriptionDetailControllerTests.swift in Sources */,
+				F4494B6825723923005A4FA4 /* BaseControllerViewModelTests.swift in Sources */,
 				F4D81DC025722CCA0060E81F /* UIColor+ExtensionsTests.swift in Sources */,
+				F4494B6C25723940005A4FA4 /* BaseNavigationControllerTests.swift in Sources */,
 				F4ACCCD4256195520059063A /* ImagesTests.swift in Sources */,
+				F4494B7C25723968005A4FA4 /* SplashControllerTests.swift in Sources */,
 				F4EB84BC25690F4F00ADF19C /* ServiceManagerTests.swift in Sources */,
 				F4D81DA1257229A10060E81F /* ThemeTests.swift in Sources */,
 				F459A4A6256A868A009C4ABE /* SplashViewModelTests.swift in Sources */,
 				F4BBAEB7256A370F0018544D /* TestConstants.swift in Sources */,
-				F4197E7A256AD250003103C2 /* SubscribeDetailViewModelTests.swift in Sources */,
+				F4494B7225723954005A4FA4 /* HomeControllerTests.swift in Sources */,
+				F4197E7A256AD250003103C2 /* SubscriptionDetailViewModelTests.swift in Sources */,
 				F4D81DED257236610060E81F /* UIView+ExtensionsTests.swift in Sources */,
 				F459A4BB256A8CAA009C4ABE /* AuthenticationManagerTests.swift in Sources */,
+				F4494B8825723984005A4FA4 /* SubscriptionSelectionControllerTests.swift in Sources */,
 				F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */,
 				F44ECD41256A6C4F008ED799 /* SubscriptionTests.swift in Sources */,
 				F4379C7225641FA100477E61 /* HomeViewModelTests.swift in Sources */,
 				F4EB84F02569134700ADF19C /* KeysTests.swift in Sources */,
 				F4D81DAA257229CD0060E81F /* SubscriptionSelectionViewModelTests.swift in Sources */,
+				F4494B5B2572390B005A4FA4 /* SettingsViewModelTests.swift in Sources */,
+				F4494B622572391B005A4FA4 /* BaseControllerTests.swift in Sources */,
+				F4494B782572395F005A4FA4 /* SettingsControllerTests.swift in Sources */,
 				F4D81DB025722A0C0060E81F /* SubscriptionTypeViewModelTests.swift in Sources */,
 				F4D81DB825722ACD0060E81F /* SubscriptionType.swift in Sources */,
 				F4F2E1A625692EEC00B3108B /* ServiceConstantsTests.swift in Sources */,
