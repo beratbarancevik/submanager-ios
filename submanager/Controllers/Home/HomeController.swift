@@ -17,8 +17,8 @@ class HomeController: BaseController {
         $0.register(SubscriptionCell.self, forCellReuseIdentifier: SubscriptionCell.identifier)
         $0.accessibilityLabel = "home_subscriptions_table_view".localized
         return $0
-    }(UITableView())
-    private let refreshControl = UIRefreshControl()
+    }(UITableView().style(Theme.Table.primary))
+    private let refreshControl = UIRefreshControl().style(Theme.RefreshControl.primary)
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -78,7 +78,7 @@ extension HomeController: Setup {
     }
     
     @objc func addDidTap() {
-        present(BaseNavigationController(rootViewController: SubscriptionSelectionController()), animated: true)
+        present(BaseNavigationController(rootViewController: SubscriptionSelectionController(), prefersLargeTitles: false), animated: true)
     }
     
     @objc func tableViewDidRefresh() {

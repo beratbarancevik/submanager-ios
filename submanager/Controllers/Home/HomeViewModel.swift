@@ -9,6 +9,7 @@
 import RxSwift
 
 class HomeViewModel: BaseControllerViewModel {
+    // MARK: - Properties
     let didReceiveSubscriptions = PublishSubject<Bool>()
     let error = PublishSubject<Error>()
     let loading = PublishSubject<Bool>()
@@ -19,6 +20,7 @@ class HomeViewModel: BaseControllerViewModel {
         }
     }
     
+    // MARK: - Functions
     func getSubscriptions() {
         sendGetSubscriptionsRequest()
     }

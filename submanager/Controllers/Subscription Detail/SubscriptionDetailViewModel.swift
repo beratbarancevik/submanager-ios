@@ -7,5 +7,5 @@
 //
 
 class SubscriptionDetailViewModel: BaseControllerViewModel {
-    
+    // MARK: - Properties
 }

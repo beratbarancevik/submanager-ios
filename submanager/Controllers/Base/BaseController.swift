@@ -18,21 +18,29 @@ protocol Setup {
 }
 
 class BaseController: UIViewController {
-    let disposeBag = DisposeBag()
-    
-    #if DEBUG
-    var isRunningTests: Bool {
-        return NSClassFromString("XCTest") != nil
-    }
-    #endif
-    
-    // MARK: - Root View Anchors
+    // MARK: - UI Properties
     /// Created to handle safeAreaLayoutGuide for iOS 11.0 and above
     var safeArea: UILayoutGuide {
         if #available(iOS 11.0, *) {
             return view.safeAreaLayoutGuide
         }
         return view.layoutMarginsGuide
+    }
+    
+    // MARK: - Other Properties
+    let disposeBag = DisposeBag()
+    
+    #if DEBUG
+    /// Used for UI testing
+    var isRunningTests: Bool {
+        return NSClassFromString("XCTest") != nil
+    }
+    #endif
+    
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.style(Theme.View.primary)
     }
     
     // MARK: - Alerts

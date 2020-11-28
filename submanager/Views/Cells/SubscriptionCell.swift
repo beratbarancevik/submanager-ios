@@ -12,18 +12,10 @@ class SubscriptionCell: BaseTableCell {
     // MARK: - UI Properties
     private let logoImageView: UIImageView = {
         $0.layer.cornerRadius = 20
-        $0.clipsToBounds = true
         return $0
-    }(UIImageView())
-    private let titleLabel: UILabel = {
-        $0.numberOfLines = 1
-        return $0
-    }(UILabel())
-    private let priceLabel: UILabel = {
-        $0.textColor = .green
-        $0.numberOfLines = 1
-        return $0
-    }(UILabel())
+    }(UIImageView().style(Theme.Image.primary))
+    private let titleLabel = UILabel().style(Theme.Label.Regular.primary)
+    private let priceLabel = UILabel().style(Theme.Label.Regular.tint)
     
     // MARK: - Other Properties
     var subscriptionViewModel: SubscriptionViewModel? {

@@ -23,7 +23,7 @@ class SubscriptionTests: XCTestCase {
     
     func testInit() {
         let path = Bundle(for: SubscriptionTests.self).path(forResource: "subscription", ofType: "json")!
-        let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
+        let data = try! Data(contentsOf: URL(fileURLWithPath: path))
         sut = try! JSONDecoder().decode(Subscription.self, from: data)
         XCTAssertNotNil(sut)
         XCTAssertEqual(sut.id, "6ce05c46-6dca-4f4b-8abb-0367750657a7")

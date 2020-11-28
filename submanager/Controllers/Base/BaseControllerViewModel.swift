@@ -9,5 +9,6 @@
 import RxSwift
 
 class BaseControllerViewModel {
+    // MARK: - Properties
     let disposeBag = DisposeBag()
 }
