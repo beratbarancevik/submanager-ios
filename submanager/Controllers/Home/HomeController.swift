@@ -62,7 +62,7 @@ extension HomeController: Setup {
         }.disposed(by: disposeBag)
         
         viewModel.error.subscribe { [weak self] event in
-            // TODO: handle error
+            self?.showError(event.error)
         }.disposed(by: disposeBag)
         
         viewModel.loading.subscribe { [weak self] event in
