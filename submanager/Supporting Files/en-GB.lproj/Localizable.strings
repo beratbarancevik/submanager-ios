@@ -8,10 +8,13 @@
 
 // MARK: - App
 app_name = "Sub Manager";
+
+// MARK: - General
+add = "Add";
 default_error = "An error occurred";
+dismiss = "Dismiss";
 
 // MARK: - HomeController
-add = "Add";
 home = "Home";
 home_navigation_bar = "Home Navigation Bar";
 home_subscriptions_table_view = "Subscriptions Table";
@@ -20,5 +23,7 @@ home_subscriptions_table_view = "Subscriptions Table";
 splash_logo_image_view = "Logo Image";
 
 // MARK: - SubscriptionDetailController
-dismiss = "Dismiss";
-subscription_detail_navigation_bar = "Home Navigation Bar";
+subscription_detail_navigation_bar = "Subscription Detail Navigation Bar";
+
+// MARK: - SubscriptionDetailController
+subscription_collection_navigation_bar = "Subscription Selection Navigation Bar";

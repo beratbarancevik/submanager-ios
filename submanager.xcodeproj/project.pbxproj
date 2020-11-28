@@ -21,6 +21,9 @@
 		F44B57D225615DA30011D20C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57D125615DA30011D20C /* Constants.swift */; };
 		F44ECD41256A6C4F008ED799 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ECD40256A6C4F008ED799 /* SubscriptionTests.swift */; };
 		F44ECD4A256A6CC2008ED799 /* subscription.json in Resources */ = {isa = PBXBuildFile; fileRef = F44ECD49256A6CC2008ED799 /* subscription.json */; };
+		F44FB9B425720E4000C6F1DE /* SubscriptionSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44FB9B325720E4000C6F1DE /* SubscriptionSelectionController.swift */; };
+		F44FB9BA25720E5000C6F1DE /* SubscriptionSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44FB9B925720E5000C6F1DE /* SubscriptionSelectionViewModel.swift */; };
+		F44FB9BE25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44FB9BD25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift */; };
 		F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */; };
 		F458ADF725611D9A0016EEDC /* HomeControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */; };
 		F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADFE25611DC40016EEDC /* HomeViewModel.swift */; };
@@ -118,6 +121,9 @@
 		F44B57D125615DA30011D20C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F44ECD40256A6C4F008ED799 /* SubscriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTests.swift; sourceTree = "<group>"; };
 		F44ECD49256A6CC2008ED799 /* subscription.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = subscription.json; sourceTree = "<group>"; };
+		F44FB9B325720E4000C6F1DE /* SubscriptionSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionController.swift; sourceTree = "<group>"; };
+		F44FB9B925720E5000C6F1DE /* SubscriptionSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionViewModel.swift; sourceTree = "<group>"; };
+		F44FB9BD25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionControllerUITests.swift; sourceTree = "<group>"; };
 		F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		F4555B93256148ED00473135 /* UITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
 		F4555B9A2561499A00473135 /* UnitTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
@@ -258,6 +264,7 @@
 				F436F990256119D800B2667D /* Home */,
 				F459A496256A85B6009C4ABE /* Splash */,
 				F4ACCCE12561973B0059063A /* Subscription Detail */,
+				F44FB9B225720E2A00C6F1DE /* Subscription Selection */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -303,6 +310,15 @@
 				F44ECD49256A6CC2008ED799 /* subscription.json */,
 			);
 			path = "Mock Data";
+			sourceTree = "<group>";
+		};
+		F44FB9B225720E2A00C6F1DE /* Subscription Selection */ = {
+			isa = PBXGroup;
+			children = (
+				F44FB9B325720E4000C6F1DE /* SubscriptionSelectionController.swift */,
+				F44FB9B925720E5000C6F1DE /* SubscriptionSelectionViewModel.swift */,
+			);
+			path = "Subscription Selection";
 			sourceTree = "<group>";
 		};
 		F4555B7225613BA100473135 /* Supporting Files */ = {
@@ -468,6 +484,7 @@
 				F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */,
 				F459A4AD256A86C4009C4ABE /* SplashControllerUITests.swift */,
 				F4ACCCEF25619A520059063A /* SubscriptionDetailControllerUITests.swift */,
+				F44FB9BD25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift */,
 				F47F40E0256134BC008C0A6A /* Extensions */,
 				F47F40E1256134CD008C0A6A /* Supporting Files */,
 			);
@@ -961,6 +978,7 @@
 				F4D41766256AC49300F9D9AC /* SubscriptionCell.swift in Sources */,
 				F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */,
 				F459A4EE256A9B38009C4ABE /* BaseControllerViewModel.swift in Sources */,
+				F44FB9B425720E4000C6F1DE /* SubscriptionSelectionController.swift in Sources */,
 				F4197E2B256AC8D6003103C2 /* SubscriptionViewModel.swift in Sources */,
 				F4ACCCEB2561975C0059063A /* SubscriptionDetailViewModel.swift in Sources */,
 				F4EB85182569170E00ADF19C /* GetAllSubscriptionsRequest.swift in Sources */,
@@ -973,6 +991,7 @@
 				F44B57D225615DA30011D20C /* Constants.swift in Sources */,
 				F459A4DD256A9790009C4ABE /* BaseManager.swift in Sources */,
 				F4EB84E02569100D00ADF19C /* Subscription.swift in Sources */,
+				F44FB9BA25720E5000C6F1DE /* SubscriptionSelectionViewModel.swift in Sources */,
 				F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */,
 				F4EB84A925690EBC00ADF19C /* ServiceManager.swift in Sources */,
 				F4ACCCE3256197520059063A /* SubscriptionDetailController.swift in Sources */,
@@ -1013,6 +1032,7 @@
 				F459A4AE256A86C4009C4ABE /* SplashControllerUITests.swift in Sources */,
 				F47F40D3256133E7008C0A6A /* String+Extensions.swift in Sources */,
 				F4ACCCF025619A520059063A /* SubscriptionDetailControllerUITests.swift in Sources */,
+				F44FB9BE25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift in Sources */,
 				F458ADF725611D9A0016EEDC /* HomeControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
