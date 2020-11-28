@@ -9,5 +9,6 @@
 import RxSwift
 
 class BaseManager {
+    // MARK: - Properties
     let disposeBag = DisposeBag()
 }

@@ -25,11 +25,4 @@ class SubscriptionDetailControllerUITests: XCTestCase {
         app.terminate()
         app = nil
     }
-    
-    func testLeftBarButtonItem() {
-        let leftBarButtonItem = app.navigationBars["subscription_detail_navigation_bar".localized].buttons["dismiss".localized]
-        XCTAssert(leftBarButtonItem.exists)
-        leftBarButtonItem.tap()
-        XCTAssertFalse(leftBarButtonItem.exists)
-    }
 }

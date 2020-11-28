@@ -18,7 +18,6 @@ enum Images: String, CaseIterable {
     case logo
     case moreHorizontal
     case notifications
-    case settings
     case share
     case systemSettings
     

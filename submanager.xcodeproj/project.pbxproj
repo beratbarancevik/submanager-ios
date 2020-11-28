@@ -60,6 +60,10 @@
 		F45F6A5F256905BA001C7718 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */; };
 		F46950502572984D00059BEB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469504F2572984D00059BEB /* Utility.swift */; };
 		F46950542572ABAB00059BEB /* UserNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46950532572ABAB00059BEB /* UserNotificationsManager.swift */; };
+		F469505D2572B68400059BEB /* UserNotificationsManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469505C2572B68400059BEB /* UserNotificationsManagerTest.swift */; };
+		F469507D2572B6AB00059BEB /* BaseManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469507C2572B6AB00059BEB /* BaseManagerTests.swift */; };
+		F469509D2572B6F500059BEB /* UtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469509C2572B6F500059BEB /* UtilityTests.swift */; };
+		F46950A12572B8AB00059BEB /* SettingsControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46950A02572B8AB00059BEB /* SettingsControllerUITests.swift */; };
 		F473E65C2569306A00440292 /* BaseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473E65B2569306A00440292 /* BaseServiceTests.swift */; };
 		F47F40C025612BB2008C0A6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F47F40C225612BB2008C0A6A /* InfoPlist.strings */; };
 		F47F40CA25613030008C0A6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
@@ -211,6 +215,10 @@
 		F469504F2572984D00059BEB /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		F46950532572ABAB00059BEB /* UserNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsManager.swift; sourceTree = "<group>"; };
 		F46950572572B13300059BEB /* SM Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SM Debug.entitlements"; sourceTree = "<group>"; };
+		F469505C2572B68400059BEB /* UserNotificationsManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsManagerTest.swift; sourceTree = "<group>"; };
+		F469507C2572B6AB00059BEB /* BaseManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManagerTests.swift; sourceTree = "<group>"; };
+		F469509C2572B6F500059BEB /* UtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTests.swift; sourceTree = "<group>"; };
+		F46950A02572B8AB00059BEB /* SettingsControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsControllerUITests.swift; sourceTree = "<group>"; };
 		F473E65B2569306A00440292 /* BaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceTests.swift; sourceTree = "<group>"; };
 		F47F40AD25612B73008C0A6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47F40C125612BB2008C0A6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -640,6 +648,7 @@
 			isa = PBXGroup;
 			children = (
 				F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */,
+				F46950A02572B8AB00059BEB /* SettingsControllerUITests.swift */,
 				F459A4AD256A86C4009C4ABE /* SplashControllerUITests.swift */,
 				F4ACCCEF25619A520059063A /* SubscriptionDetailControllerUITests.swift */,
 				F44FB9BD25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift */,
@@ -664,6 +673,7 @@
 			children = (
 				F4ACCCD3256195520059063A /* ImagesTests.swift */,
 				F4D81DA0257229A10060E81F /* ThemeTests.swift */,
+				F469509C2572B6F500059BEB /* UtilityTests.swift */,
 			);
 			path = UtilityTests;
 			sourceTree = "<group>";
@@ -761,7 +771,9 @@
 		F4EB84BA25690F4000ADF19C /* ManagerTests */ = {
 			isa = PBXGroup;
 			children = (
+				F469507C2572B6AB00059BEB /* BaseManagerTests.swift */,
 				F459A4BA256A8CAA009C4ABE /* AuthenticationManagerTests.swift */,
+				F469505C2572B68400059BEB /* UserNotificationsManagerTest.swift */,
 			);
 			path = ManagerTests;
 			sourceTree = "<group>";
@@ -1270,6 +1282,7 @@
 				F4494B6825723923005A4FA4 /* BaseControllerViewModelTests.swift in Sources */,
 				F4D81DC025722CCA0060E81F /* UIColor+ExtensionsTests.swift in Sources */,
 				F4494B6C25723940005A4FA4 /* BaseNavigationControllerTests.swift in Sources */,
+				F469505D2572B68400059BEB /* UserNotificationsManagerTest.swift in Sources */,
 				F4ACCCD4256195520059063A /* ImagesTests.swift in Sources */,
 				F4494B7C25723968005A4FA4 /* SplashControllerTests.swift in Sources */,
 				F4EB84BC25690F4F00ADF19C /* ServiceManagerTests.swift in Sources */,
@@ -1282,11 +1295,13 @@
 				F459A4BB256A8CAA009C4ABE /* AuthenticationManagerTests.swift in Sources */,
 				F4494B8825723984005A4FA4 /* SubscriptionSelectionControllerTests.swift in Sources */,
 				F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */,
+				F469509D2572B6F500059BEB /* UtilityTests.swift in Sources */,
 				F44ECD41256A6C4F008ED799 /* SubscriptionTests.swift in Sources */,
 				F4379C7225641FA100477E61 /* HomeViewModelTests.swift in Sources */,
 				F4EB84F02569134700ADF19C /* KeysTests.swift in Sources */,
 				F4D81DAA257229CD0060E81F /* SubscriptionSelectionViewModelTests.swift in Sources */,
 				F4494B5B2572390B005A4FA4 /* SettingsViewModelTests.swift in Sources */,
+				F469507D2572B6AB00059BEB /* BaseManagerTests.swift in Sources */,
 				F4494B622572391B005A4FA4 /* BaseControllerTests.swift in Sources */,
 				F4494B782572395F005A4FA4 /* SettingsControllerTests.swift in Sources */,
 				F4D81DB025722A0C0060E81F /* SubscriptionTypeViewModelTests.swift in Sources */,
@@ -1303,6 +1318,7 @@
 				F47F40D3256133E7008C0A6A /* String+Extensions.swift in Sources */,
 				F4ACCCF025619A520059063A /* SubscriptionDetailControllerUITests.swift in Sources */,
 				F44FB9BE25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift in Sources */,
+				F46950A12572B8AB00059BEB /* SettingsControllerUITests.swift in Sources */,
 				F458ADF725611D9A0016EEDC /* HomeControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

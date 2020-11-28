@@ -30,9 +30,14 @@ class HomeControllerUITests: XCTestCase {
         XCTAssert(navigationBarTitle.exists)
     }
     
-    func testRightBarButtonItem() {
-        let rightBarButtonItem = app.navigationBars["home_navigation_bar".localized].buttons["add".localized]
-        XCTAssert(rightBarButtonItem.exists)
+    func testSettingsBarButtonItem() {
+        let settingsBarButtonItem = app.navigationBars["home_navigation_bar".localized].buttons["settings".localized]
+        XCTAssert(settingsBarButtonItem.exists)
+    }
+    
+    func testAddBarButtonItem() {
+        let testAddBarButtonItem = app.navigationBars["home_navigation_bar".localized].buttons["add".localized]
+        XCTAssert(testAddBarButtonItem.exists)
     }
     
     func testSubscriptionsTableView() {

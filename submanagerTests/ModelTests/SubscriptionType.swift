@@ -28,6 +28,6 @@ class SubscriptionTypeTests: XCTestCase {
         XCTAssertNotNil(sut)
         XCTAssertEqual(sut.id, "b4fa7ed0-69e3-4c77-a1d9-bdf0ca335352")
         XCTAssertEqual(sut.title, "Netflix")
-        XCTAssertNil(sut.imageUrl)
+        XCTAssertEqual(sut.imageUrl, "")
     }
 }

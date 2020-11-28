@@ -1,5 +1,5 @@
 //
-//  SubscriptionSelectionControllerUITests.swift
+//  SettingsControllerUITests.swift
 //  submanagerUITests
 //
 //  Created by Berat Cevik on 11/28/20.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import SM_Debug
 
-class SusbcriptionSelectionControllerUITests: XCTestCase {
+class SettingsControllerUITests: XCTestCase {
     var app: XCUIApplication!
     
     override func setUp() {
@@ -17,7 +17,7 @@ class SusbcriptionSelectionControllerUITests: XCTestCase {
         continueAfterFailure = false
         app = XCUIApplication()
         app.launch()
-        app.navigationBars["home_navigation_bar".localized].buttons["add".localized].tap()
+        app.navigationBars["home_navigation_bar".localized].buttons["settings".localized].tap()
     }
     
     override func tearDown() {
@@ -27,7 +27,7 @@ class SusbcriptionSelectionControllerUITests: XCTestCase {
     }
     
     func testDismissBarButtonItem() {
-        let dismissBarButtonItem = app.navigationBars["subscription_selection_navigation_bar".localized].buttons["dismiss".localized]
+        let dismissBarButtonItem = app.navigationBars["settings_navigation_bar".localized].buttons["dismiss".localized]
         XCTAssert(dismissBarButtonItem.exists)
         dismissBarButtonItem.tap()
         XCTAssertFalse(dismissBarButtonItem.exists)
