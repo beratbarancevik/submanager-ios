@@ -128,11 +128,11 @@ class FlawedUrlTestRequest: SM_Debug.Request {
 }
 
 class UnauthorizedTestRequest: SM_Debug.Request {
-    var path = "/"
+    var path = "/subscriptions"
     
     var method: HttpMethod = .get
     
-    var headers: [String: String] = HttpHeader.allHeaders
+    var headers: [String: String] = HttpHeader.headersExceptToken
     
     var query: [String: Any] = [:]
     

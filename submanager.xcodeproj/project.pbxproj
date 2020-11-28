@@ -11,6 +11,9 @@
 		AFD96C0E5B81C304C1AC8E2A /* Pods_submanagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7EE3270A0982043627FAD7 /* Pods_submanagerTests.framework */; };
 		B7947CB3764C176E8618E3F0 /* Pods_submanager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CCDDC7E835D8DA4A5368B5 /* Pods_submanager.framework */; };
 		F4110C532562D0C600BD77A5 /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */; };
+		F4197E2B256AC8D6003103C2 /* SubscriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4197E2A256AC8D6003103C2 /* SubscriptionViewModel.swift */; };
+		F4197E34256AC930003103C2 /* SubscriptionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4197E33256AC930003103C2 /* SubscriptionViewModelTests.swift */; };
+		F4197E7A256AD250003103C2 /* SubscribeDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4197E79256AD250003103C2 /* SubscribeDetailTests.swift */; };
 		F436F992256119E300B2667D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436F991256119E300B2667D /* HomeController.swift */; };
 		F4379C7225641FA100477E61 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4379C7125641FA100477E61 /* HomeViewModelTests.swift */; };
 		F44B57D225615DA30011D20C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57D125615DA30011D20C /* Constants.swift */; };
@@ -29,7 +32,7 @@
 		F459A4BB256A8CAA009C4ABE /* AuthenticationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4BA256A8CAA009C4ABE /* AuthenticationManagerTests.swift */; };
 		F459A4DD256A9790009C4ABE /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4DC256A9790009C4ABE /* BaseManager.swift */; };
 		F459A4E6256A9B16009C4ABE /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4E5256A9B16009C4ABE /* BaseController.swift */; };
-		F459A4EE256A9B38009C4ABE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4ED256A9B38009C4ABE /* BaseViewModel.swift */; };
+		F459A4EE256A9B38009C4ABE /* BaseControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4ED256A9B38009C4ABE /* BaseControllerViewModel.swift */; };
 		F459A4F3256A9C8F009C4ABE /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459A4F2256A9C8F009C4ABE /* BaseNavigationController.swift */; };
 		F45F6A2025690386001C7718 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A1F25690386001C7718 /* Alamofire */; };
 		F45F6A262569043D001C7718 /* AlamofireNetworkActivityIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A252569043D001C7718 /* AlamofireNetworkActivityIndicator */; };
@@ -51,6 +54,8 @@
 		F4ACCD4F2561A4D80059063A /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD4E2561A4D80059063A /* Nuke */; };
 		F4BBAEB7256A370F0018544D /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBAEB6256A370F0018544D /* TestConstants.swift */; };
 		F4BBAEBC256A3E640018544D /* SubscriptionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBAEBB256A3E640018544D /* SubscriptionsService.swift */; };
+		F4D41759256AC46000F9D9AC /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D41758256AC46000F9D9AC /* BaseTableCell.swift */; };
+		F4D41766256AC49300F9D9AC /* SubscriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D41765256AC49300F9D9AC /* SubscriptionCell.swift */; };
 		F4EB84A925690EBC00ADF19C /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB84A825690EBC00ADF19C /* ServiceManager.swift */; };
 		F4EB84B325690F3200ADF19C /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB84B225690F3200ADF19C /* BaseService.swift */; };
 		F4EB84BC25690F4F00ADF19C /* ServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB84BB25690F4F00ADF19C /* ServiceManagerTests.swift */; };
@@ -88,6 +93,9 @@
 		A1D576524A62787D4BCD1C1F /* Pods-submanagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-submanagerTests.release.xcconfig"; path = "Target Support Files/Pods-submanagerTests/Pods-submanagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAF459DF1D4A0EEF2DD820F7 /* Pods_submanager_submanagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_submanager_submanagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
+		F4197E2A256AC8D6003103C2 /* SubscriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModel.swift; sourceTree = "<group>"; };
+		F4197E33256AC930003103C2 /* SubscriptionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModelTests.swift; sourceTree = "<group>"; };
+		F4197E79256AD250003103C2 /* SubscribeDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeDetailTests.swift; sourceTree = "<group>"; };
 		F436F991256119E300B2667D /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		F4379C7125641FA100477E61 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		F44B57D125615DA30011D20C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -111,7 +119,7 @@
 		F459A4BA256A8CAA009C4ABE /* AuthenticationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManagerTests.swift; sourceTree = "<group>"; };
 		F459A4DC256A9790009C4ABE /* BaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
 		F459A4E5256A9B16009C4ABE /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
-		F459A4ED256A9B38009C4ABE /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F459A4ED256A9B38009C4ABE /* BaseControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControllerViewModel.swift; sourceTree = "<group>"; };
 		F459A4F2256A9C8F009C4ABE /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		F473E65B2569306A00440292 /* BaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceTests.swift; sourceTree = "<group>"; };
@@ -135,6 +143,8 @@
 		F4ACCCEF25619A520059063A /* SubscriptionDetailControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetailControllerUITests.swift; sourceTree = "<group>"; };
 		F4BBAEB6256A370F0018544D /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
 		F4BBAEBB256A3E640018544D /* SubscriptionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsService.swift; sourceTree = "<group>"; };
+		F4D41758256AC46000F9D9AC /* BaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
+		F4D41765256AC49300F9D9AC /* SubscriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCell.swift; sourceTree = "<group>"; };
 		F4EB84A825690EBC00ADF19C /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		F4EB84B225690F3200ADF19C /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		F4EB84BB25690F4F00ADF19C /* ServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerTests.swift; sourceTree = "<group>"; };
@@ -202,6 +212,30 @@
 			path = Keys;
 			sourceTree = "<group>";
 		};
+		F4197E29256AC8C6003103C2 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4197E2A256AC8D6003103C2 /* SubscriptionViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		F4197E32256AC91D003103C2 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4197E33256AC930003103C2 /* SubscriptionViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		F4197E78256AD236003103C2 /* SubscribeDetailTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4197E79256AD250003103C2 /* SubscribeDetailTests.swift */,
+			);
+			path = SubscribeDetailTests;
+			sourceTree = "<group>";
+		};
 		F436F98F256119C400B2667D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,8 +259,9 @@
 		F44B57CF25615C920011D20C /* ControllerTests */ = {
 			isa = PBXGroup;
 			children = (
-				F459A4A4256A867E009C4ABE /* SplashTests */,
 				F44B57D025615C9A0011D20C /* HomeTests */,
+				F459A4A4256A867E009C4ABE /* SplashTests */,
+				F4197E78256AD236003103C2 /* SubscribeDetailTests */,
 			);
 			path = ControllerTests;
 			sourceTree = "<group>";
@@ -317,8 +352,8 @@
 			isa = PBXGroup;
 			children = (
 				F459A4E5256A9B16009C4ABE /* BaseController.swift */,
+				F459A4ED256A9B38009C4ABE /* BaseControllerViewModel.swift */,
 				F459A4F2256A9C8F009C4ABE /* BaseNavigationController.swift */,
-				F459A4ED256A9B38009C4ABE /* BaseViewModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -384,6 +419,8 @@
 			isa = PBXGroup;
 			children = (
 				F4EB84B025690F1400ADF19C /* Models */,
+				F4D41754256AC44900F9D9AC /* Views */,
+				F4197E29256AC8C6003103C2 /* View Models */,
 				F436F98F256119C400B2667D /* Controllers */,
 				F4F2E19825692E6B00B3108B /* Services */,
 				F4EB84A725690EB000ADF19C /* Managers */,
@@ -398,6 +435,7 @@
 			isa = PBXGroup;
 			children = (
 				F44ECD3F256A6C41008ED799 /* ModelTests */,
+				F4197E32256AC91D003103C2 /* ViewModelTests */,
 				F44B57CF25615C920011D20C /* ControllerTests */,
 				F4F2E1A425692EC400B3108B /* ServiceTests */,
 				F4EB84BA25690F4000ADF19C /* ManagerTests */,
@@ -444,6 +482,31 @@
 				F4ACCCEA2561975C0059063A /* SubscriptionDetailViewModel.swift */,
 			);
 			path = "Subscription Detail";
+			sourceTree = "<group>";
+		};
+		F4D41754256AC44900F9D9AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4D4175D256AC46400F9D9AC /* Base */,
+				F4D41761256AC48400F9D9AC /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4D4175D256AC46400F9D9AC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F4D41758256AC46000F9D9AC /* BaseTableCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F4D41761256AC48400F9D9AC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F4D41765256AC49300F9D9AC /* SubscriptionCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F4EB84A725690EB000ADF19C /* Managers */ = {
@@ -876,8 +939,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F459A4F3256A9C8F009C4ABE /* BaseNavigationController.swift in Sources */,
+				F4D41759256AC46000F9D9AC /* BaseTableCell.swift in Sources */,
+				F4D41766256AC49300F9D9AC /* SubscriptionCell.swift in Sources */,
 				F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */,
-				F459A4EE256A9B38009C4ABE /* BaseViewModel.swift in Sources */,
+				F459A4EE256A9B38009C4ABE /* BaseControllerViewModel.swift in Sources */,
+				F4197E2B256AC8D6003103C2 /* SubscriptionViewModel.swift in Sources */,
 				F4ACCCEB2561975C0059063A /* SubscriptionDetailViewModel.swift in Sources */,
 				F4EB85182569170E00ADF19C /* GetAllSubscriptionsRequest.swift in Sources */,
 				F459A4A0256A85D1009C4ABE /* SplashViewModel.swift in Sources */,
@@ -906,11 +972,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F473E65C2569306A00440292 /* BaseServiceTests.swift in Sources */,
+				F4197E34256AC930003103C2 /* SubscriptionViewModelTests.swift in Sources */,
 				F45F6A5F256905BA001C7718 /* AppDelegateTests.swift in Sources */,
 				F4ACCCD4256195520059063A /* ImagesTests.swift in Sources */,
 				F4EB84BC25690F4F00ADF19C /* ServiceManagerTests.swift in Sources */,
 				F459A4A6256A868A009C4ABE /* SplashViewModelTests.swift in Sources */,
 				F4BBAEB7256A370F0018544D /* TestConstants.swift in Sources */,
+				F4197E7A256AD250003103C2 /* SubscribeDetailTests.swift in Sources */,
 				F459A4BB256A8CAA009C4ABE /* AuthenticationManagerTests.swift in Sources */,
 				F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */,
 				F44ECD41256A6C4F008ED799 /* SubscriptionTests.swift in Sources */,

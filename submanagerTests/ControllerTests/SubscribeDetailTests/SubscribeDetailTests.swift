@@ -1,28 +1,24 @@
 //
-//  HomeViewModelTests.swift
+//  SubscribeDetailTests.swift
 //  submanagerTests
 //
-//  Created by Berat Cevik on 11/15/20.
+//  Created by Berat Cevik on 11/22/20.
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
 import XCTest
 @testable import SM_Debug
 
-class HomeViewModelTests: XCTestCase {
-    var sut: HomeViewModel!
+class SubscriptionDetailTests: XCTestCase {
+    var sut: SubscriptionDetailViewModel!
     
     override func setUp() {
         super.setUp()
-        sut = HomeViewModel()
+        sut = SubscriptionDetailViewModel()
     }
     
     override func tearDown() {
         super.tearDown()
         sut = nil
-    }
-    
-    func testGetSubscriptions() {
-        
     }
 }

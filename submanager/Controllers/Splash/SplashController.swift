@@ -12,18 +12,22 @@ import UIKit
 class SplashController: BaseController {
     private let viewModel = SplashViewModel()
     
+    // MARK: - UI Properties
     private let logoImageView: UIImageView = {
         $0.image = Images.logo.image
         $0.accessibilityLabel = "splash_logo_image_view".localized
         return $0
     }(UIImageView())
     
+    // MARK: - Other Properties
     private var disposable: Disposable?
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
+        addViews()
+        addConstraints()
         addObservers()
     }
     
@@ -33,11 +37,16 @@ class SplashController: BaseController {
     }
 }
 
-// MARK: - Private Functions
-private extension SplashController {
+// MARK: - Setup
+extension SplashController: Setup {
     // MARK: - Setup
-    func setUpUI() {
+    func setUpUI() {}
+    
+    func addViews() {
         view.addSubview(logoImageView)
+    }
+    
+    func addConstraints() {
         logoImageView.snp.makeConstraints { maker in
             maker.center.equalTo(view.safeAreaLayoutGuide)
             maker.width.height.equalTo(128)

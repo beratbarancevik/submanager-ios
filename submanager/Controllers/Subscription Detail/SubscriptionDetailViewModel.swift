@@ -6,6 +6,6 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
-class SubscriptionDetailViewModel {
+class SubscriptionDetailViewModel: BaseControllerViewModel {
     
 }

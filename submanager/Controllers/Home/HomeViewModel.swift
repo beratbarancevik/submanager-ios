@@ -6,7 +6,19 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
-class HomeViewModel {
+import RxSwift
+
+class HomeViewModel: BaseControllerViewModel {
+    let didReceiveSubscriptions = PublishSubject<Bool>()
+    let error = PublishSubject<Error>()
+    let loading = PublishSubject<Bool>()
+    
+    var subscriptionViewModels = [SubscriptionViewModel]() {
+        didSet {
+            didReceiveSubscriptions.onNext(true)
+        }
+    }
+    
     func getSubscriptions() {
         sendGetSubscriptionsRequest()
     }
@@ -15,12 +27,14 @@ class HomeViewModel {
 // MARK: - Private Functions
 private extension HomeViewModel {
     func sendGetSubscriptionsRequest() {
-        SubscriptionsService.getSubscriptions { result in
+        loading.onNext(true)
+        SubscriptionsService.getSubscriptions { [weak self] result in
+            self?.loading.onNext(false)
             switch result {
-            case .success:
-                break
-            case .failure:
-                break
+            case .success(let response):
+                self?.subscriptionViewModels = response.data.map { SubscriptionViewModel(subscription: $0) }
+            case .failure(let error):
+                self?.error.onNext(error)
             }
         }
     }

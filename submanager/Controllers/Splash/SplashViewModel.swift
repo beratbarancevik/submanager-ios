@@ -8,8 +8,8 @@
 
 import RxSwift
 
-class SplashViewModel: BaseViewModel {
-    var authDidCompleteSubject = PublishSubject<Bool>()
+class SplashViewModel: BaseControllerViewModel {
+    let authDidCompleteSubject = PublishSubject<Bool>()
     
     // MARK: - Setup
     override init() {

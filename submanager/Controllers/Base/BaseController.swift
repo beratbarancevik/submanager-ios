@@ -9,6 +9,13 @@
 import RxSwift
 import UIKit
 
+protocol Setup {
+    func setUpUI()
+    func addViews()
+    func addConstraints()
+    func addObservers()
+}
+
 class BaseController: UIViewController {
     let disposeBag = DisposeBag()
     

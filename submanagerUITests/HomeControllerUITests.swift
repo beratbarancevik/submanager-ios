@@ -34,4 +34,11 @@ class HomeControllerUITests: XCTestCase {
         let rightBarButtonItem = app.navigationBars["home_navigation_bar".localized].buttons["add".localized]
         XCTAssert(rightBarButtonItem.exists)
     }
+    
+    func testSubscriptionsTableView() {
+        let subscriptionsTableView = app.tables["home_subscriptions_table_view".localized]
+        XCTAssert(subscriptionsTableView.exists)
+        let subscriptionCell = subscriptionsTableView.cells.element(matching: .cell, identifier: String(describing: "SubscriptionCell"))
+        XCTAssert(subscriptionCell.exists)
+    }
 }
