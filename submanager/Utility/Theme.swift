@@ -26,6 +26,14 @@ struct Style<View: UIView> {
 
 // MARK: - Theme
 enum Theme {
+    static var settingsTableViewStyle: UITableView.Style {
+        if #available(iOS 13.0, *) {
+            return .insetGrouped
+        } else {
+            return .grouped
+        }
+    }
+    
     static func configureTheme() {
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Montserrat.regular.font(size: 15)], for: .normal)
     }

@@ -14,19 +14,13 @@ class SettingsController: BaseController {
     // MARK: - UI Properties
     private let dismissBarButtonItem = UIBarButtonItem(image: Images.dismiss.image, style: .plain, target: nil, action: nil)
     
-    private var settingsTableViewStyle: UITableView.Style {
-        if #available(iOS 13.0, *) {
-            return .insetGrouped
-        } else {
-            return .grouped
-        }
-    }
-    private lazy var settingsTableView: UITableView = {
+    private let settingsTableView: UITableView = {
         $0.register(SettingCell.self, forCellReuseIdentifier: SettingCell.identifier)
         $0.register(SettingFooterView.self, forHeaderFooterViewReuseIdentifier: SettingFooterView.identifier)
         $0.accessibilityLabel = "settings_table_view".localized
+        $0.backgroundColor = .secondaryBackground
         return $0
-    }(UITableView(frame: .zero, style: settingsTableViewStyle))
+    }(UITableView(frame: .zero, style: Theme.settingsTableViewStyle))
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -75,6 +69,22 @@ extension SettingsController: Setup {
 extension SettingsController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        switch SettingType.allCases[indexPath.row] {
+        case .notifications:
+            break
+        case .share:
+            let activityViewController = UIActivityViewController(activityItems: ["app_promotion".localized], applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            present(activityViewController, animated: true)
+        case .appStore:
+            if UIApplication.shared.canOpenURL(Utility.shared.appStoreUrl) {
+                UIApplication.shared.open(Utility.shared.appStoreUrl)
+            }
+        case .systemSettings:
+            if UIApplication.shared.canOpenURL(Utility.shared.deviceSettings) {
+                UIApplication.shared.open(Utility.shared.deviceSettings)
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

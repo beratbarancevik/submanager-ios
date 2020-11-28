@@ -58,6 +58,7 @@
 		F45F6A2025690386001C7718 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A1F25690386001C7718 /* Alamofire */; };
 		F45F6A262569043D001C7718 /* AlamofireNetworkActivityIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = F45F6A252569043D001C7718 /* AlamofireNetworkActivityIndicator */; };
 		F45F6A5F256905BA001C7718 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */; };
+		F46950502572984D00059BEB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469504F2572984D00059BEB /* Utility.swift */; };
 		F473E65C2569306A00440292 /* BaseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F473E65B2569306A00440292 /* BaseServiceTests.swift */; };
 		F47F40C025612BB2008C0A6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F47F40C225612BB2008C0A6A /* InfoPlist.strings */; };
 		F47F40CA25613030008C0A6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
@@ -206,6 +207,7 @@
 		F459A4ED256A9B38009C4ABE /* BaseControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControllerViewModel.swift; sourceTree = "<group>"; };
 		F459A4F2256A9C8F009C4ABE /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		F469504F2572984D00059BEB /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		F473E65B2569306A00440292 /* BaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceTests.swift; sourceTree = "<group>"; };
 		F47F40AD25612B73008C0A6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47F40C125612BB2008C0A6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -648,6 +650,7 @@
 			children = (
 				F4ACCCC72561951B0059063A /* Images.swift */,
 				F4D81D9C257229980060E81F /* Theme.swift */,
+				F469504F2572984D00059BEB /* Utility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -1243,6 +1246,7 @@
 				F4FA8BA0257289C4007D5A55 /* UpdateSubscriptionResponse.swift in Sources */,
 				F430DAE025723FC2002E39CE /* TitleTextFieldCell.swift in Sources */,
 				F4FA8B86257263E3007D5A55 /* DeleteSubscriptionResponse.swift in Sources */,
+				F46950502572984D00059BEB /* Utility.swift in Sources */,
 				F430DAEB257250FC002E39CE /* BaseTableHeaderFooterView.swift in Sources */,
 				F4494B5625723895005A4FA4 /* SettingsViewModel.swift in Sources */,
 				F4FA8B9C25728989007D5A55 /* CreateSubscriptionResponse.swift in Sources */,

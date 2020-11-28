@@ -37,7 +37,7 @@ class SettingFooterView: BaseTableHeaderFooterView {
 extension SettingFooterView: Setup {
     func setUpUI() {
         contentView.backgroundColor = .secondaryBackground
-        versionLabel.text = String(format: "settings_version".localized, "1.0.0")
+        versionLabel.text = String(format: "settings_version".localized, Utility.shared.appVersion)
     }
     
     func addViews() {

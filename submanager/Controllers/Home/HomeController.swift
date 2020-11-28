@@ -84,11 +84,11 @@ extension HomeController: Setup {
     }
     
     @objc func settingsDidTap() {
-        present(BaseNavigationController(rootViewController: SettingsController(), prefersLargeTitles: false), animated: true)
+        present(BaseNavigationController(rootViewController: SettingsController()), animated: true)
     }
     
     @objc func addDidTap() {
-        present(BaseNavigationController(rootViewController: SubscriptionSelectionController(), prefersLargeTitles: false), animated: true)
+        present(BaseNavigationController(rootViewController: SubscriptionSelectionController()), animated: true)
     }
     
     @objc func tableViewDidRefresh() {
