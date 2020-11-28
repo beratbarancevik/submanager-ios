@@ -52,7 +52,7 @@ extension HomeController: Setup {
     
     func addConstraints() {
         subscriptionsTableView.snp.makeConstraints { maker in
-            maker.edges.equalTo(view.safeAreaLayoutGuide)
+            maker.edges.equalTo(safeArea)
         }
     }
     
@@ -101,5 +101,9 @@ extension HomeController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SubscriptionCell.identifier, for: indexPath) as? SubscriptionCell else { return UITableViewCell() }
         cell.subscriptionViewModel = viewModel.subscriptionViewModels[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 64
     }
 }

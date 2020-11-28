@@ -24,4 +24,13 @@ class BaseController: UIViewController {
         return NSClassFromString("XCTest") != nil
     }
     #endif
+    
+    // MARK: - Root View Anchors
+    /// Created to handle safeAreaLayoutGuide for iOS 11.0 and above
+    var safeArea: UILayoutGuide {
+        if #available(iOS 11.0, *) {
+            return view.safeAreaLayoutGuide
+        }
+        return view.layoutMarginsGuide
+    }
 }

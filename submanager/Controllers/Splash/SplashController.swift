@@ -48,7 +48,7 @@ extension SplashController: Setup {
     
     func addConstraints() {
         logoImageView.snp.makeConstraints { maker in
-            maker.center.equalTo(view.safeAreaLayoutGuide)
+            maker.center.equalTo(safeArea)
             maker.width.height.equalTo(128)
         }
     }
