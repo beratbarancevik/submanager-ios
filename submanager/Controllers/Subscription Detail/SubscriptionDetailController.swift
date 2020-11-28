@@ -18,14 +18,26 @@ class SubscriptionDetailController: UIViewController {
     }
 }
 
-// MARK: - Private Functions
-private extension SubscriptionDetailController {
+// MARK: - Setup
+extension SubscriptionDetailController: Setup {
     func setUpUI() {
         view.backgroundColor = .black
         navigationController?.navigationBar.accessibilityIdentifier = "subscription_detail_navigation_bar".localized
         let dismissBarButtonItem = UIBarButtonItem(image: Images.dismiss.image, style: .plain, target: self, action: #selector(dismissDidTap))
         dismissBarButtonItem.accessibilityLabel = "dismiss".localized
         navigationItem.leftBarButtonItem = dismissBarButtonItem
+    }
+    
+    func addViews() {
+        
+    }
+    
+    func addConstraints() {
+        
+    }
+    
+    func addObservers() {
+        
     }
     
     @objc func dismissDidTap() {

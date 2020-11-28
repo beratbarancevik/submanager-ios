@@ -8,6 +8,7 @@
 
 import AlamofireNetworkActivityIndicator
 import Firebase
+import Kingfisher
 import SnapKit
 import UIKit
 
@@ -23,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-// MARK: - Private Functions
+// MARK: - Setup
 private extension AppDelegate {
     func setUpFirebase() {
         FirebaseConfiguration.shared.setLoggerLevel(.min)

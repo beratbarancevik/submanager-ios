@@ -11,4 +11,14 @@ import XCTest
 
 class SplashViewModelTests: XCTestCase {
     var sut: SplashViewModel!
+    
+    override func setUp() {
+        super.setUp()
+        sut = SplashViewModel()
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+        sut = nil
+    }
 }

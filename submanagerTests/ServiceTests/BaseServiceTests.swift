@@ -33,8 +33,8 @@ class BaseServiceTests: XCTestCase {
     func testHeaders() {
         XCTAssertEqual(sut2.allCases.count, 2)
         XCTAssertEqual(sut2.authorization.rawValue, "Authorization")
+        XCTAssert(sut2.allHeaders[sut2.authorization.rawValue]!.contains("Bearer "))
         XCTAssertEqual(sut2.contentType.rawValue, "Content-Type")
-        XCTAssertEqual(sut2.allHeaders[sut2.authorization.rawValue], "Bearer ")
         XCTAssertEqual(sut2.allHeaders[sut2.contentType.rawValue], "application/json")
     }
     

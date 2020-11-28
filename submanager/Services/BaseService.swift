@@ -49,7 +49,7 @@ enum HttpHeader: String, CaseIterable {
     
     static var allHeaders: [String: String] {
         return [
-            self.authorization.rawValue: "Bearer ",
+            self.authorization.rawValue: AuthenticationManager.shared.bearerToken,
             self.contentType.rawValue: "application/json"
         ]
     }

@@ -1,5 +1,5 @@
 //
-//  BaseViewModel.swift
+//  BaseControllerViewModel.swift
 //  submanager
 //
 //  Created by Berat Cevik on 11/22/20.
@@ -8,6 +8,6 @@
 
 import RxSwift
 
-class BaseViewModel {
+class BaseControllerViewModel {
     let disposeBag = DisposeBag()
 }
