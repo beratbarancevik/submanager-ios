@@ -27,6 +27,12 @@ home_subscriptions_table_view = "Subscriptions Table";
 
 // MARK: - SettingsController
 settings_navigation_bar = "Settings Navigation Bar";
+settings = "Settings";
+settings_notifications = "Notifications";
+settings_share = "Share with Friends";
+settings_appStore = "Rate on App Store";
+settings_systemSettings = "System Settings";
+settings_version = "Version %@";
 
 // MARK: - SplashController
 splash_logo_image_view = "Logo Image";

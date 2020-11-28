@@ -42,7 +42,7 @@ enum Theme {
         static let primary = Style<UIImageView> {
             $0.contentMode = .scaleAspectFit
             $0.clipsToBounds = true
-            $0.tintColor = .white
+            $0.tintColor = .primaryBackgroundReversed
         }
     }
     
@@ -68,7 +68,6 @@ enum Theme {
             $0.titleTextAttributes = titleTextAttributes as [NSAttributedString.Key: Any]
             $0.tintColor = .primaryText
             $0.barTintColor = .primaryBackground
-            $0.barStyle = .blackOpaque
             if #available(iOS 11.0, *) {
                 $0.prefersLargeTitles = true
                 let largeTitleTextAttributes = [NSAttributedString.Key.font: Montserrat.light.font(size: 27)]

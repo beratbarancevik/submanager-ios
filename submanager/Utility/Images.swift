@@ -12,11 +12,15 @@ import UIKit
 
 enum Images: String, CaseIterable {
     case add
+    case appStore
+    case detail
     case dismiss
     case logo
     case moreHorizontal
-    case moreVertical
+    case notifications
     case settings
+    case share
+    case systemSettings
     
     var image: UIImage {
         return UIImage(named: self.rawValue)!

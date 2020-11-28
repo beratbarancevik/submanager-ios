@@ -92,6 +92,16 @@ extension SubscriptionDetailController: Setup {
 extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        switch SettingType.allCases[indexPath.row] {
+        case .notifications:
+            break
+        case .share:
+            break
+        case .appStore:
+            break
+        case .systemSettings:
+            break
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -115,7 +125,7 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = SubscriptionDetailHeaderView(reuseIdentifier: SubscriptionDetailHeaderView.identifier)
+        guard let headerView = SubscriptionDetailHeaderView(reuseIdentifier: SubscriptionDetailHeaderView.identifier) as? SubscriptionDetailHeaderView else { return UITableViewHeaderFooterView() }
         headerView.imageUrl = viewModel.subscriptionViewModel?.imageUrl
         return headerView
     }

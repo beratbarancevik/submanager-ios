@@ -9,12 +9,14 @@
 import UIKit
 
 class SubscriptionDetailHeaderView: BaseTableHeaderFooterView {
+    // MARK: - UI Properties
     private let logoImageView: UIImageView = {
         $0.style(Theme.Image.primary)
         $0.layer.cornerRadius = 64
         return $0
     }(UIImageView())
     
+    // MARK: - Other Properties
     var imageUrl: URL? {
         didSet {
             logoImageView.kf.setImage(
@@ -47,9 +49,7 @@ class SubscriptionDetailHeaderView: BaseTableHeaderFooterView {
 
 // MARK: - Setup
 extension SubscriptionDetailHeaderView: Setup {
-    func setUpUI() {
-        
-    }
+    func setUpUI() {}
     
     func addViews() {
         addSubview(logoImageView)
