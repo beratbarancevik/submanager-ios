@@ -14,6 +14,9 @@ enum Images: String, CaseIterable {
     case add
     case dismiss
     case logo
+    case moreHorizontal
+    case moreVertical
+    case settings
     
     var image: UIImage {
         return UIImage(named: self.rawValue)!

@@ -12,6 +12,7 @@ class HomeController: BaseController {
     private let viewModel = HomeViewModel()
     
     // MARK: - UI Properties
+    private let settingsBarButtonItem = UIBarButtonItem(image: Images.moreHorizontal.image, style: .plain, target: nil, action: nil)
     private let addBarButtonItem = UIBarButtonItem(image: Images.add.image, style: .plain, target: nil, action: nil)
     private let subscriptionsTableView: UITableView = {
         $0.register(SubscriptionCell.self, forCellReuseIdentifier: SubscriptionCell.identifier)
@@ -36,6 +37,10 @@ extension HomeController: Setup {
     func setUpUI() {
         navigationController?.navigationBar.accessibilityIdentifier = "home_navigation_bar".localized
         navigationItem.title = "home".localized
+        
+        settingsBarButtonItem.target = self
+        settingsBarButtonItem.accessibilityLabel = "settings".localized
+        navigationItem.leftBarButtonItem = settingsBarButtonItem
         
         addBarButtonItem.target = self
         addBarButtonItem.accessibilityLabel = "add".localized
@@ -73,8 +78,13 @@ extension HomeController: Setup {
             }
         }.disposed(by: disposeBag)
         
+        settingsBarButtonItem.action = #selector(settingsDidTap)
         addBarButtonItem.action = #selector(addDidTap)
         refreshControl.addTarget(self, action: #selector(tableViewDidRefresh), for: .valueChanged)
+    }
+    
+    @objc func settingsDidTap() {
+        present(BaseNavigationController(rootViewController: SettingsController(), prefersLargeTitles: false), animated: true)
     }
     
     @objc func addDidTap() {
