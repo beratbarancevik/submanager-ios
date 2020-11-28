@@ -6,11 +6,18 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
+import RxSwift
+
 class SubscriptionDetailViewModel: BaseControllerViewModel {
     // MARK: - Properties
     var details = SubscriptionDetailType.allCases
     
     var subscriptionViewModel: SubscriptionViewModel?
+    
+    let didCreateSubscription = PublishSubject<Bool>()
+    let didUpdateSubscription = PublishSubject<Bool>()
+    let error = PublishSubject<Error>()
+    let loading = PublishSubject<Bool>()
     
     // MARK: - Functions
     func saveSubscription() {
@@ -22,11 +29,29 @@ class SubscriptionDetailViewModel: BaseControllerViewModel {
 // MARK: - Private Functions
 private extension SubscriptionDetailViewModel {
     func sendCreateSubscriptionRequest() {
-        
+        loading.onNext(true)
+        SubscriptionsService.createSubscription { [weak self] result in
+            self?.loading.onNext(false)
+            switch result {
+            case .success:
+                self?.didCreateSubscription.onNext(true)
+            case .failure(let error):
+                self?.error.onNext(error)
+            }
+        }
     }
     
     func sendUpdateSubscriptionRequest() {
-        
+        loading.onNext(true)
+        SubscriptionsService.updateSubscription { [weak self] result in
+            self?.loading.onNext(false)
+            switch result {
+            case .success:
+                self?.didUpdateSubscription.onNext(true)
+            case .failure(let error):
+                self?.error.onNext(error)
+            }
+        }
     }
 }
 

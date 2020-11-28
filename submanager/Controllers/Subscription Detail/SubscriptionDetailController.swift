@@ -125,7 +125,7 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let headerView = SubscriptionDetailHeaderView(reuseIdentifier: SubscriptionDetailHeaderView.identifier) as? SubscriptionDetailHeaderView else { return UITableViewHeaderFooterView() }
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: SubscriptionDetailHeaderView.identifier) as? SubscriptionDetailHeaderView else { return UITableViewHeaderFooterView() }
         headerView.imageUrl = viewModel.subscriptionViewModel?.imageUrl
         return headerView
     }

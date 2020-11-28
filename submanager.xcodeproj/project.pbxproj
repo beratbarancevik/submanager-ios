@@ -111,6 +111,10 @@
 		F4FA8B86257263E3007D5A55 /* DeleteSubscriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA8B85257263E3007D5A55 /* DeleteSubscriptionResponse.swift */; };
 		F4FA8B8A25726902007D5A55 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA8B8925726902007D5A55 /* SettingCell.swift */; };
 		F4FA8B9025727866007D5A55 /* SettingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA8B8F25727866007D5A55 /* SettingFooterView.swift */; };
+		F4FA8B962572897E007D5A55 /* CreateSubscriptionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA8B952572897E007D5A55 /* CreateSubscriptionRequest.swift */; };
+		F4FA8B9C25728989007D5A55 /* CreateSubscriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA8B9B25728989007D5A55 /* CreateSubscriptionResponse.swift */; };
+		F4FA8BA0257289C4007D5A55 /* UpdateSubscriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA8B9F257289C4007D5A55 /* UpdateSubscriptionResponse.swift */; };
+		F4FA8BA4257289D8007D5A55 /* UpdateSubscriptionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA8BA3257289D8007D5A55 /* UpdateSubscriptionRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -260,6 +264,10 @@
 		F4FA8B85257263E3007D5A55 /* DeleteSubscriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteSubscriptionResponse.swift; sourceTree = "<group>"; };
 		F4FA8B8925726902007D5A55 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		F4FA8B8F25727866007D5A55 /* SettingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingFooterView.swift; sourceTree = "<group>"; };
+		F4FA8B952572897E007D5A55 /* CreateSubscriptionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSubscriptionRequest.swift; sourceTree = "<group>"; };
+		F4FA8B9B25728989007D5A55 /* CreateSubscriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSubscriptionResponse.swift; sourceTree = "<group>"; };
+		F4FA8B9F257289C4007D5A55 /* UpdateSubscriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSubscriptionResponse.swift; sourceTree = "<group>"; };
+		F4FA8BA3257289D8007D5A55 /* UpdateSubscriptionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSubscriptionRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -754,9 +762,11 @@
 			isa = PBXGroup;
 			children = (
 				F4BBAEBB256A3E640018544D /* SubscriptionsService.swift */,
+				F4FA8B932572892C007D5A55 /* Create Subscription */,
 				F4EB8516256916E800ADF19C /* Get All Subscriptions */,
 				F40A8A50257222850088DA4A /* Get Subscription Types */,
 				F4FA8B80257263CE007D5A55 /* Delete Subscription */,
+				F4FA8B942572893E007D5A55 /* Update Subscription */,
 			);
 			path = Subscriptions;
 			sourceTree = "<group>";
@@ -806,6 +816,24 @@
 				F4FA8B85257263E3007D5A55 /* DeleteSubscriptionResponse.swift */,
 			);
 			path = "Delete Subscription";
+			sourceTree = "<group>";
+		};
+		F4FA8B932572892C007D5A55 /* Create Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				F4FA8B952572897E007D5A55 /* CreateSubscriptionRequest.swift */,
+				F4FA8B9B25728989007D5A55 /* CreateSubscriptionResponse.swift */,
+			);
+			path = "Create Subscription";
+			sourceTree = "<group>";
+		};
+		F4FA8B942572893E007D5A55 /* Update Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				F4FA8BA3257289D8007D5A55 /* UpdateSubscriptionRequest.swift */,
+				F4FA8B9F257289C4007D5A55 /* UpdateSubscriptionResponse.swift */,
+			);
+			path = "Update Subscription";
 			sourceTree = "<group>";
 		};
 		FF4BD50E720E800AE09CCE25 /* Pods */ = {
@@ -1171,6 +1199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4FA8B962572897E007D5A55 /* CreateSubscriptionRequest.swift in Sources */,
 				F459A4F3256A9C8F009C4ABE /* BaseNavigationController.swift in Sources */,
 				F4D41759256AC46000F9D9AC /* BaseTableCell.swift in Sources */,
 				F4FA8B9025727866007D5A55 /* SettingFooterView.swift in Sources */,
@@ -1190,6 +1219,7 @@
 				F4D81D79257224AF0060E81F /* SubscriptionTypeViewModel.swift in Sources */,
 				F436F992256119E300B2667D /* HomeController.swift in Sources */,
 				F4EB84EA256912B600ADF19C /* SecretConstants.swift in Sources */,
+				F4FA8BA4257289D8007D5A55 /* UpdateSubscriptionRequest.swift in Sources */,
 				F459A49B256A85C6009C4ABE /* SplashController.swift in Sources */,
 				F4FA8B82257263DB007D5A55 /* DeleteSubscriptionRequest.swift in Sources */,
 				F459A4DD256A9790009C4ABE /* BaseManager.swift in Sources */,
@@ -1210,10 +1240,12 @@
 				F40A8A5C257223030088DA4A /* SubscriptionType.swift in Sources */,
 				F4BBAEBC256A3E640018544D /* SubscriptionsService.swift in Sources */,
 				F4ACCCC82561951B0059063A /* Images.swift in Sources */,
+				F4FA8BA0257289C4007D5A55 /* UpdateSubscriptionResponse.swift in Sources */,
 				F430DAE025723FC2002E39CE /* TitleTextFieldCell.swift in Sources */,
 				F4FA8B86257263E3007D5A55 /* DeleteSubscriptionResponse.swift in Sources */,
 				F430DAEB257250FC002E39CE /* BaseTableHeaderFooterView.swift in Sources */,
 				F4494B5625723895005A4FA4 /* SettingsViewModel.swift in Sources */,
+				F4FA8B9C25728989007D5A55 /* CreateSubscriptionResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
