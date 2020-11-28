@@ -9,10 +9,17 @@
 import UIKit
 
 class BaseNavigationController: UINavigationController {
+    // MARK: - UI Properties
     override var preferredStatusBarStyle: UIStatusBarStyle {
         if let rootViewController = viewControllers.last {
             return rootViewController.preferredStatusBarStyle
         }
         return .default
+    }
+    
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationBar.style(Theme.NavigationBar.navigationBar)
     }
 }

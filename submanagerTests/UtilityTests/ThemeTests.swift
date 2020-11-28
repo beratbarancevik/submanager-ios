@@ -1,20 +1,20 @@
 //
-//  SubscribeDetailTests.swift
+//  ThemeTests.swift
 //  submanagerTests
 //
-//  Created by Berat Cevik on 11/22/20.
+//  Created by Berat Cevik on 11/28/20.
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
 import XCTest
 @testable import SM_Debug
 
-class SubscriptionDetailTests: XCTestCase {
-    var sut: SubscriptionDetailViewModel!
+class ThemeTests: XCTestCase {
+    var sut: Images.Type!
     
     override func setUp() {
         super.setUp()
-        sut = SubscriptionDetailViewModel()
+        sut = Images.self
     }
     
     override func tearDown() {

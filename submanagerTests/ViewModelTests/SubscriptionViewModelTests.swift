@@ -17,7 +17,7 @@ class SubscriptionViewModelTests: XCTestCase {
     override func setUp() {
         super.setUp()
         let path = Bundle(for: SubscriptionTests.self).path(forResource: "subscription", ofType: "json")!
-        let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
+        let data = try! Data(contentsOf: URL(fileURLWithPath: path))
         let subscription = try! JSONDecoder().decode(Subscription.self, from: data)
         sut = SubscriptionViewModel(subscription: subscription)
     }
