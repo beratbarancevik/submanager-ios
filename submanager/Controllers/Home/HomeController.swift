@@ -78,7 +78,7 @@ extension HomeController: Setup {
     }
     
     @objc func addDidTap() {
-        present(BaseNavigationController(rootViewController: SubscriptionDetailController()), animated: true)
+        present(BaseNavigationController(rootViewController: SubscriptionSelectionController()), animated: true)
     }
     
     @objc func tableViewDidRefresh() {
@@ -90,7 +90,7 @@ extension HomeController: Setup {
 extension HomeController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        navigationController?.present(BaseNavigationController(rootViewController: SubscriptionDetailController()), animated: true)
+        present(BaseNavigationController(rootViewController: SubscriptionDetailController()), animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
