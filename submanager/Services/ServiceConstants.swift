@@ -8,6 +8,7 @@
 
 class ServiceConstants {
     static let subscriptions = "/subscriptions"
+    static let subscriptionTypes = "/subscriptions/list"
     
     // MARK: - Init
     private init() {}

@@ -10,6 +10,9 @@
 		3BF61B217FBDD74248EDFDAC /* Pods_submanagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8028458076BC0DFD589892 /* Pods_submanagerTests.framework */; };
 		B32A3C1B0D0AF0FF5BFD3DF1 /* Pods_submanager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BF0B5C3FF6327AC5A74305 /* Pods_submanager.framework */; };
 		BDAA7294EEAA033658B6DE3E /* Pods_submanager_submanagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCEFB8A3C43AB41390FF8B9 /* Pods_submanager_submanagerUITests.framework */; };
+		F40A8A52257222C00088DA4A /* GetSubscriptionTypesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A8A51257222C00088DA4A /* GetSubscriptionTypesRequest.swift */; };
+		F40A8A58257222CB0088DA4A /* GetSubscriptionTypesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A8A57257222CB0088DA4A /* GetSubscriptionTypesResponse.swift */; };
+		F40A8A5C257223030088DA4A /* SubscriptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A8A5B257223030088DA4A /* SubscriptionType.swift */; };
 		F4110C532562D0C600BD77A5 /* GoogleService-Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */; };
 		F4197E2B256AC8D6003103C2 /* SubscriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4197E2A256AC8D6003103C2 /* SubscriptionViewModel.swift */; };
 		F4197E34256AC930003103C2 /* SubscriptionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4197E33256AC930003103C2 /* SubscriptionViewModelTests.swift */; };
@@ -60,6 +63,7 @@
 		F4BBAEBC256A3E640018544D /* SubscriptionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBAEBB256A3E640018544D /* SubscriptionsService.swift */; };
 		F4D41759256AC46000F9D9AC /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D41758256AC46000F9D9AC /* BaseTableCell.swift */; };
 		F4D41766256AC49300F9D9AC /* SubscriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D41765256AC49300F9D9AC /* SubscriptionCell.swift */; };
+		F4D81D79257224AF0060E81F /* SubscriptionTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D81D78257224AF0060E81F /* SubscriptionTypeViewModel.swift */; };
 		F4EB84A925690EBC00ADF19C /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB84A825690EBC00ADF19C /* ServiceManager.swift */; };
 		F4EB84B325690F3200ADF19C /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB84B225690F3200ADF19C /* BaseService.swift */; };
 		F4EB84BC25690F4F00ADF19C /* ServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB84BB25690F4F00ADF19C /* ServiceManagerTests.swift */; };
@@ -112,6 +116,9 @@
 		9C3EDDE02996298D43367C37 /* Pods-submanager-submanagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-submanager-submanagerUITests.release.xcconfig"; path = "Target Support Files/Pods-submanager-submanagerUITests/Pods-submanager-submanagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B10F0B7EF6E8C12BEC31A5FA /* Pods-submanager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-submanager.release.xcconfig"; path = "Target Support Files/Pods-submanager/Pods-submanager.release.xcconfig"; sourceTree = "<group>"; };
 		F3B893156E9C9AD5759F4A3E /* Pods-submanagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-submanagerTests.release.xcconfig"; path = "Target Support Files/Pods-submanagerTests/Pods-submanagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		F40A8A51257222C00088DA4A /* GetSubscriptionTypesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSubscriptionTypesRequest.swift; sourceTree = "<group>"; };
+		F40A8A57257222CB0088DA4A /* GetSubscriptionTypesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSubscriptionTypesResponse.swift; sourceTree = "<group>"; };
+		F40A8A5B257223030088DA4A /* SubscriptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionType.swift; sourceTree = "<group>"; };
 		F4110C522562D0C600BD77A5 /* GoogleService-Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Debug.plist"; sourceTree = "<group>"; };
 		F4197E2A256AC8D6003103C2 /* SubscriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModel.swift; sourceTree = "<group>"; };
 		F4197E33256AC930003103C2 /* SubscriptionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModelTests.swift; sourceTree = "<group>"; };
@@ -168,6 +175,7 @@
 		F4BBAEBB256A3E640018544D /* SubscriptionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsService.swift; sourceTree = "<group>"; };
 		F4D41758256AC46000F9D9AC /* BaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
 		F4D41765256AC49300F9D9AC /* SubscriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCell.swift; sourceTree = "<group>"; };
+		F4D81D78257224AF0060E81F /* SubscriptionTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTypeViewModel.swift; sourceTree = "<group>"; };
 		F4EB84A825690EBC00ADF19C /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		F4EB84B225690F3200ADF19C /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		F4EB84BB25690F4F00ADF19C /* ServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerTests.swift; sourceTree = "<group>"; };
@@ -223,6 +231,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F40A8A50257222850088DA4A /* Get Subscription Types */ = {
+			isa = PBXGroup;
+			children = (
+				F40A8A51257222C00088DA4A /* GetSubscriptionTypesRequest.swift */,
+				F40A8A57257222CB0088DA4A /* GetSubscriptionTypesResponse.swift */,
+			);
+			path = "Get Subscription Types";
+			sourceTree = "<group>";
+		};
 		F4115C2825624AEF00A78E70 /* Keys */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				F4197E2A256AC8D6003103C2 /* SubscriptionViewModel.swift */,
+				F4D81D78257224AF0060E81F /* SubscriptionTypeViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -554,6 +572,7 @@
 			isa = PBXGroup;
 			children = (
 				F4EB84DF2569100D00ADF19C /* Subscription.swift */,
+				F40A8A5B257223030088DA4A /* SubscriptionType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -579,6 +598,7 @@
 			children = (
 				F4BBAEBB256A3E640018544D /* SubscriptionsService.swift */,
 				F4EB8516256916E800ADF19C /* Get All Subscriptions */,
+				F40A8A50257222850088DA4A /* Get Subscription Types */,
 			);
 			path = Subscriptions;
 			sourceTree = "<group>";
@@ -975,6 +995,7 @@
 			files = (
 				F459A4F3256A9C8F009C4ABE /* BaseNavigationController.swift in Sources */,
 				F4D41759256AC46000F9D9AC /* BaseTableCell.swift in Sources */,
+				F40A8A58257222CB0088DA4A /* GetSubscriptionTypesResponse.swift in Sources */,
 				F4D41766256AC49300F9D9AC /* SubscriptionCell.swift in Sources */,
 				F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */,
 				F459A4EE256A9B38009C4ABE /* BaseControllerViewModel.swift in Sources */,
@@ -985,6 +1006,7 @@
 				F459A4A0256A85D1009C4ABE /* SplashViewModel.swift in Sources */,
 				F459A4B6256A8C42009C4ABE /* AuthenticationManager.swift in Sources */,
 				F4F2E19D25692EA800B3108B /* ServiceConstants.swift in Sources */,
+				F4D81D79257224AF0060E81F /* SubscriptionTypeViewModel.swift in Sources */,
 				F436F992256119E300B2667D /* HomeController.swift in Sources */,
 				F4EB84EA256912B600ADF19C /* SecretConstants.swift in Sources */,
 				F459A49B256A85C6009C4ABE /* SplashController.swift in Sources */,
@@ -993,12 +1015,14 @@
 				F4EB84E02569100D00ADF19C /* Subscription.swift in Sources */,
 				F44FB9BA25720E5000C6F1DE /* SubscriptionSelectionViewModel.swift in Sources */,
 				F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */,
+				F40A8A52257222C00088DA4A /* GetSubscriptionTypesRequest.swift in Sources */,
 				F4EB84A925690EBC00ADF19C /* ServiceManager.swift in Sources */,
 				F4ACCCE3256197520059063A /* SubscriptionDetailController.swift in Sources */,
 				F4EB85202569171800ADF19C /* GetAllSubscriptionsResponse.swift in Sources */,
 				F459A4E6256A9B16009C4ABE /* BaseController.swift in Sources */,
 				F4A417A825611539009B92C7 /* AppDelegate.swift in Sources */,
 				F4EB84B325690F3200ADF19C /* BaseService.swift in Sources */,
+				F40A8A5C257223030088DA4A /* SubscriptionType.swift in Sources */,
 				F4BBAEBC256A3E640018544D /* SubscriptionsService.swift in Sources */,
 				F4ACCCC82561951B0059063A /* Images.swift in Sources */,
 			);

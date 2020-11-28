@@ -26,4 +26,5 @@ splash_logo_image_view = "Logo Image";
 subscription_detail_navigation_bar = "Subscription Detail Navigation Bar";
 
 // MARK: - SubscriptionDetailController
-subscription_collection_navigation_bar = "Subscription Selection Navigation Bar";
+subscription_selection_navigation_bar = "Subscription Selection Navigation Bar";
+subscription_types_table_view = "Subscription Types Table";

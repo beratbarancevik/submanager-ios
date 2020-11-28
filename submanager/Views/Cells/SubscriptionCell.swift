@@ -10,7 +10,11 @@ import UIKit
 
 class SubscriptionCell: BaseTableCell {
     // MARK: - UI Properties
-    private let logoImageView = UIImageView()
+    private let logoImageView: UIImageView = {
+        $0.layer.cornerRadius = 20
+        $0.clipsToBounds = true
+        return $0
+    }(UIImageView())
     private let titleLabel: UILabel = {
         $0.numberOfLines = 1
         return $0
@@ -34,6 +38,21 @@ class SubscriptionCell: BaseTableCell {
                 ])
             titleLabel.text = viewModel.title
             priceLabel.text = viewModel.priceDescription
+        }
+    }
+    
+    var subscriptionTypeViewModel: SubscriptionTypeViewModel? {
+        didSet {
+            guard let viewModel = subscriptionTypeViewModel else { return }
+            logoImageView.kf.setImage(
+                with: viewModel.imageUrl,
+                placeholder: Images.logo.image,
+                options: [
+                    .transition(.fade(0.5)),
+                    .cacheOriginalImage
+                ])
+            titleLabel.text = viewModel.title
+            priceLabel.isHidden = true
         }
     }
     
@@ -69,7 +88,7 @@ extension SubscriptionCell: Setup {
         logoImageView.snp.makeConstraints { maker in
             maker.leading.equalToSuperview().inset(16)
             maker.centerY.equalToSuperview()
-            maker.width.height.equalTo(32)
+            maker.width.height.equalTo(40)
         }
         
         titleLabel.snp.makeConstraints { maker in

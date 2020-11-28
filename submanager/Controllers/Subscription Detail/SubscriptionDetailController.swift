@@ -8,11 +8,11 @@
 
 import UIKit
 
-class SubscriptionDetailController: UIViewController {
+class SubscriptionDetailController: BaseController {
     private let viewModel = SubscriptionDetailViewModel()
     
     // MARK: - UI Properties
-    let dismissBarButtonItem = UIBarButtonItem(image: Images.dismiss.image, style: .plain, target: nil, action: nil)
+    private let dismissBarButtonItem = UIBarButtonItem(image: Images.dismiss.image, style: .plain, target: nil, action: nil)
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -33,7 +33,6 @@ extension SubscriptionDetailController: Setup {
         
         dismissBarButtonItem.accessibilityLabel = "dismiss".localized
         dismissBarButtonItem.target = self
-        dismissBarButtonItem.action = #selector(dismissDidTap)
         navigationItem.leftBarButtonItem = dismissBarButtonItem
     }
     
@@ -46,7 +45,7 @@ extension SubscriptionDetailController: Setup {
     }
     
     func addObservers() {
-        
+        dismissBarButtonItem.action = #selector(dismissDidTap)
     }
     
     @objc func dismissDidTap() {

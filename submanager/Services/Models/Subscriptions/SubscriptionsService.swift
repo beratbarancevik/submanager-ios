@@ -15,4 +15,9 @@ class SubscriptionsService {
         let request = GetAllSubscriptionsRequest()
         ServiceManager.sendRequest(request, GetAllSubscriptionsResponse.self, completion: completion)
     }
+    
+    static func getSubscriptionTypes(completion: @escaping (Result<GetSubscriptionTypesResponse, Error>) -> Void) {
+        let request = GetSubscriptionTypesRequest()
+        ServiceManager.sendRequest(request, GetSubscriptionTypesResponse.self, completion: completion)
+    }
 }
