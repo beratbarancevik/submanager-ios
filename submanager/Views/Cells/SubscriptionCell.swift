@@ -9,36 +9,80 @@
 import UIKit
 
 class SubscriptionCell: BaseTableCell {
+    // MARK: - UI Properties
+    private let logoImageView = UIImageView()
     private let titleLabel: UILabel = {
         $0.numberOfLines = 1
         return $0
     }(UILabel())
+    private let priceLabel: UILabel = {
+        $0.textColor = .green
+        $0.numberOfLines = 1
+        return $0
+    }(UILabel())
     
+    // MARK: - Other Properties
     var subscriptionViewModel: SubscriptionViewModel? {
         didSet {
             guard let viewModel = subscriptionViewModel else { return }
+            logoImageView.kf.setImage(
+                with: viewModel.imageUrl,
+                placeholder: Images.logo.image,
+                options: [
+                    .transition(.fade(0.5)),
+                    .cacheOriginalImage
+                ])
             titleLabel.text = viewModel.title
+            priceLabel.text = viewModel.priceDescription
         }
     }
     
-    // MARK: - Setup
+    // MARK: - Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setUpUI()
+        addViews()
+        addConstraints()
+        addObservers()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setUpUI()
+        addViews()
+        addConstraints()
+        addObservers()
     }
 }
 
-// MARK: - Private Functions
-private extension SubscriptionCell {
-    func setUpUI() {
+// MARK: - Setup
+extension SubscriptionCell: Setup {
+    func setUpUI() {}
+    
+    func addViews() {
+        addSubview(logoImageView)
         addSubview(titleLabel)
+        addSubview(priceLabel)
+    }
+    
+    func addConstraints() {
+        logoImageView.snp.makeConstraints { maker in
+            maker.leading.equalToSuperview().inset(16)
+            maker.centerY.equalToSuperview()
+            maker.width.height.equalTo(32)
+        }
+        
         titleLabel.snp.makeConstraints { maker in
-            maker.edges.equalToSuperview().inset(16)
+            maker.leading.equalTo(logoImageView.snp.trailing).offset(16)
+            maker.centerY.equalToSuperview()
+        }
+        
+        priceLabel.snp.makeConstraints { maker in
+            maker.leading.equalTo(titleLabel.snp.trailing).offset(16)
+            maker.trailing.equalToSuperview().inset(32)
+            maker.centerY.equalToSuperview()
         }
     }
+    
+    func addObservers() {}
 }

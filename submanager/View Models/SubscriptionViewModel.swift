@@ -34,6 +34,13 @@ class SubscriptionViewModel {
         return Double(price)
     }
     
+    var priceDescription: String {
+        guard let price = subscription.price else {
+            return ""
+        }
+        return "$\(price)"
+    }
+    
     var imageUrl: URL? {
         guard let imageUrl = subscription.imageUrl, let url = URL(string: imageUrl) else {
             return nil

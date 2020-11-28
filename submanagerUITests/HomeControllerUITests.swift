@@ -38,6 +38,8 @@ class HomeControllerUITests: XCTestCase {
     func testSubscriptionsTableView() {
         let subscriptionsTableView = app.tables["home_subscriptions_table_view".localized]
         XCTAssert(subscriptionsTableView.exists)
+        
+        
         let subscriptionCell = subscriptionsTableView.cells.element(matching: .cell, identifier: String(describing: "SubscriptionCell"))
         XCTAssert(subscriptionCell.exists)
     }

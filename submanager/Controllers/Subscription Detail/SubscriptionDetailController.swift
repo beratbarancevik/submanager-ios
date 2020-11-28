@@ -18,8 +18,8 @@ class SubscriptionDetailController: UIViewController {
     }
 }
 
-// MARK: - Private Functions
-private extension SubscriptionDetailController: Setup {
+// MARK: - Setup
+extension SubscriptionDetailController: Setup {
     func setUpUI() {
         view.backgroundColor = .black
         navigationController?.navigationBar.accessibilityIdentifier = "subscription_detail_navigation_bar".localized
