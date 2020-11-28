@@ -26,6 +26,10 @@ struct Style<View: UIView> {
 
 // MARK: - Theme
 enum Theme {
+    static func configureTheme() {
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Montserrat.regular.font(size: 15)], for: .normal)
+    }
+    
     enum Button {
         static let primary = Style<UIButton> {
             $0.setTitleColor(.white, for: .normal)
@@ -38,6 +42,7 @@ enum Theme {
         static let primary = Style<UIImageView> {
             $0.contentMode = .scaleAspectFit
             $0.clipsToBounds = true
+            $0.tintColor = .white
         }
     }
     
@@ -63,6 +68,7 @@ enum Theme {
             $0.titleTextAttributes = titleTextAttributes as [NSAttributedString.Key: Any]
             $0.tintColor = .primaryText
             $0.barTintColor = .primaryBackground
+            $0.barStyle = .blackOpaque
             if #available(iOS 11.0, *) {
                 $0.prefersLargeTitles = true
                 let largeTitleTextAttributes = [NSAttributedString.Key.font: Montserrat.light.font(size: 27)]
@@ -83,6 +89,13 @@ enum Theme {
             $0.keyboardDismissMode = .onDrag
             $0.tableFooterView = UIView()
             $0.alwaysBounceVertical = true
+        }
+    }
+    
+    enum TextField {
+        static let primary = Style<UITextField> {
+            $0.tintColor = .primaryBackgroundReversed
+            $0.font = Montserrat.regular.font(size: 17)
         }
     }
     

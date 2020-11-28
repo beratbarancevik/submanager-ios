@@ -27,8 +27,6 @@ class SettingsController: BaseController {
 // MARK: - Setup
 extension SettingsController: Setup {
     func setUpUI() {
-        view.backgroundColor = .black
-        
         navigationController?.navigationBar.accessibilityIdentifier = "settings_navigation_bar".localized
         
         dismissBarButtonItem.accessibilityLabel = "dismiss".localized

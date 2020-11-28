@@ -92,6 +92,7 @@ extension HomeController: Setup {
     }
     
     @objc func tableViewDidRefresh() {
+        UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
         viewModel.getSubscriptions()
     }
 }

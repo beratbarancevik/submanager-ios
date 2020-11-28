@@ -33,6 +33,7 @@ private extension AppDelegate {
     
     func setUpUI() {
         NetworkActivityIndicatorManager.shared.isEnabled = true
+        Theme.configureTheme()
     }
     
     func displayHome() {

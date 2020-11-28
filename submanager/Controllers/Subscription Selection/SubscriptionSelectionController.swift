@@ -34,8 +34,6 @@ class SubscriptionSelectionController: BaseController {
 // MARK: - Setup
 extension SubscriptionSelectionController: Setup {
     func setUpUI() {
-        view.backgroundColor = .black
-        
         navigationController?.navigationBar.accessibilityIdentifier = "subscription_selection_navigation_bar".localized
         
         dismissBarButtonItem.accessibilityLabel = "dismiss".localized

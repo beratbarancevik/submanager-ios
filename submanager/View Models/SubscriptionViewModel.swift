@@ -41,6 +41,10 @@ class SubscriptionViewModel {
         return "$\(price)"
     }
     
+    var startDate: Date? {
+        return nil
+    }
+    
     var imageUrl: URL? {
         guard let imageUrl = subscription.imageUrl, let url = URL(string: imageUrl) else {
             return nil

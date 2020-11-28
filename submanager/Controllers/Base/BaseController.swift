@@ -28,8 +28,6 @@ class BaseController: UIViewController {
     }
     
     // MARK: - Other Properties
-    let disposeBag = DisposeBag()
-    
     #if DEBUG
     /// Used for UI testing
     var isRunningTests: Bool {
@@ -37,10 +35,26 @@ class BaseController: UIViewController {
     }
     #endif
     
+    let disposeBag = DisposeBag()
+    
+    let keyboardHeightDidChange = PublishSubject<CGFloat>()
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.style(Theme.View.primary)
+    }
+    
+    // MARK: - Keyboard
+    func registerKeyboardListener() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeHeight), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeHeight), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+
+    @objc func keyboardWillChangeHeight(_ notification: Notification) {
+        if let keyboardHeight = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.height {
+            keyboardHeightDidChange.onNext(keyboardHeight)
+        }
     }
     
     // MARK: - Alerts
