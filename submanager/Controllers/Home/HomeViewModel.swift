@@ -24,6 +24,11 @@ class HomeViewModel: BaseControllerViewModel {
     func getSubscriptions() {
         sendGetSubscriptionsRequest()
     }
+    
+    func deleteSubscription(at index: Int) {
+        let subscriptionToBeDeleted = subscriptionViewModels.remove(at: index)
+        sendDeleteSubscriptionRequest(subscriptionId: subscriptionToBeDeleted.id)
+    }
 }
 
 // MARK: - Private Functions
@@ -37,6 +42,18 @@ private extension HomeViewModel {
                 self?.subscriptionViewModels = response.data.map { SubscriptionViewModel(subscription: $0) }
             case .failure(let error):
                 self?.error.onNext(error)
+            }
+        }
+    }
+    
+    func sendDeleteSubscriptionRequest(subscriptionId: String) {
+        SubscriptionsService.deleteSubscription(subscriptionId: subscriptionId) { [weak self] result in
+            switch result {
+            case .success:
+                break
+            case .failure(let error):
+                self?.error.onNext(error)
+                self?.getSubscriptions()
             }
         }
     }

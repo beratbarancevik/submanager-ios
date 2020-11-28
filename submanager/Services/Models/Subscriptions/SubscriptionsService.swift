@@ -20,4 +20,9 @@ class SubscriptionsService {
         let request = GetSubscriptionTypesRequest()
         ServiceManager.sendRequest(request, GetSubscriptionTypesResponse.self, completion: completion)
     }
+    
+    static func deleteSubscription(subscriptionId: String, completion: @escaping (Result<DeleteSubscriptionResponse, Error>) -> Void) {
+        let request = DeleteSubscriptionRequest(subscriptionId: subscriptionId)
+        ServiceManager.sendRequest(request, DeleteSubscriptionResponse.self, completion: completion)
+    }
 }
