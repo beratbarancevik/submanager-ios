@@ -1,15 +1,15 @@
 //
-//  SubscriptionDetailController.swift
+//  SubscriptionSelectionController.swift
 //  submanager
 //
-//  Created by Berat Cevik on 11/15/20.
+//  Created by Berat Cevik on 11/28/20.
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
 import UIKit
 
-class SubscriptionDetailController: UIViewController {
-    private let viewModel = SubscriptionDetailViewModel()
+class SubscriptionSelectionController: UIViewController {
+    private let viewModel = SubscriptionSelectionViewModel()
     
     // MARK: - UI Properties
     let dismissBarButtonItem = UIBarButtonItem(image: Images.dismiss.image, style: .plain, target: nil, action: nil)
@@ -25,11 +25,11 @@ class SubscriptionDetailController: UIViewController {
 }
 
 // MARK: - Setup
-extension SubscriptionDetailController: Setup {
+extension SubscriptionSelectionController: Setup {
     func setUpUI() {
         view.backgroundColor = .black
         
-        navigationController?.navigationBar.accessibilityIdentifier = "subscription_detail_navigation_bar".localized
+        navigationController?.navigationBar.accessibilityIdentifier = "subscription_selection_navigation_bar".localized
         
         dismissBarButtonItem.accessibilityLabel = "dismiss".localized
         dismissBarButtonItem.target = self
