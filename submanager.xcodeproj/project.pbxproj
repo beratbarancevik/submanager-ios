@@ -15,6 +15,7 @@
 		F4197E34256AC930003103C2 /* SubscriptionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4197E33256AC930003103C2 /* SubscriptionViewModelTests.swift */; };
 		F4197E7A256AD250003103C2 /* SubscribeDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4197E79256AD250003103C2 /* SubscribeDetailTests.swift */; };
 		F41EED442571FEF500BDF921 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F41EED432571FEF500BDF921 /* Kingfisher */; };
+		F41EED6525720A2F00BDF921 /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = F41EED6425720A2F00BDF921 /* SwiftMessages */; };
 		F436F992256119E300B2667D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436F991256119E300B2667D /* HomeController.swift */; };
 		F4379C7225641FA100477E61 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4379C7125641FA100477E61 /* HomeViewModelTests.swift */; };
 		F44B57D225615DA30011D20C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57D125615DA30011D20C /* Constants.swift */; };
@@ -182,6 +183,7 @@
 				F45F6A262569043D001C7718 /* AlamofireNetworkActivityIndicator in Frameworks */,
 				F4ACCD162561A3B00059063A /* SnapKit in Frameworks */,
 				B32A3C1B0D0AF0FF5BFD3DF1 /* Pods_submanager.framework in Frameworks */,
+				F41EED6525720A2F00BDF921 /* SwiftMessages in Frameworks */,
 				F41EED442571FEF500BDF921 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,6 +644,7 @@
 				F45F6A1F25690386001C7718 /* Alamofire */,
 				F45F6A252569043D001C7718 /* AlamofireNetworkActivityIndicator */,
 				F41EED432571FEF500BDF921 /* Kingfisher */,
+				F41EED6425720A2F00BDF921 /* SwiftMessages */,
 			);
 			productName = submanager;
 			productReference = F4A417A425611539009B92C7 /* SM Debug.app */;
@@ -727,6 +730,7 @@
 				F45F6A1E25690386001C7718 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F45F6A242569043D001C7718 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */,
 				F41EED422571FEF500BDF921 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F41EED6325720A2F00BDF921 /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 			);
 			productRefGroup = F4A417A525611539009B92C7 /* Products */;
 			projectDirPath = "";
@@ -1369,6 +1373,14 @@
 				version = 5.15.8;
 			};
 		};
+		F41EED6325720A2F00BDF921 /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				kind = exactVersion;
+				version = 8.0.3;
+			};
+		};
 		F45F6A1E25690386001C7718 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -1400,6 +1412,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F41EED422571FEF500BDF921 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		F41EED6425720A2F00BDF921 /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F41EED6325720A2F00BDF921 /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
 		};
 		F45F6A1F25690386001C7718 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;

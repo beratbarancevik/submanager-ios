@@ -8,6 +8,7 @@
 
 // MARK: - App
 app_name = "Sub Manager";
+default_error = "An error occurred";
 
 // MARK: - HomeController
 add = "Add";
