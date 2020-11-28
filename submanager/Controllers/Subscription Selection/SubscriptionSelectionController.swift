@@ -17,8 +17,8 @@ class SubscriptionSelectionController: BaseController {
         $0.register(SubscriptionCell.self, forCellReuseIdentifier: SubscriptionCell.identifier)
         $0.accessibilityLabel = "subscription_types_table_view".localized
         return $0
-    }(UITableView())
-    private let refreshControl = UIRefreshControl()
+    }(UITableView().style(Theme.Table.primary))
+    private let refreshControl = UIRefreshControl().style(Theme.RefreshControl.primary)
     
     // MARK: - Lifecycle
     override func viewDidLoad() {

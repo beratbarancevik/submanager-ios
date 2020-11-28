@@ -6,9 +6,16 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
+// swiftlint:disable force_unwrapping
+
 import UIKit
 
 extension UIColor {
+    // MARK: - Tint Colors
+    static var tintColor: UIColor {
+        return .systemGreen
+    }
+    
     // MARK: - Text Colors
     static var primaryText: UIColor {
         if #available(iOS 13.0, *) {
@@ -44,6 +51,14 @@ extension UIColor {
             return .tertiarySystemBackground
         }
         return .white
+    }
+    
+    // MARK: - Reversed Colors
+    static var primaryBackgroundReversed: UIColor {
+        if #available(iOS 11.0, *) {
+            return UIColor(named: "primary-background-reversed")!
+        }
+        return .black
     }
     
     // MARK: - Init

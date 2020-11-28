@@ -1,5 +1,5 @@
 //
-//  UIColor+ExtensionsTests.swift
+//  UIView+ExtensionsTests.swift
 //  submanagerTests
 //
 //  Created by Berat Cevik on 11/28/20.
@@ -9,4 +9,4 @@
 import XCTest
 @testable import SM_Debug
 
-class UIColorExtensionsTests: XCTestCase {}
+class UIViewExtensionsTests: XCTestCase {}

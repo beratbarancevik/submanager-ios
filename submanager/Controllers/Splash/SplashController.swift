@@ -17,7 +17,7 @@ class SplashController: BaseController {
         $0.image = Images.logo.image
         $0.accessibilityLabel = "splash_logo_image_view".localized
         return $0
-    }(UIImageView())
+    }(UIImageView().style(Theme.Image.primary))
     
     // MARK: - Other Properties
     private var disposable: Disposable?
@@ -39,7 +39,6 @@ class SplashController: BaseController {
 
 // MARK: - Setup
 extension SplashController: Setup {
-    // MARK: - Setup
     func setUpUI() {}
     
     func addViews() {
@@ -60,8 +59,10 @@ extension SplashController: Setup {
             }
         }
     }
-    
-    // MARK: - Navigation
+}
+
+// MARK: - Private Functions
+private extension SplashController {
     func displayHome() {
         #if DEBUG
         // ensures that splash screen's UI gets tested

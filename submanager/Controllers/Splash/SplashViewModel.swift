@@ -9,14 +9,16 @@
 import RxSwift
 
 class SplashViewModel: BaseControllerViewModel {
+    // MARK: - Properties
     let authDidCompleteSubject = PublishSubject<Bool>()
     
-    // MARK: - Setup
+    // MARK: - Init
     override init() {
         super.init()
         addObservers()
     }
     
+    // MARK: - Setup
     func addObservers() {
         AuthenticationManager.shared.authDidCompleteSubject.subscribe { [weak self] event in
             if event.element ?? false {

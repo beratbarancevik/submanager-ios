@@ -17,9 +17,17 @@ class BaseNavigationController: UINavigationController {
         return .default
     }
     
+    // MARK: - Init
+    convenience init(rootViewController: BaseController, prefersLargeTitles: Bool = true) {
+        self.init(rootViewController: rootViewController)
+        if #available(iOS 11.0, *) {
+            navigationBar.prefersLargeTitles = prefersLargeTitles
+        }
+    }
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.style(Theme.NavigationBar.navigationBar)
+        navigationBar.style(Theme.NavigationBar.primary)
     }
 }

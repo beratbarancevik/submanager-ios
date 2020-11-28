@@ -9,6 +9,7 @@
 import RxSwift
 
 class SubscriptionSelectionViewModel: BaseControllerViewModel {
+    // MARK: - Properties
     let didReceiveSubscriptionTypes = PublishSubject<Bool>()
     let error = PublishSubject<Error>()
     let loading = PublishSubject<Bool>()
@@ -19,6 +20,7 @@ class SubscriptionSelectionViewModel: BaseControllerViewModel {
         }
     }
     
+    // MARK: - Functions
     func getSubscriptionTypes() {
         sendGetSubscriptionTypesRequest()
     }

@@ -7,6 +7,7 @@
 //
 
 // swiftlint:disable force_unwrapping
+// swiftlint:disable nesting
 
 import UIKit
 
@@ -23,18 +24,41 @@ struct Style<View: UIView> {
     }
 }
 
-extension UIView {
-    @discardableResult
-    func style<V>(_ style: Style<V>) -> V {
-        let view = self as! V
-        style.apply(to: view)
-        return view
-    }
-}
-
+// MARK: - Theme
 enum Theme {
+    enum Button {
+        static let primary = Style<UIButton> {
+            $0.setTitleColor(.white, for: .normal)
+            $0.tintColor = .white
+            $0.titleLabel?.font = Montserrat.regular.font(size: 17)
+        }
+    }
+    
+    enum Image {
+        static let primary = Style<UIImageView> {
+            $0.contentMode = .scaleAspectFit
+            $0.clipsToBounds = true
+        }
+    }
+    
+    enum Label {
+        enum Regular {
+            static let primary = Style<UILabel> {
+                $0.textColor = .primaryText
+                $0.font = Montserrat.regular.font(size: 17)
+                $0.numberOfLines = 1
+            }
+            
+            static let tint = Style<UILabel> {
+                $0.textColor = .tintColor
+                $0.font = Montserrat.regular.font(size: 17)
+                $0.numberOfLines = 1
+            }
+        }
+    }
+    
     enum NavigationBar {
-        static let navigationBar = Style<UINavigationBar> {
+        static let primary = Style<UINavigationBar> {
             let titleTextAttributes = [NSAttributedString.Key.font: Montserrat.light.font(size: 20)]
             $0.titleTextAttributes = titleTextAttributes as [NSAttributedString.Key: Any]
             $0.tintColor = .primaryText
@@ -44,6 +68,27 @@ enum Theme {
                 let largeTitleTextAttributes = [NSAttributedString.Key.font: Montserrat.light.font(size: 27)]
                 $0.largeTitleTextAttributes = largeTitleTextAttributes as [NSAttributedString.Key: Any]
             }
+        }
+    }
+    
+    enum RefreshControl {
+        static let primary = Style<UIRefreshControl> {
+            $0.tintColor = .primaryBackgroundReversed
+        }
+    }
+    
+    enum Table {
+        static let primary = Style<UITableView> {
+            $0.backgroundColor = .primaryBackground
+            $0.keyboardDismissMode = .onDrag
+            $0.tableFooterView = UIView()
+            $0.alwaysBounceVertical = true
+        }
+    }
+    
+    enum View {
+        static let primary = Style<UIView> {
+            $0.backgroundColor = .primaryBackground
         }
     }
 }
