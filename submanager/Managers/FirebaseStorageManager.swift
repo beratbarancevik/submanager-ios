@@ -27,7 +27,7 @@ class FirebaseStorageManager {
         
         loading.onNext(true)
         
-        let folderName = "custom_susbcription_images"
+        let folderName = Constants.customSubscriptionStorageFolder.rawValue
         let storageReference = storage.reference(withPath: folderName)
         storageReference.putData(imageData, metadata: nil) { [weak self] _, error in
             if let error = error {

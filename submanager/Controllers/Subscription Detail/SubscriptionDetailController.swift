@@ -105,16 +105,6 @@ private extension SubscriptionDetailController {
 extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        switch SettingType.allCases[indexPath.row] {
-        case .notifications:
-            break
-        case .share:
-            break
-        case .appStore:
-            break
-        case .systemSettings:
-            break
-        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

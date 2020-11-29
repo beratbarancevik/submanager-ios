@@ -15,11 +15,14 @@ enum Images: String, CaseIterable {
     case appStore
     case detail
     case dismiss
+    case email
     case logo
     case moreHorizontal
     case notifications
+    case privacy
     case share
     case systemSettings
+    case terms
     
     var image: UIImage {
         return UIImage(named: self.rawValue)!

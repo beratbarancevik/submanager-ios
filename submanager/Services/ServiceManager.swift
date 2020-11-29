@@ -53,7 +53,7 @@ class ServiceManager {
 // MARK: - Private Functions
 extension ServiceManager {
     static func getBaseUrl(from path: String) -> URL? {
-        return URL(string: "\(SecretConstants.baseUrl)\(path)")
+        return URL(string: "\(SecretConstants.baseUrl.value)\(path)")
     }
     
     static func getHeaders(from dict: [String: String]) -> HTTPHeaders {

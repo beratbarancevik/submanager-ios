@@ -15,6 +15,9 @@ enum SettingType: CaseIterable {
     case notifications
     case share
     case appStore
+    case feedback
+    case termsOfService
+    case privacyPolicy
     case systemSettings
     
     var icon: Images {
@@ -25,6 +28,12 @@ enum SettingType: CaseIterable {
             return .share
         case .appStore:
             return .appStore
+        case .feedback:
+            return .email
+        case .termsOfService:
+            return .terms
+        case .privacyPolicy:
+            return .privacy
         case .systemSettings:
             return .systemSettings
         }
@@ -37,6 +46,12 @@ enum SettingType: CaseIterable {
         case .share:
             return "settings_share"
         case .appStore:
+            return "settings_appStore"
+        case .feedback:
+            return "settings_appStore"
+        case .termsOfService:
+            return "settings_appStore"
+        case .privacyPolicy:
             return "settings_appStore"
         case .systemSettings:
             return "settings_systemSettings"

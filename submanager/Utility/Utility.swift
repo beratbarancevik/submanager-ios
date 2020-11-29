@@ -21,7 +21,7 @@ class Utility {
     }
     
     var appStoreUrl: URL {
-        return URL(string: "https://apps.apple.com/us/app/sub-manager/id1540474654")!
+        return URL(string: Constants.appStoreUrl.rawValue)!
     }
     
     var deviceSettings: URL {

@@ -82,6 +82,12 @@ extension SettingsController: UITableViewDelegate, UITableViewDataSource {
             if UIApplication.shared.canOpenURL(Utility.shared.appStoreUrl) {
                 UIApplication.shared.open(Utility.shared.appStoreUrl)
             }
+        case .feedback:
+            break
+        case .termsOfService:
+            break
+        case .privacyPolicy:
+            break
         case .systemSettings:
             if UIApplication.shared.canOpenURL(Utility.shared.deviceSettings) {
                 UIApplication.shared.open(Utility.shared.deviceSettings)
