@@ -62,7 +62,7 @@ extension SettingsController: Setup {
         dismissBarButtonItem.action = #selector(dismissDidTap)
     }
     
-    @objc func dismissDidTap() {
+    @objc private func dismissDidTap() {
         dismiss(animated: true)
     }
 }

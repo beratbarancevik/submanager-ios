@@ -94,16 +94,16 @@ extension HomeController: Setup {
         }
     }
     
-    @objc func settingsDidTap() {
+    @objc private func settingsDidTap() {
         present(BaseNavigationController(rootViewController: SettingsController()), animated: true)
     }
     
-    @objc func addDidTap() {
+    @objc private func addDidTap() {
         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
         present(BaseNavigationController(rootViewController: SubscriptionSelectionController()), animated: true)
     }
     
-    @objc func tableViewDidRefresh() {
+    @objc private func tableViewDidRefresh() {
         UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
         viewModel.getSubscriptions()
     }

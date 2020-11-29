@@ -8,15 +8,21 @@
 
 import UIKit
 
+protocol SubscriptionDetailHeaderViewDelegate: AnyObject {
+    func imageViewDidTap()
+}
+
 class SubscriptionDetailHeaderView: BaseTableHeaderFooterView {
     // MARK: - UI Properties
     private let logoImageView: UIImageView = {
-        $0.style(Theme.Image.primary)
+        $0.isUserInteractionEnabled = true
         $0.layer.cornerRadius = 64
         return $0
-    }(UIImageView())
+    }(UIImageView().style(Theme.Image.primary))
     
     // MARK: - Other Properties
+    weak var delegate: SubscriptionDetailHeaderViewDelegate?
+    
     var imageUrl: URL? {
         didSet {
             logoImageView.kf.setImage(
@@ -63,5 +69,12 @@ extension SubscriptionDetailHeaderView: Setup {
         }
     }
     
-    func addObservers() {}
+    func addObservers() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(logoImageViewDidTap))
+        logoImageView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc private func logoImageViewDidTap() {
+        delegate?.imageViewDidTap()
+    }
 }

@@ -43,6 +43,8 @@
 		F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */; };
 		F4580FE125737856006697E6 /* ZeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4580FE025737856006697E6 /* ZeroView.swift */; };
 		F4580FE525737879006697E6 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4580FE425737879006697E6 /* BaseView.swift */; };
+		F4580FE92573AD88006697E6 /* PhotoLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4580FE82573AD88006697E6 /* PhotoLibraryManager.swift */; };
+		F4580FEF2573AD9E006697E6 /* PhotoLibraryManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4580FEE2573AD9E006697E6 /* PhotoLibraryManagerTests.swift */; };
 		F458ADF725611D9A0016EEDC /* HomeControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */; };
 		F458ADFF25611DC40016EEDC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458ADFE25611DC40016EEDC /* HomeViewModel.swift */; };
 		F458AE182561278C0016EEDC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F458AE1A2561278C0016EEDC /* Localizable.strings */; };
@@ -198,6 +200,8 @@
 		F4555B9A2561499A00473135 /* UnitTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
 		F4580FE025737856006697E6 /* ZeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroView.swift; sourceTree = "<group>"; };
 		F4580FE425737879006697E6 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		F4580FE82573AD88006697E6 /* PhotoLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryManager.swift; sourceTree = "<group>"; };
+		F4580FEE2573AD9E006697E6 /* PhotoLibraryManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryManagerTests.swift; sourceTree = "<group>"; };
 		F458ADF625611D9A0016EEDC /* HomeControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControllerUITests.swift; sourceTree = "<group>"; };
 		F458ADFE25611DC40016EEDC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F458AE12256127650016EEDC /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -760,6 +764,7 @@
 			children = (
 				F459A4DC256A9790009C4ABE /* BaseManager.swift */,
 				F459A4B5256A8C42009C4ABE /* AuthenticationManager.swift */,
+				F4580FE82573AD88006697E6 /* PhotoLibraryManager.swift */,
 				F46950532572ABAB00059BEB /* UserNotificationsManager.swift */,
 			);
 			path = Managers;
@@ -787,6 +792,7 @@
 			children = (
 				F469507C2572B6AB00059BEB /* BaseManagerTests.swift */,
 				F459A4BA256A8CAA009C4ABE /* AuthenticationManagerTests.swift */,
+				F4580FEE2573AD9E006697E6 /* PhotoLibraryManagerTests.swift */,
 				F469505C2572B68400059BEB /* UserNotificationsManagerTest.swift */,
 			);
 			path = ManagerTests;
@@ -1243,6 +1249,7 @@
 				F458AE2B256128D00016EEDC /* String+Extensions.swift in Sources */,
 				F459A4EE256A9B38009C4ABE /* BaseControllerViewModel.swift in Sources */,
 				F4D81DE92572361B0060E81F /* UIView+Extensions.swift in Sources */,
+				F4580FE92573AD88006697E6 /* PhotoLibraryManager.swift in Sources */,
 				F44FB9B425720E4000C6F1DE /* SubscriptionSelectionController.swift in Sources */,
 				F4197E2B256AC8D6003103C2 /* SubscriptionViewModel.swift in Sources */,
 				F4ACCCEB2561975C0059063A /* SubscriptionDetailViewModel.swift in Sources */,
@@ -1307,6 +1314,7 @@
 				F4BBAEB7256A370F0018544D /* TestConstants.swift in Sources */,
 				F4494B7225723954005A4FA4 /* HomeControllerTests.swift in Sources */,
 				F4197E7A256AD250003103C2 /* SubscriptionDetailViewModelTests.swift in Sources */,
+				F4580FEF2573AD9E006697E6 /* PhotoLibraryManagerTests.swift in Sources */,
 				F4D81DED257236610060E81F /* UIView+ExtensionsTests.swift in Sources */,
 				F459A4BB256A8CAA009C4ABE /* AuthenticationManagerTests.swift in Sources */,
 				F4494B8825723984005A4FA4 /* SubscriptionSelectionControllerTests.swift in Sources */,

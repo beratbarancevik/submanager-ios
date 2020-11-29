@@ -79,12 +79,25 @@ extension SubscriptionDetailController: Setup {
         }.disposed(by: disposeBag)
     }
     
-    @objc func dismissDidTap() {
+    @objc private func dismissDidTap() {
         dismiss(animated: true)
     }
     
-    @objc func saveDidTap() {
+    @objc private func saveDidTap() {
         viewModel.saveSubscription()
+    }
+}
+
+// MARK: - Private Functions
+private extension SubscriptionDetailController {
+    func openImagePicker() {
+        let imagePickerController = PhotoLibraryManager().getImagePickerController()
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    func manageImageResult(for image: UIImage) {
+        // TODO: set image
     }
 }
 
@@ -126,6 +139,7 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: SubscriptionDetailHeaderView.identifier) as? SubscriptionDetailHeaderView else { return UITableViewHeaderFooterView() }
+        headerView.delegate = self
         headerView.imageUrl = viewModel.subscriptionViewModel?.imageUrl
         return headerView
     }
@@ -136,5 +150,28 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 192
+    }
+}
+
+// MARK: - SubscriptionDetailHeaderViewDelegate
+extension SubscriptionDetailController: SubscriptionDetailHeaderViewDelegate {
+    func imageViewDidTap() {
+        openImagePicker()
+    }
+}
+
+// MARK: - UIImagePickerControllerDelegate
+extension SubscriptionDetailController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        if let editedImage = info[.editedImage] as? UIImage {
+            manageImageResult(for: editedImage)
+        } else if let originalImage = info[.originalImage] as? UIImage {
+            manageImageResult(for: originalImage)
+        } else if let originalImage = info[.cropRect] as? UIImage {
+            manageImageResult(for: originalImage)
+        } else {
+            showError()
+        }
+        dismiss(animated: true)
     }
 }

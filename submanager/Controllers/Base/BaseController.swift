@@ -51,14 +51,14 @@ class BaseController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeHeight), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
-    @objc func keyboardWillChangeHeight(_ notification: Notification) {
+    @objc private func keyboardWillChangeHeight(_ notification: Notification) {
         if let keyboardHeight = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.height {
             keyboardHeightDidChange.onNext(keyboardHeight)
         }
     }
     
     // MARK: - Alerts
-    func showError(_ error: Error?) {
+    func showError(_ error: Error? = nil) {
         SwiftMessages.hideAll()
         let view = MessageView.viewFromNib(layout: .statusLine)
         view.configureTheme(.error)

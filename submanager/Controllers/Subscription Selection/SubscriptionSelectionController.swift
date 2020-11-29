@@ -77,11 +77,11 @@ extension SubscriptionSelectionController: Setup {
         refreshControl.addTarget(self, action: #selector(tableViewDidRefresh), for: .valueChanged)
     }
     
-    @objc func tableViewDidRefresh() {
+    @objc private func tableViewDidRefresh() {
         viewModel.getSubscriptionTypes()
     }
     
-    @objc func dismissDidTap() {
+    @objc private func dismissDidTap() {
         dismiss(animated: true)
     }
 }
