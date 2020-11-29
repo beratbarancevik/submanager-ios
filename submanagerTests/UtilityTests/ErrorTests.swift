@@ -1,5 +1,5 @@
 //
-//  PhotoLibraryManagerTests.swift
+//  ErrorTests.swift
 //  submanagerTests
 //
 //  Created by Berat Cevik on 11/29/20.
@@ -9,16 +9,20 @@
 import XCTest
 @testable import SM_Debug
 
-class PhotoLibraryManagerTests: XCTestCase {
-    var sut: PhotoLibraryManager!
+class ErrorTests: XCTestCase {
+    var sut: GenericError.Type!
     
     override func setUp() {
         super.setUp()
-        sut = PhotoLibraryManager()
+        sut = GenericError.self
     }
     
     override func tearDown() {
         super.tearDown()
         sut = nil
+    }
+    
+    func testStaticImages() {
+        XCTAssertEqual(sut.allCases.count, 2)
     }
 }

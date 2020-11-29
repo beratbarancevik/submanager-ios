@@ -1,5 +1,5 @@
 //
-//  PhotoLibraryManagerTests.swift
+//  FirebaseStorageManagerTests.swift
 //  submanagerTests
 //
 //  Created by Berat Cevik on 11/29/20.
@@ -9,12 +9,12 @@
 import XCTest
 @testable import SM_Debug
 
-class PhotoLibraryManagerTests: XCTestCase {
-    var sut: PhotoLibraryManager!
+class FirebaseStorageManagerTests: XCTestCase {
+    var sut: FirebaseStorageManager!
     
     override func setUp() {
         super.setUp()
-        sut = PhotoLibraryManager()
+        sut = FirebaseStorageManager()
     }
     
     override func tearDown() {
