@@ -121,6 +121,8 @@
 		F4EB84F02569134700ADF19C /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB84EF2569134700ADF19C /* KeysTests.swift */; };
 		F4EB85182569170E00ADF19C /* GetAllSubscriptionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB85172569170E00ADF19C /* GetAllSubscriptionsRequest.swift */; };
 		F4EB85202569171800ADF19C /* GetAllSubscriptionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB851F2569171800ADF19C /* GetAllSubscriptionsResponse.swift */; };
+		F4EF27192573F040008F8AB6 /* Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4EF27182573F040008F8AB6 /* Info-Debug.plist */; };
+		F4EF271D2573F045008F8AB6 /* Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4EF271C2573F045008F8AB6 /* Info-Release.plist */; };
 		F4F2E19D25692EA800B3108B /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2E19C25692EA800B3108B /* ServiceConstants.swift */; };
 		F4F2E1A625692EEC00B3108B /* ServiceConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2E1A525692EEC00B3108B /* ServiceConstantsTests.swift */; };
 		F4FA8B82257263DB007D5A55 /* DeleteSubscriptionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA8B81257263DB007D5A55 /* DeleteSubscriptionRequest.swift */; };
@@ -240,7 +242,6 @@
 		F469509C2572B6F500059BEB /* UtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTests.swift; sourceTree = "<group>"; };
 		F46950A02572B8AB00059BEB /* SettingsControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsControllerUITests.swift; sourceTree = "<group>"; };
 		F473E65B2569306A00440292 /* BaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceTests.swift; sourceTree = "<group>"; };
-		F47F40AD25612B73008C0A6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47F40C125612BB2008C0A6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F47F40C625612BB3008C0A6A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		F47F40D2256133E7008C0A6A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -291,6 +292,8 @@
 		F4EB84EF2569134700ADF19C /* KeysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysTests.swift; sourceTree = "<group>"; };
 		F4EB85172569170E00ADF19C /* GetAllSubscriptionsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllSubscriptionsRequest.swift; sourceTree = "<group>"; };
 		F4EB851F2569171800ADF19C /* GetAllSubscriptionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllSubscriptionsResponse.swift; sourceTree = "<group>"; };
+		F4EF27182573F040008F8AB6 /* Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
+		F4EF271C2573F045008F8AB6 /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
 		F4F2E19C25692EA800B3108B /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
 		F4F2E1A525692EEC00B3108B /* ServiceConstantsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstantsTests.swift; sourceTree = "<group>"; };
 		F4FA8B81257263DB007D5A55 /* DeleteSubscriptionRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteSubscriptionRequest.swift; sourceTree = "<group>"; };
@@ -532,7 +535,8 @@
 			isa = PBXGroup;
 			children = (
 				F4A417A725611539009B92C7 /* AppDelegate.swift */,
-				F47F40AD25612B73008C0A6A /* Info.plist */,
+				F4EF27182573F040008F8AB6 /* Info-Debug.plist */,
+				F4EF271C2573F045008F8AB6 /* Info-Release.plist */,
 				F47F40C225612BB2008C0A6A /* InfoPlist.strings */,
 				F4A417B22561153B009B92C7 /* LaunchScreen.storyboard */,
 				F458AE1A2561278C0016EEDC /* Localizable.strings */,
@@ -1040,6 +1044,7 @@
 			files = (
 				F4D81DD525722DA50060E81F /* Montserrat-Light.ttf in Resources */,
 				F4A417B42561153B009B92C7 /* LaunchScreen.storyboard in Resources */,
+				F4EF271D2573F045008F8AB6 /* Info-Release.plist in Resources */,
 				F4D81DD325722DA50060E81F /* Montserrat-Thin.ttf in Resources */,
 				F4D81DCE25722DA50060E81F /* Montserrat-Black.ttf in Resources */,
 				F47F40C025612BB2008C0A6A /* InfoPlist.strings in Resources */,
@@ -1048,6 +1053,7 @@
 				F458AE182561278C0016EEDC /* Localizable.strings in Resources */,
 				F4A417B12561153B009B92C7 /* Assets.xcassets in Resources */,
 				F4D81DD225722DA50060E81F /* Montserrat-SemiBold.ttf in Resources */,
+				F4EF27192573F040008F8AB6 /* Info-Debug.plist in Resources */,
 				F48BABED2566D24B007324D1 /* GoogleService-Info-Release.plist in Resources */,
 				F4D81DCF25722DA50060E81F /* Montserrat-Medium.ttf in Resources */,
 				F4110C532562D0C600BD77A5 /* GoogleService-Info-Debug.plist in Resources */,
@@ -1546,7 +1552,7 @@
 				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/submanager/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/submanager/Supporting Files/Info-Debug.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1570,7 +1576,7 @@
 				CURRENT_PROJECT_VERSION = 18;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
-				INFOPLIST_FILE = "$(SRCROOT)/submanager/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/submanager/Supporting Files/Info-Release.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
