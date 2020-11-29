@@ -26,6 +26,11 @@ class SusbcriptionSelectionControllerUITests: XCTestCase {
         app = nil
     }
     
+    func testNavigationBarTitle() {
+        let navigationBarTitle = app.navigationBars["subscription_selection_navigation_bar".localized].staticTexts["subscription_selection_title".localized]
+        XCTAssert(navigationBarTitle.exists)
+    }
+    
     func testDismissBarButtonItem() {
         let dismissBarButtonItem = app.navigationBars["subscription_selection_navigation_bar".localized].buttons["dismiss".localized]
         XCTAssert(dismissBarButtonItem.exists)

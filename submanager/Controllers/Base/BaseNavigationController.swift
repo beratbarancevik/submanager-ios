@@ -28,6 +28,7 @@ class BaseNavigationController: UINavigationController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.style(Theme.View.primary)
         navigationBar.style(Theme.NavigationBar.primary)
     }
 }

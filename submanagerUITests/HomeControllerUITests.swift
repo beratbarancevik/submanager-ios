@@ -26,7 +26,7 @@ class HomeControllerUITests: XCTestCase {
     }
     
     func testNavigationBarTitle() {
-        let navigationBarTitle = app.navigationBars["home_navigation_bar".localized].staticTexts["home".localized]
+        let navigationBarTitle = app.navigationBars["home_navigation_bar".localized].staticTexts["home_title".localized]
         XCTAssert(navigationBarTitle.exists)
     }
     

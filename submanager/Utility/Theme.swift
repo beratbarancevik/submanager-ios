@@ -85,6 +85,8 @@ enum Theme {
             $0.titleTextAttributes = titleTextAttributes as [NSAttributedString.Key: Any]
             $0.tintColor = .primaryText
             $0.barTintColor = .primaryBackground
+            $0.backgroundColor = .primaryBackground
+            $0.isTranslucent = false
             if #available(iOS 11.0, *) {
                 $0.prefersLargeTitles = true
                 let largeTitleTextAttributes = [NSAttributedString.Key.font: Montserrat.light.font(size: 27)]

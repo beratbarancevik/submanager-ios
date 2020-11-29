@@ -35,6 +35,7 @@ class SubscriptionSelectionController: BaseController {
 extension SubscriptionSelectionController: Setup {
     func setUpUI() {
         navigationController?.navigationBar.accessibilityIdentifier = "subscription_selection_navigation_bar".localized
+        navigationItem.title = "subscription_selection_title".localized
         
         dismissBarButtonItem.accessibilityLabel = "dismiss".localized
         dismissBarButtonItem.target = self

@@ -37,7 +37,7 @@ class HomeController: BaseController {
 extension HomeController: Setup {
     func setUpUI() {
         navigationController?.navigationBar.accessibilityIdentifier = "home_navigation_bar".localized
-        navigationItem.title = "home".localized
+        navigationItem.title = "home_title".localized
         
         settingsBarButtonItem.target = self
         settingsBarButtonItem.accessibilityLabel = "settings".localized
