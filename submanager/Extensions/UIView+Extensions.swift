@@ -15,4 +15,8 @@ extension UIView {
         style.apply(to: view)
         return view
     }
+    
+    func setHidden(_ hidden: Bool) {
+        self.isHidden = hidden
+    }
 }

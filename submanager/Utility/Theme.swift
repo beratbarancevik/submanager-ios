@@ -38,10 +38,11 @@ enum Theme {
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: Montserrat.regular.font(size: 15)], for: .normal)
     }
     
+    // MARK: - UI Component Styles
     enum Button {
         static let primary = Style<UIButton> {
-            $0.setTitleColor(.white, for: .normal)
-            $0.tintColor = .white
+            $0.setTitleColor(.primaryBackground, for: .normal)
+            $0.backgroundColor = .primaryBackgroundReversed
             $0.titleLabel?.font = Montserrat.regular.font(size: 17)
         }
     }
@@ -65,6 +66,14 @@ enum Theme {
             static let tint = Style<UILabel> {
                 $0.textColor = .tintColor
                 $0.font = Montserrat.regular.font(size: 17)
+                $0.numberOfLines = 1
+            }
+        }
+        
+        enum Large {
+            static let primary = Style<UILabel> {
+                $0.textColor = .primaryText
+                $0.font = Montserrat.regular.font(size: 20)
                 $0.numberOfLines = 1
             }
         }

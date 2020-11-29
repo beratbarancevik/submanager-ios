@@ -20,6 +20,7 @@ class HomeController: BaseController {
         return $0
     }(UITableView().style(Theme.Table.primary))
     private let refreshControl = UIRefreshControl().style(Theme.RefreshControl.primary)
+    private let zeroView = ZeroView(labelText: "You don't have any subscriptions. Let's start by adding your first one.", buttonTitle: "Add Subscription")
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -53,17 +54,23 @@ extension HomeController: Setup {
     func addViews() {
         view.addSubview(subscriptionsTableView)
         subscriptionsTableView.addSubview(refreshControl)
+        view.addSubview(zeroView)
     }
     
     func addConstraints() {
         subscriptionsTableView.snp.makeConstraints { maker in
             maker.edges.equalTo(safeArea)
         }
+        
+        zeroView.snp.makeConstraints { maker in
+            maker.leading.trailing.equalTo(safeArea).inset(32)
+            maker.bottom.equalTo(safeArea.snp.centerY)
+        }
     }
     
     func addObservers() {
         viewModel.didReceiveSubscriptions.subscribe { [weak self] _ in
-            self?.subscriptionsTableView.reloadData()
+            self?.updateTable()
         }.disposed(by: disposeBag)
         
         viewModel.error.subscribe { [weak self] event in
@@ -81,6 +88,10 @@ extension HomeController: Setup {
         settingsBarButtonItem.action = #selector(settingsDidTap)
         addBarButtonItem.action = #selector(addDidTap)
         refreshControl.addTarget(self, action: #selector(tableViewDidRefresh), for: .valueChanged)
+        
+        zeroView.mainButtonDidTap = { [weak self] in
+            self?.addDidTap()
+        }
     }
     
     @objc func settingsDidTap() {
@@ -88,12 +99,23 @@ extension HomeController: Setup {
     }
     
     @objc func addDidTap() {
+        UIImpactFeedbackGenerator(style: .medium).impactOccurred()
         present(BaseNavigationController(rootViewController: SubscriptionSelectionController()), animated: true)
     }
     
     @objc func tableViewDidRefresh() {
         UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
         viewModel.getSubscriptions()
+    }
+}
+
+// MARK: - Private Functions
+private extension HomeController {
+    func updateTable() {
+        let subscriptionsEmpty = viewModel.subscriptionViewModels.isEmpty
+        subscriptionsTableView.setHidden(subscriptionsEmpty)
+        zeroView.setHidden(!subscriptionsEmpty)
+        subscriptionsTableView.reloadData()
     }
 }
 
