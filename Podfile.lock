@@ -15,6 +15,9 @@ PODS:
   - Firebase/Performance (7.1.0):
     - Firebase/CoreOnly
     - FirebasePerformance (~> 7.1.0)
+  - Firebase/Storage (7.1.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 7.1.0)
   - FirebaseABTesting (7.1.0):
     - FirebaseCore (~> 7.0)
   - FirebaseAnalytics (7.1.0):
@@ -69,6 +72,9 @@ PODS:
     - FirebaseInstallations (~> 7.0)
     - GoogleUtilities/Environment (~> 7.0)
     - "GoogleUtilities/NSData+zlib (~> 7.0)"
+  - FirebaseStorage (7.1.0):
+    - FirebaseCore (~> 7.0)
+    - GTMSessionFetcher/Core (~> 1.4)
   - GoogleAppMeasurement (7.1.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
     - GoogleUtilities/MethodSwizzler (~> 7.0)
@@ -126,6 +132,7 @@ DEPENDENCIES:
   - Firebase/Auth (= 7.1.0)
   - Firebase/Crashlytics (= 7.1.0)
   - Firebase/Performance (= 7.1.0)
+  - Firebase/Storage (= 7.1.0)
   - RxBlocking (= 6.0.0-rc.2)
   - RxCocoa (= 6.0.0-rc.2)
   - RxRelay (= 6.0.0-rc.2)
@@ -144,6 +151,7 @@ SPEC REPOS:
     - FirebaseInstallations
     - FirebasePerformance
     - FirebaseRemoteConfig
+    - FirebaseStorage
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleToolboxForMac
@@ -169,6 +177,7 @@ SPEC CHECKSUMS:
   FirebaseInstallations: 3de38553e86171b5f81d83cdeef63473d37bfdb0
   FirebasePerformance: 70f4ea16062512a57a084ed4ae0925b6af1e3884
   FirebaseRemoteConfig: 04cd72851dad51780aa66f05b01a7dd0b85cdbf5
+  FirebaseStorage: 80e2cd5200791540ca544f4dcac5e6b56994fc97
   GoogleAppMeasurement: 89e1a64593f968713b0506ba1b53b38a154bf9a5
   GoogleDataTransport: e4085e6762f36a6141738f46b0153473ce57fb18
   GoogleToolboxForMac: 1350d40e86a76f7863928d63bcb0b89c84c521c5
@@ -183,6 +192,6 @@ SPEC CHECKSUMS:
   RxSwift: ada35be6643bedf6881cdbd6bbfb27aeea527670
   RxTest: 979a97b4c55e9fcb5e6b32fb86cb432a819883b4
 
-PODFILE CHECKSUM: 05f83fd42e809ed46ff6b6684db647ad4a0c1921
+PODFILE CHECKSUM: 45e8cb3ce0c0def6dc3910daa0ddc7b040dd6a4e
 
 COCOAPODS: 1.10.0

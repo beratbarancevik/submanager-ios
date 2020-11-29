@@ -14,6 +14,7 @@ target 'submanager' do
   pod 'Firebase/Auth', '7.1.0'
   pod 'Firebase/Crashlytics', '7.1.0'
   pod 'Firebase/Performance', '7.1.0'
+  pod 'Firebase/Storage', '7.1.0'
 
   target 'submanagerTests' do
     inherit! :search_paths
