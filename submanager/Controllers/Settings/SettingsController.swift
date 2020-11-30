@@ -6,6 +6,7 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
+import MessageUI
 import UIKit
 
 class SettingsController: BaseController {
@@ -13,7 +14,6 @@ class SettingsController: BaseController {
     
     // MARK: - UI Properties
     private let dismissBarButtonItem = UIBarButtonItem(image: Images.dismiss.image, style: .plain, target: nil, action: nil)
-    
     private let settingsTableView: UITableView = {
         $0.register(SettingCell.self, forCellReuseIdentifier: SettingCell.identifier)
         $0.register(SettingFooterView.self, forHeaderFooterViewReuseIdentifier: SettingFooterView.identifier)
@@ -73,25 +73,26 @@ extension SettingsController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         switch SettingType.allCases[indexPath.row] {
         case .notifications:
-            UserNotificationsManager.shared.askForNotificationPermissionIfNecessary()
+            UserNotificationsManager().askForNotificationPermissionIfNecessary()
         case .share:
             let activityViewController = UIActivityViewController(activityItems: ["app_promotion".localized], applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view
             present(activityViewController, animated: true)
         case .appStore:
-            if UIApplication.shared.canOpenURL(Utility.shared.appStoreUrl) {
-                UIApplication.shared.open(Utility.shared.appStoreUrl)
-            }
+            NavigationManager().openURL(Constants.appStoreUrl.rawValue)
         case .feedback:
-            break
-        case .termsOfService:
-            break
-        case .privacyPolicy:
-            break
-        case .systemSettings:
-            if UIApplication.shared.canOpenURL(Utility.shared.deviceSettings) {
-                UIApplication.shared.open(Utility.shared.deviceSettings)
+            guard let mailComposeViewController = Utility.shared.getMailComposeViewController() else {
+                showError(GenericError.emailClient)
+                return
             }
+            mailComposeViewController.delegate = self
+            present(mailComposeViewController, animated: true)
+        case .termsOfService:
+            NavigationManager().openURL(Constants.termsOfServiceUrl.rawValue, from: self)
+        case .privacyPolicy:
+            NavigationManager().openURL(Constants.privacPolicyUrl.rawValue, from: self)
+        case .systemSettings:
+            NavigationManager().openURL(Utility.shared.deviceSettings)
         }
     }
     
@@ -116,5 +117,12 @@ extension SettingsController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 64
+    }
+}
+
+// MARK: - MFMailComposeViewControllerDelegate
+extension SettingsController: MFMailComposeViewControllerDelegate, UINavigationControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
     }
 }

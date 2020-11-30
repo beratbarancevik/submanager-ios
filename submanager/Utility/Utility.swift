@@ -8,7 +8,7 @@
 
 // swiftlint:disable force_unwrapping
 
-import Foundation
+import MessageUI
 import UIKit
 
 class Utility {
@@ -20,14 +20,32 @@ class Utility {
         return currentVersion
     }
     
-    var appStoreUrl: URL {
-        return URL(string: Constants.appStoreUrl.rawValue)!
-    }
-    
     var deviceSettings: URL {
         return URL(string: UIApplication.openSettingsURLString)!
     }
     
     // MARK: - Init
     private init() {}
+    
+    // MARK: - Email
+    func getMailComposeViewController() -> MFMailComposeViewController? {
+        let subject = "Sub Manager Feedback"
+        let messageBody = """
+        Hello,
+        
+        
+        
+        Best
+        """
+        
+        if MFMailComposeViewController.canSendMail() {
+            let mailComposeViewController = MFMailComposeViewController()
+            mailComposeViewController.setToRecipients([Constants.feedbackEmail.rawValue])
+            mailComposeViewController.setSubject(subject)
+            mailComposeViewController.setMessageBody(messageBody, isHTML: false)
+            mailComposeViewController.navigationBar.tintColor = .tintColor
+            return mailComposeViewController
+        }
+        return nil
+    }
 }

@@ -14,6 +14,8 @@ subscription = "Subscription";
 
 // MARK: - Errors
 default_error = "An error occurred";
+email_client = "No email client found on device";
+internet_error = "No internet connection";
 
 // MARK: - Icons
 add = "Add";
@@ -32,6 +34,9 @@ settings = "Settings";
 settings_notifications = "Notifications";
 settings_share = "Share with Friends";
 settings_appStore = "Rate on App Store";
+settings_feedback = "Send Feedback";
+settings_privacy = "Privacy Policy";
+settings_terms = "Terms of Service";
 settings_systemSettings = "System Settings";
 settings_version = "Version %@";
 

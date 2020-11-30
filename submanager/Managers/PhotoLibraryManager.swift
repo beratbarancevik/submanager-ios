@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotoLibraryManager {
+class PhotoLibraryManager: BaseManager {
     // MARK: - Functions
     func getImagePickerController() -> UIImagePickerController {
         let imagePickerController = UIImagePickerController()

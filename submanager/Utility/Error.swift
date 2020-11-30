@@ -8,5 +8,17 @@
 
 enum GenericError: CaseIterable, Error {
     case `default`
+    case emailClient
     case internet
+    
+    var localizedDescription: String {
+        switch self {
+        case .default:
+            return ""
+        case .internet:
+            return ""
+        case .emailClient:
+            return ""
+        }
+    }
 }

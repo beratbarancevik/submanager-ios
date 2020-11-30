@@ -48,11 +48,11 @@ enum SettingType: CaseIterable {
         case .appStore:
             return "settings_appStore"
         case .feedback:
-            return "settings_appStore"
+            return "settings_feedback"
         case .termsOfService:
-            return "settings_appStore"
+            return "settings_terms"
         case .privacyPolicy:
-            return "settings_appStore"
+            return "settings_privacy"
         case .systemSettings:
             return "settings_systemSettings"
         }

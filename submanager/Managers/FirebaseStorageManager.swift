@@ -10,7 +10,7 @@ import Firebase
 import RxSwift
 import UIKit
 
-class FirebaseStorageManager {
+class FirebaseStorageManager: BaseManager {
     // MARK: - Properties
     lazy var storage = Storage.storage()
     

@@ -9,13 +9,7 @@
 import UIKit
 import UserNotifications
 
-class UserNotificationsManager {
-    // MARK: - Properties
-    static let shared = UserNotificationsManager()
-    
-    // MARK: - Init
-    private init() {}
-    
+class UserNotificationsManager: BaseManager {
     // MARK: - Functions
     func askForNotificationPermissionIfNecessary() {
         UNUserNotificationCenter.current().getNotificationSettings { [weak self] settings in

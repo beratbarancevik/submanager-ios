@@ -40,6 +40,8 @@
 		F44FB9B425720E4000C6F1DE /* SubscriptionSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44FB9B325720E4000C6F1DE /* SubscriptionSelectionController.swift */; };
 		F44FB9BA25720E5000C6F1DE /* SubscriptionSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44FB9B925720E5000C6F1DE /* SubscriptionSelectionViewModel.swift */; };
 		F44FB9BE25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44FB9BD25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift */; };
+		F453351F2573F1C600605A6F /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F453351E2573F1C600605A6F /* NavigationManager.swift */; };
+		F45335292574001C00605A6F /* NavigationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45335282574001C00605A6F /* NavigationManagerTests.swift */; };
 		F4555B7525613BFB00473135 /* String+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */; };
 		F4580FE125737856006697E6 /* ZeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4580FE025737856006697E6 /* ZeroView.swift */; };
 		F4580FE525737879006697E6 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4580FE425737879006697E6 /* BaseView.swift */; };
@@ -121,8 +123,6 @@
 		F4EB84F02569134700ADF19C /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB84EF2569134700ADF19C /* KeysTests.swift */; };
 		F4EB85182569170E00ADF19C /* GetAllSubscriptionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB85172569170E00ADF19C /* GetAllSubscriptionsRequest.swift */; };
 		F4EB85202569171800ADF19C /* GetAllSubscriptionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB851F2569171800ADF19C /* GetAllSubscriptionsResponse.swift */; };
-		F4EF27192573F040008F8AB6 /* Info-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4EF27182573F040008F8AB6 /* Info-Debug.plist */; };
-		F4EF271D2573F045008F8AB6 /* Info-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4EF271C2573F045008F8AB6 /* Info-Release.plist */; };
 		F4F2E19D25692EA800B3108B /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2E19C25692EA800B3108B /* ServiceConstants.swift */; };
 		F4F2E1A625692EEC00B3108B /* ServiceConstantsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2E1A525692EEC00B3108B /* ServiceConstantsTests.swift */; };
 		F4FA8B82257263DB007D5A55 /* DeleteSubscriptionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA8B81257263DB007D5A55 /* DeleteSubscriptionRequest.swift */; };
@@ -203,6 +203,8 @@
 		F44FB9B325720E4000C6F1DE /* SubscriptionSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionController.swift; sourceTree = "<group>"; };
 		F44FB9B925720E5000C6F1DE /* SubscriptionSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionViewModel.swift; sourceTree = "<group>"; };
 		F44FB9BD25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionControllerUITests.swift; sourceTree = "<group>"; };
+		F453351E2573F1C600605A6F /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		F45335282574001C00605A6F /* NavigationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManagerTests.swift; sourceTree = "<group>"; };
 		F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		F4555B93256148ED00473135 /* UITestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UITestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
 		F4555B9A2561499A00473135 /* UnitTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnitTestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
@@ -785,6 +787,7 @@
 				F459A4DC256A9790009C4ABE /* BaseManager.swift */,
 				F459A4B5256A8C42009C4ABE /* AuthenticationManager.swift */,
 				F4580FF42573B611006697E6 /* FirebaseStorageManager.swift */,
+				F453351E2573F1C600605A6F /* NavigationManager.swift */,
 				F4580FE82573AD88006697E6 /* PhotoLibraryManager.swift */,
 				F46950532572ABAB00059BEB /* UserNotificationsManager.swift */,
 			);
@@ -814,6 +817,7 @@
 				F469507C2572B6AB00059BEB /* BaseManagerTests.swift */,
 				F459A4BA256A8CAA009C4ABE /* AuthenticationManagerTests.swift */,
 				F458100A2573C76E006697E6 /* FirebaseStorageManagerTests.swift */,
+				F45335282574001C00605A6F /* NavigationManagerTests.swift */,
 				F4580FEE2573AD9E006697E6 /* PhotoLibraryManagerTests.swift */,
 				F469505C2572B68400059BEB /* UserNotificationsManagerTest.swift */,
 			);
@@ -1044,7 +1048,6 @@
 			files = (
 				F4D81DD525722DA50060E81F /* Montserrat-Light.ttf in Resources */,
 				F4A417B42561153B009B92C7 /* LaunchScreen.storyboard in Resources */,
-				F4EF271D2573F045008F8AB6 /* Info-Release.plist in Resources */,
 				F4D81DD325722DA50060E81F /* Montserrat-Thin.ttf in Resources */,
 				F4D81DCE25722DA50060E81F /* Montserrat-Black.ttf in Resources */,
 				F47F40C025612BB2008C0A6A /* InfoPlist.strings in Resources */,
@@ -1053,7 +1056,6 @@
 				F458AE182561278C0016EEDC /* Localizable.strings in Resources */,
 				F4A417B12561153B009B92C7 /* Assets.xcassets in Resources */,
 				F4D81DD225722DA50060E81F /* Montserrat-SemiBold.ttf in Resources */,
-				F4EF27192573F040008F8AB6 /* Info-Debug.plist in Resources */,
 				F48BABED2566D24B007324D1 /* GoogleService-Info-Release.plist in Resources */,
 				F4D81DCF25722DA50060E81F /* Montserrat-Medium.ttf in Resources */,
 				F4110C532562D0C600BD77A5 /* GoogleService-Info-Debug.plist in Resources */,
@@ -1314,6 +1316,7 @@
 				F430DAE025723FC2002E39CE /* TitleTextFieldCell.swift in Sources */,
 				F4580FE125737856006697E6 /* ZeroView.swift in Sources */,
 				F4FA8B86257263E3007D5A55 /* DeleteSubscriptionResponse.swift in Sources */,
+				F453351F2573F1C600605A6F /* NavigationManager.swift in Sources */,
 				F46950502572984D00059BEB /* Utility.swift in Sources */,
 				F430DAEB257250FC002E39CE /* BaseTableHeaderFooterView.swift in Sources */,
 				F4494B5625723895005A4FA4 /* SettingsViewModel.swift in Sources */,
@@ -1334,6 +1337,7 @@
 				F4494B6C25723940005A4FA4 /* BaseNavigationControllerTests.swift in Sources */,
 				F469505D2572B68400059BEB /* UserNotificationsManagerTest.swift in Sources */,
 				F4ACCCD4256195520059063A /* ImagesTests.swift in Sources */,
+				F45335292574001C00605A6F /* NavigationManagerTests.swift in Sources */,
 				F4494B7C25723968005A4FA4 /* SplashControllerTests.swift in Sources */,
 				F4EB84BC25690F4F00ADF19C /* ServiceManagerTests.swift in Sources */,
 				F4D81DA1257229A10060E81F /* ThemeTests.swift in Sources */,

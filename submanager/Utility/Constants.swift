@@ -12,6 +12,9 @@ enum Constants: String, CaseIterable {
     case privacPolicyUrl = "https://www.beratbarancevik.com/submanager/privacy.html"
     case termsOfServiceUrl = "https://www.beratbarancevik.com/submanager/terms.html"
     
+    // Email
+    case feedbackEmail = "bbcevik26@gmail.com"
+    
     // Firebase
     case customSubscriptionStorageFolder = "custom_susbcription_images"
 }
