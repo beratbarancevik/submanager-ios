@@ -92,6 +92,8 @@ extension HomeController: Setup {
         zeroView.mainButtonDidTap = { [weak self] in
             self?.addDidTap()
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(shouldUpdateNotifications), name: Notifications.shouldUpdateSubscriptions.name, object: nil)
     }
     
     @objc private func settingsDidTap() {
@@ -105,6 +107,10 @@ extension HomeController: Setup {
     
     @objc private func tableViewDidRefresh() {
         UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+        viewModel.getSubscriptions()
+    }
+    
+    @objc private func shouldUpdateNotifications() {
         viewModel.getSubscriptions()
     }
 }
@@ -123,7 +129,7 @@ private extension HomeController {
 extension HomeController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        present(BaseNavigationController(rootViewController: SubscriptionDetailController()), animated: true)
+        present(BaseNavigationController(rootViewController: SubscriptionDetailController(subscriptionViewModel: viewModel.subscriptionViewModels[indexPath.row])), animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

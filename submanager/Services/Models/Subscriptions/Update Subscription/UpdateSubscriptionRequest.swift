@@ -16,4 +16,9 @@ class UpdateSubscriptionRequest: Request {
     var query: [String: Any] = [:]
     
     var body: [String: Any]?
+    
+    init(subscription: Subscription) {
+        self.path.append("/\(subscription.id ?? "")")
+        body = subscription.dictionary
+    }
 }

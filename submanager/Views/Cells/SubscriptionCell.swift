@@ -29,7 +29,7 @@ class SubscriptionCell: BaseTableCell {
                     .cacheOriginalImage
                 ])
             titleLabel.text = viewModel.title
-            priceLabel.text = viewModel.priceDescription
+            priceLabel.text = viewModel.priceWithCurrency
         }
     }
     

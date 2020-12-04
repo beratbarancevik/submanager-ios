@@ -9,11 +9,8 @@
 import Foundation
 
 class SubscriptionTypeViewModel {
+    // MARK: - Properties
     private let subscriptionType: SubscriptionType
-    
-    init(subscriptionType: SubscriptionType) {
-        self.subscriptionType = subscriptionType
-    }
     
     var id: String {
         return subscriptionType.id ?? ""
@@ -28,5 +25,10 @@ class SubscriptionTypeViewModel {
             return nil
         }
         return url
+    }
+    
+    // MARK: - Init
+    init(subscriptionType: SubscriptionType) {
+        self.subscriptionType = subscriptionType
     }
 }

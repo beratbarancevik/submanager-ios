@@ -26,6 +26,7 @@ class SubscriptionDetailController: BaseController {
     convenience init(subscriptionViewModel: SubscriptionViewModel) {
         self.init()
         viewModel.subscriptionViewModel = subscriptionViewModel
+        viewModel.updatedSubscriptionViewModel = subscriptionViewModel.copy()
     }
     
     // MARK: - Lifecycle
@@ -77,6 +78,23 @@ extension SubscriptionDetailController: Setup {
                 self.detailsTableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardHeight, right: 0)
             }
         }.disposed(by: disposeBag)
+        
+        viewModel.didCreateSubscription.subscribe { [weak self] _ in
+            NotificationCenter.default.post(name: Notifications.shouldUpdateSubscriptions.name, object: nil)
+            self?.dismiss(animated: true)
+        }.disposed(by: disposeBag)
+        
+        viewModel.didUpdateSubscription.subscribe { [weak self] _ in
+            NotificationCenter.default.post(name: Notifications.shouldUpdateSubscriptions.name, object: nil)
+            self?.dismiss(animated: true)
+        }.disposed(by: disposeBag)
+        
+        viewModel.error.subscribe { [weak self] event in
+            self?.showError(event.error)
+        }.disposed(by: disposeBag)
+        
+        viewModel.loading.subscribe { _ in
+        }.disposed(by: disposeBag)
     }
     
     @objc private func dismissDidTap() {
@@ -113,6 +131,7 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TitleTextFieldCell.identifier, for: indexPath) as? TitleTextFieldCell else { return UITableViewCell() }
+        cell.delegate = self
         let type = viewModel.details[indexPath.row]
         switch type {
         case .title:
@@ -122,7 +141,7 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
         case .price:
             cell.updateUI(type, text: viewModel.subscriptionViewModel?.priceDescription)
         case .startDate:
-            cell.updateUI(type, text: viewModel.subscriptionViewModel?.priceDescription)
+            cell.updateUI(type, text: viewModel.subscriptionViewModel?.startDateDescription)
         }
         return cell
     }
@@ -147,6 +166,22 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
 extension SubscriptionDetailController: SubscriptionDetailHeaderViewDelegate {
     func imageViewDidTap() {
         openImagePicker()
+    }
+}
+
+// MARK: - TitleTextFieldCellDelegate
+extension SubscriptionDetailController: TitleTextFieldCellDelegate {
+    func textFieldDidChange(_ type: SubscriptionDetailType, _ text: String) {
+        switch type {
+        case .title:
+            viewModel.updatedSubscriptionViewModel?.updateTitle(text)
+        case .description:
+            viewModel.updatedSubscriptionViewModel?.updateDescription(text)
+        case .price:
+            viewModel.updatedSubscriptionViewModel?.updatePrice(text)
+        case .startDate:
+            viewModel.updatedSubscriptionViewModel?.updateStartDate(text)
+        }
     }
 }
 

@@ -19,7 +19,7 @@ struct Subscription: Codable {
         case title
         case description
         case price
-        case startDate
+        case startDate = "startedAt"
         case imageUrl
     }
     

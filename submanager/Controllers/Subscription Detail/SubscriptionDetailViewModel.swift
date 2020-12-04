@@ -13,6 +13,7 @@ class SubscriptionDetailViewModel: BaseControllerViewModel {
     var details = SubscriptionDetailType.allCases
     
     var subscriptionViewModel: SubscriptionViewModel?
+    var updatedSubscriptionViewModel: SubscriptionViewModel?
     
     let didCreateSubscription = PublishSubject<Bool>()
     let didUpdateSubscription = PublishSubject<Bool>()
@@ -21,16 +22,21 @@ class SubscriptionDetailViewModel: BaseControllerViewModel {
     
     // MARK: - Functions
     func saveSubscription() {
-        sendCreateSubscriptionRequest()
-        sendUpdateSubscriptionRequest()
+        if subscriptionViewModel == nil {
+            sendCreateSubscriptionRequest()
+        } else {
+            sendUpdateSubscriptionRequest()
+        }
     }
 }
 
 // MARK: - Private Functions
 private extension SubscriptionDetailViewModel {
     func sendCreateSubscriptionRequest() {
+        guard let subscription = updatedSubscriptionViewModel?.subscription else { return }
+        
         loading.onNext(true)
-        SubscriptionsService.createSubscription { [weak self] result in
+        SubscriptionsService.createSubscription(subscription: subscription) { [weak self] result in
             self?.loading.onNext(false)
             switch result {
             case .success:
@@ -42,8 +48,10 @@ private extension SubscriptionDetailViewModel {
     }
     
     func sendUpdateSubscriptionRequest() {
+        guard let subscription = updatedSubscriptionViewModel?.subscription else { return }
+        
         loading.onNext(true)
-        SubscriptionsService.updateSubscription { [weak self] result in
+        SubscriptionsService.updateSubscription(subscription: subscription) { [weak self] result in
             self?.loading.onNext(false)
             switch result {
             case .success:

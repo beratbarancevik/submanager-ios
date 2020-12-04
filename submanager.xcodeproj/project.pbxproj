@@ -37,6 +37,7 @@
 		F4494B8825723984005A4FA4 /* SubscriptionSelectionControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4494B8725723984005A4FA4 /* SubscriptionSelectionControllerTests.swift */; };
 		F44ECD41256A6C4F008ED799 /* SubscriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ECD40256A6C4F008ED799 /* SubscriptionTests.swift */; };
 		F44ECD4A256A6CC2008ED799 /* subscription.json in Resources */ = {isa = PBXBuildFile; fileRef = F44ECD49256A6CC2008ED799 /* subscription.json */; };
+		F44FB8FB25760AB900B80971 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44FB8FA25760AB900B80971 /* Encodable+Extensions.swift */; };
 		F44FB9B425720E4000C6F1DE /* SubscriptionSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44FB9B325720E4000C6F1DE /* SubscriptionSelectionController.swift */; };
 		F44FB9BA25720E5000C6F1DE /* SubscriptionSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44FB9B925720E5000C6F1DE /* SubscriptionSelectionViewModel.swift */; };
 		F44FB9BE25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44FB9BD25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift */; };
@@ -115,6 +116,10 @@
 		F4D81DD92572321F0060E81F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D81DD82572321F0060E81F /* Colors.xcassets */; };
 		F4D81DE92572361B0060E81F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D81DE82572361B0060E81F /* UIView+Extensions.swift */; };
 		F4D81DED257236610060E81F /* UIView+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D81DEC257236610060E81F /* UIView+ExtensionsTests.swift */; };
+		F4E1B14B257738EF0039F022 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1B14A257738EF0039F022 /* Notifications.swift */; };
+		F4E1B1532577394D0039F022 /* NotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1B1522577394D0039F022 /* NotificationsTests.swift */; };
+		F4E1B17B25775BAE0039F022 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1B17525775B370039F022 /* Date+Extensions.swift */; };
+		F4E1B18125775BBA0039F022 /* Date+ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1B18025775BBA0039F022 /* Date+ExtensionsTests.swift */; };
 		F4EB84A925690EBC00ADF19C /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB84A825690EBC00ADF19C /* ServiceManager.swift */; };
 		F4EB84B325690F3200ADF19C /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB84B225690F3200ADF19C /* BaseService.swift */; };
 		F4EB84BC25690F4F00ADF19C /* ServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB84BB25690F4F00ADF19C /* ServiceManagerTests.swift */; };
@@ -200,6 +205,7 @@
 		F4494B8725723984005A4FA4 /* SubscriptionSelectionControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionControllerTests.swift; sourceTree = "<group>"; };
 		F44ECD40256A6C4F008ED799 /* SubscriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTests.swift; sourceTree = "<group>"; };
 		F44ECD49256A6CC2008ED799 /* subscription.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = subscription.json; sourceTree = "<group>"; };
+		F44FB8FA25760AB900B80971 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
 		F44FB9B325720E4000C6F1DE /* SubscriptionSelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionController.swift; sourceTree = "<group>"; };
 		F44FB9B925720E5000C6F1DE /* SubscriptionSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionViewModel.swift; sourceTree = "<group>"; };
 		F44FB9BD25720FC100C6F1DE /* SubscriptionSelectionControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionSelectionControllerUITests.swift; sourceTree = "<group>"; };
@@ -286,6 +292,10 @@
 		F4D81DD82572321F0060E81F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F4D81DE82572361B0060E81F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		F4D81DEC257236610060E81F /* UIView+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ExtensionsTests.swift"; sourceTree = "<group>"; };
+		F4E1B14A257738EF0039F022 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		F4E1B1522577394D0039F022 /* NotificationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTests.swift; sourceTree = "<group>"; };
+		F4E1B17525775B370039F022 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		F4E1B18025775BBA0039F022 /* Date+ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ExtensionsTests.swift"; sourceTree = "<group>"; };
 		F4EB84A825690EBC00ADF19C /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		F4EB84B225690F3200ADF19C /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		F4EB84BB25690F4F00ADF19C /* ServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerTests.swift; sourceTree = "<group>"; };
@@ -400,8 +410,8 @@
 		F430DAE325725068002E39CE /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				F430DAE425725083002E39CE /* SubscriptionDetailHeaderView.swift */,
 				F4FA8B8F25727866007D5A55 /* SettingFooterView.swift */,
+				F430DAE425725083002E39CE /* SubscriptionDetailHeaderView.swift */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -518,6 +528,7 @@
 		F4555B7325613BE200473135 /* ExtensionTests */ = {
 			isa = PBXGroup;
 			children = (
+				F4E1B18025775BBA0039F022 /* Date+ExtensionsTests.swift */,
 				F4555B7425613BFB00473135 /* String+ExtensionsTests.swift */,
 				F4D81DBF25722CCA0060E81F /* UIColor+ExtensionsTests.swift */,
 				F4D81DEC257236610060E81F /* UIView+ExtensionsTests.swift */,
@@ -551,6 +562,8 @@
 		F458AE26256128A30016EEDC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F4E1B17525775B370039F022 /* Date+Extensions.swift */,
+				F44FB8FA25760AB900B80971 /* Encodable+Extensions.swift */,
 				F458AE2A256128D00016EEDC /* String+Extensions.swift */,
 				F4D81DBB25722C850060E81F /* UIColor+Extensions.swift */,
 				F4D81DE82572361B0060E81F /* UIView+Extensions.swift */,
@@ -698,6 +711,7 @@
 				F45810122573C908006697E6 /* Constants.swift */,
 				F4580FFA2573C5B8006697E6 /* Error.swift */,
 				F4ACCCC72561951B0059063A /* Images.swift */,
+				F4E1B14A257738EF0039F022 /* Notifications.swift */,
 				F4D81D9C257229980060E81F /* Theme.swift */,
 				F469504F2572984D00059BEB /* Utility.swift */,
 			);
@@ -710,6 +724,7 @@
 				F45810182573C914006697E6 /* ConstantsTests.swift */,
 				F45810002573C5EF006697E6 /* ErrorTests.swift */,
 				F4ACCCD3256195520059063A /* ImagesTests.swift */,
+				F4E1B1522577394D0039F022 /* NotificationsTests.swift */,
 				F4D81DA0257229A10060E81F /* ThemeTests.swift */,
 				F469509C2572B6F500059BEB /* UtilityTests.swift */,
 			);
@@ -1287,6 +1302,7 @@
 				F4D81D79257224AF0060E81F /* SubscriptionTypeViewModel.swift in Sources */,
 				F436F992256119E300B2667D /* HomeController.swift in Sources */,
 				F4EB84EA256912B600ADF19C /* SecretConstants.swift in Sources */,
+				F44FB8FB25760AB900B80971 /* Encodable+Extensions.swift in Sources */,
 				F4FA8BA4257289D8007D5A55 /* UpdateSubscriptionRequest.swift in Sources */,
 				F459A49B256A85C6009C4ABE /* SplashController.swift in Sources */,
 				F4FA8B82257263DB007D5A55 /* DeleteSubscriptionRequest.swift in Sources */,
@@ -1320,7 +1336,9 @@
 				F46950502572984D00059BEB /* Utility.swift in Sources */,
 				F430DAEB257250FC002E39CE /* BaseTableHeaderFooterView.swift in Sources */,
 				F4494B5625723895005A4FA4 /* SettingsViewModel.swift in Sources */,
+				F4E1B17B25775BAE0039F022 /* Date+Extensions.swift in Sources */,
 				F4FA8B9C25728989007D5A55 /* CreateSubscriptionResponse.swift in Sources */,
+				F4E1B14B257738EF0039F022 /* Notifications.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1354,9 +1372,11 @@
 				F458100B2573C76E006697E6 /* FirebaseStorageManagerTests.swift in Sources */,
 				F44ECD41256A6C4F008ED799 /* SubscriptionTests.swift in Sources */,
 				F4379C7225641FA100477E61 /* HomeViewModelTests.swift in Sources */,
+				F4E1B1532577394D0039F022 /* NotificationsTests.swift in Sources */,
 				F45810012573C5EF006697E6 /* ErrorTests.swift in Sources */,
 				F4EB84F02569134700ADF19C /* KeysTests.swift in Sources */,
 				F4D81DAA257229CD0060E81F /* SubscriptionSelectionViewModelTests.swift in Sources */,
+				F4E1B18125775BBA0039F022 /* Date+ExtensionsTests.swift in Sources */,
 				F4494B5B2572390B005A4FA4 /* SettingsViewModelTests.swift in Sources */,
 				F469507D2572B6AB00059BEB /* BaseManagerTests.swift in Sources */,
 				F4494B622572391B005A4FA4 /* BaseControllerTests.swift in Sources */,

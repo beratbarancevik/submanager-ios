@@ -11,8 +11,8 @@ class SubscriptionsService {
     private init() {}
     
     // MARK: - Requests
-    static func createSubscription(completion: @escaping (Result<CreateSubscriptionResponse, Error>) -> Void) {
-        let request = CreateSubscriptionRequest()
+    static func createSubscription(subscription: Subscription, completion: @escaping (Result<CreateSubscriptionResponse, Error>) -> Void) {
+        let request = CreateSubscriptionRequest(subscription: subscription)
         ServiceManager.sendRequest(request, CreateSubscriptionResponse.self, completion: completion)
     }
     
@@ -31,8 +31,8 @@ class SubscriptionsService {
         ServiceManager.sendRequest(request, DeleteSubscriptionResponse.self, completion: completion)
     }
     
-    static func updateSubscription(completion: @escaping (Result<UpdateSubscriptionResponse, Error>) -> Void) {
-        let request = UpdateSubscriptionRequest()
+    static func updateSubscription(subscription: Subscription, completion: @escaping (Result<UpdateSubscriptionResponse, Error>) -> Void) {
+        let request = UpdateSubscriptionRequest(subscription: subscription)
         ServiceManager.sendRequest(request, UpdateSubscriptionResponse.self, completion: completion)
     }
 }

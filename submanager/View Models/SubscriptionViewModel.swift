@@ -9,11 +9,8 @@
 import Foundation
 
 class SubscriptionViewModel {
-    private let subscription: Subscription
-    
-    init(subscription: Subscription) {
-        self.subscription = subscription
-    }
+    // MARK: - Properties
+    private (set) var subscription: Subscription
     
     var id: String {
         return subscription.id ?? ""
@@ -38,6 +35,13 @@ class SubscriptionViewModel {
         guard let price = subscription.price else {
             return ""
         }
+        return "\(price)"
+    }
+    
+    var priceWithCurrency: String {
+        guard let price = subscription.price else {
+            return ""
+        }
         return "$\(price)"
     }
     
@@ -45,10 +49,44 @@ class SubscriptionViewModel {
         return nil
     }
     
+    var startDateDescription: String {
+        guard let startDateDescription = subscription.startDate else {
+            return ""
+        }
+        return "\(startDateDescription.simpleDate)"
+    }
+    
     var imageUrl: URL? {
         guard let imageUrl = subscription.imageUrl, let url = URL(string: imageUrl) else {
             return nil
         }
         return url
+    }
+    
+    // MARK: - Init
+    init(subscription: Subscription) {
+        self.subscription = subscription
+    }
+    
+    // MARK: - Functions
+    func copy() -> SubscriptionViewModel {
+        let copy = SubscriptionViewModel(subscription: subscription)
+        return copy
+    }
+    
+    func updateTitle(_ title: String) {
+        subscription.title = title
+    }
+    
+    func updateDescription(_ description: String) {
+        subscription.description = description
+    }
+    
+    func updatePrice(_ price: String) {
+        subscription.price = price
+    }
+    
+    func updateStartDate(_ startDate: String) {
+        subscription.startDate = startDate.fullDate
     }
 }

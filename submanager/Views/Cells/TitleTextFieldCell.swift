@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol TitleTextFieldCellDelegate: AnyObject {
+    func textFieldDidChange(_ type: SubscriptionDetailType, _ text: String)
+}
+
 class TitleTextFieldCell: BaseTableCell {
     // MARK: - UI Properties
     private let titleLabel = UILabel().style(Theme.Label.Regular.primary)
@@ -15,6 +19,11 @@ class TitleTextFieldCell: BaseTableCell {
         $0.textAlignment = .right
         return $0
     }(UITextField().style(Theme.TextField.primary))
+    
+    // MARK: - Other Properties
+    weak var delegate: TitleTextFieldCellDelegate?
+    
+    var subsriptionDetailType = SubscriptionDetailType.title
     
     // MARK: - Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -35,6 +44,8 @@ class TitleTextFieldCell: BaseTableCell {
     
     // MARK: - Functions
     func updateUI(_ type: SubscriptionDetailType, text: String?) {
+        subsriptionDetailType = type
+        
         titleLabel.text = type.name.localized
         textField.placeholder = type.placeholder.localized
         textField.text = text
@@ -52,7 +63,9 @@ class TitleTextFieldCell: BaseTableCell {
 
 // MARK: - Setup
 extension TitleTextFieldCell: Setup {
-    func setUpUI() {}
+    func setUpUI() {
+        textField.delegate = self
+    }
     
     func addViews() {
         addSubview(titleLabel)
@@ -73,5 +86,32 @@ extension TitleTextFieldCell: Setup {
         }
     }
     
-    func addObservers() {}
+    func addObservers() {
+        textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+    }
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        guard let text = textField.text else { return }
+        delegate?.textFieldDidChange(subsriptionDetailType, text)
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension TitleTextFieldCell: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard subsriptionDetailType == .startDate else { return true }
+        
+        guard let text = textField.text else { return true }
+        
+        // backspace tap
+        if string.isEmpty {
+            return true
+        }
+        
+        if text.count == 2 || text.count == 5 {
+            textField.text?.append("/")
+        }
+        
+        return text.count < 10
+    }
 }
