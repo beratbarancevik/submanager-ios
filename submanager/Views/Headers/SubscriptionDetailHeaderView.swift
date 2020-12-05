@@ -35,6 +35,12 @@ class SubscriptionDetailHeaderView: BaseTableHeaderFooterView {
         }
     }
     
+    var image: UIImage? {
+        didSet {
+            logoImageView.image = image
+        }
+    }
+    
     // MARK: - Init
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)

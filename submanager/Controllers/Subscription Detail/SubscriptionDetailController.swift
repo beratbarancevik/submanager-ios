@@ -88,7 +88,7 @@ extension SubscriptionDetailController: Setup {
         
         viewModel.didCreateSubscription.subscribe { [weak self] _ in
             NotificationCenter.default.post(name: Notifications.shouldUpdateSubscriptions.name, object: nil)
-            self?.dismiss(animated: true)
+            self?.navigationController?.dismiss(animated: true)
         }.disposed(by: disposeBag)
         
         viewModel.didUpdateSubscription.subscribe { [weak self] _ in
@@ -100,8 +100,7 @@ extension SubscriptionDetailController: Setup {
             self?.showError(event.error)
         }.disposed(by: disposeBag)
         
-        viewModel.loading.subscribe { _ in
-        }.disposed(by: disposeBag)
+        viewModel.loading.subscribe { _ in }.disposed(by: disposeBag)
     }
     
     @objc private func dismissDidTap() {
@@ -122,7 +121,8 @@ private extension SubscriptionDetailController {
     }
     
     func manageImageResult(for image: UIImage) {
-        // TODO: set image
+        viewModel.subscriptionViewModel?.updateImage(image)
+        detailsTableView.reloadData()
     }
 }
 
@@ -156,7 +156,11 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: SubscriptionDetailHeaderView.identifier) as? SubscriptionDetailHeaderView else { return UITableViewHeaderFooterView() }
         headerView.delegate = self
-        headerView.imageUrl = viewModel.subscriptionViewModel?.imageUrl
+        if let image = viewModel.subscriptionViewModel?.image {
+            headerView.image = image
+        } else {
+            headerView.imageUrl = viewModel.subscriptionViewModel?.imageUrl
+        }
         return headerView
     }
     
@@ -172,9 +176,9 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
 // MARK: - SubscriptionDetailHeaderViewDelegate
 extension SubscriptionDetailController: SubscriptionDetailHeaderViewDelegate {
     func imageViewDidTap() {
-        if viewModel.subscriptionTypeViewModel?.isCustomSubscription ?? false {
-            openImagePicker()
-        }
+//        if viewModel.subscriptionTypeViewModel?.isCustomSubscription ?? false {
+//            openImagePicker()
+//        }
     }
 }
 

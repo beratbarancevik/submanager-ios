@@ -6,7 +6,7 @@
 //  Copyright © 2020 Berat Baran Cevik. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class SubscriptionViewModel {
     // MARK: - Properties
@@ -25,23 +25,17 @@ class SubscriptionViewModel {
     }
     
     var price: Double? {
-        guard let price = subscription.price else {
-            return nil
-        }
+        guard let price = subscription.price else { return nil }
         return Double(price)
     }
     
     var priceDescription: String {
-        guard let price = subscription.price else {
-            return ""
-        }
+        guard let price = subscription.price else { return "" }
         return "\(price)"
     }
     
     var priceWithCurrency: String {
-        guard let price = subscription.price else {
-            return ""
-        }
+        guard let price = subscription.price else { return "" }
         return "$\(price)"
     }
     
@@ -50,18 +44,16 @@ class SubscriptionViewModel {
     }
     
     var startDateDescription: String {
-        guard let startDateDescription = subscription.startDate else {
-            return ""
-        }
+        guard let startDateDescription = subscription.startDate else { return "" }
         return "\(startDateDescription.simpleDate)"
     }
     
     var imageUrl: URL? {
-        guard let imageUrl = subscription.imageUrl, let url = URL(string: imageUrl) else {
-            return nil
-        }
+        guard let imageUrl = subscription.imageUrl, let url = URL(string: imageUrl) else { return nil }
         return url
     }
+    
+    var image: UIImage?
     
     // MARK: - Init
     init(subscription: Subscription) {
@@ -88,5 +80,13 @@ class SubscriptionViewModel {
     
     func updateStartDate(_ startDate: String) {
         subscription.startDate = startDate.fullDate
+    }
+    
+    func updateImageUrl(_ imageUrl: String) {
+        subscription.imageUrl = imageUrl
+    }
+    
+    func updateImage(_ image: UIImage) {
+        self.image = image
     }
 }

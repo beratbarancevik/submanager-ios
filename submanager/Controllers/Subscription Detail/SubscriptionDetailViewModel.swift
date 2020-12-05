@@ -28,7 +28,7 @@ class SubscriptionDetailViewModel: BaseControllerViewModel {
     
     // MARK: - Functions
     func saveSubscription() {
-        if subscriptionViewModel == nil {
+        if isCreateSubscription {
             sendCreateSubscriptionRequest()
         } else {
             sendUpdateSubscriptionRequest()
