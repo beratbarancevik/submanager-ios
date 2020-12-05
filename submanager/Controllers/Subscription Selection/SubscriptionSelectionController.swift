@@ -90,7 +90,7 @@ extension SubscriptionSelectionController: Setup {
 extension SubscriptionSelectionController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        navigationController?.pushViewController(SubscriptionDetailController(), animated: true)
+        navigationController?.pushViewController(SubscriptionDetailController(subscriptionTypeViewModel: viewModel.subscriptionTypeViewModels[indexPath.row]), animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

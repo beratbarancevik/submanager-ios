@@ -29,6 +29,11 @@ class SubscriptionDetailController: BaseController {
         viewModel.updatedSubscriptionViewModel = subscriptionViewModel.copy()
     }
     
+    convenience init(subscriptionTypeViewModel: SubscriptionTypeViewModel) {
+        self.init()
+        viewModel.subscriptionTypeViewModel = subscriptionTypeViewModel
+    }
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,9 +51,11 @@ extension SubscriptionDetailController: Setup {
         navigationController?.navigationBar.accessibilityIdentifier = "subscription_detail_navigation_bar".localized
         navigationItem.title = "subscription".localized
         
-        dismissBarButtonItem.accessibilityLabel = "dismiss".localized
-        dismissBarButtonItem.target = self
-        navigationItem.leftBarButtonItem = dismissBarButtonItem
+        if !viewModel.isCreateSubscription {
+            dismissBarButtonItem.accessibilityLabel = "dismiss".localized
+            dismissBarButtonItem.target = self
+            navigationItem.leftBarButtonItem = dismissBarButtonItem
+        }
         
         saveBarButtonItem.accessibilityLabel = "save".localized
         saveBarButtonItem.target = self
@@ -165,7 +172,9 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
 // MARK: - SubscriptionDetailHeaderViewDelegate
 extension SubscriptionDetailController: SubscriptionDetailHeaderViewDelegate {
     func imageViewDidTap() {
-        openImagePicker()
+        if viewModel.subscriptionTypeViewModel?.isCustomSubscription ?? false {
+            openImagePicker()
+        }
     }
 }
 

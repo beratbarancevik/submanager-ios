@@ -15,6 +15,12 @@ class SubscriptionDetailViewModel: BaseControllerViewModel {
     var subscriptionViewModel: SubscriptionViewModel?
     var updatedSubscriptionViewModel: SubscriptionViewModel?
     
+    var subscriptionTypeViewModel: SubscriptionTypeViewModel?
+    
+    var isCreateSubscription: Bool {
+        return subscriptionTypeViewModel != nil
+    }
+    
     let didCreateSubscription = PublishSubject<Bool>()
     let didUpdateSubscription = PublishSubject<Bool>()
     let error = PublishSubject<Error>()

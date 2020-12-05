@@ -27,6 +27,10 @@ class SubscriptionTypeViewModel {
         return url
     }
     
+    var isCustomSubscription: Bool {
+        return id == "0"
+    }
+    
     // MARK: - Init
     init(subscriptionType: SubscriptionType) {
         self.subscriptionType = subscriptionType
