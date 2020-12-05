@@ -22,8 +22,6 @@ enum SettingType: CaseIterable {
     
     var icon: Images {
         switch self {
-//        case .notifications:
-//            return .notifications
         case .share:
             return .share
         case .appStore:
@@ -41,8 +39,6 @@ enum SettingType: CaseIterable {
     
     var title: String {
         switch self {
-//        case .notifications:
-//            return "settings_notifications"
         case .share:
             return "settings_share"
         case .appStore:

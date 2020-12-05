@@ -31,7 +31,6 @@ home_title = "Subscriptions";
 // MARK: - SettingsController
 settings_navigation_bar = "Settings Navigation Bar";
 settings = "Settings";
-settings_notifications = "Notifications";
 settings_share = "Share with Friends";
 settings_appStore = "Rate on App Store";
 settings_feedback = "Send Feedback";
