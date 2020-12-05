@@ -31,6 +31,9 @@ class SubscriptionDetailController: BaseController {
     
     convenience init(subscriptionTypeViewModel: SubscriptionTypeViewModel) {
         self.init()
+        var subscriptionType = subscriptionTypeViewModel.subscriptionType
+        subscriptionType.title = subscriptionTypeViewModel.id == "0" ? "" : subscriptionTypeViewModel.title
+        viewModel.updatedSubscriptionViewModel = SubscriptionViewModel(subscription: Subscription(subscriptionType: subscriptionType))
         viewModel.subscriptionTypeViewModel = subscriptionTypeViewModel
     }
     
@@ -42,6 +45,7 @@ class SubscriptionDetailController: BaseController {
         addConstraints()
         addObservers()
         registerKeyboardListener()
+        detailsTableView.reloadData()
     }
 }
 
@@ -142,13 +146,13 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
         let type = viewModel.details[indexPath.row]
         switch type {
         case .title:
-            cell.updateUI(type, text: viewModel.subscriptionViewModel?.title)
+            cell.updateUI(type, text: viewModel.updatedSubscriptionViewModel?.title)
         case .description:
-            cell.updateUI(type, text: viewModel.subscriptionViewModel?.description)
+            cell.updateUI(type, text: viewModel.updatedSubscriptionViewModel?.description)
         case .price:
-            cell.updateUI(type, text: viewModel.subscriptionViewModel?.priceDescription)
+            cell.updateUI(type, text: viewModel.updatedSubscriptionViewModel?.priceDescription)
         case .startDate:
-            cell.updateUI(type, text: viewModel.subscriptionViewModel?.startDateDescription)
+            cell.updateUI(type, text: viewModel.updatedSubscriptionViewModel?.startDateDescription)
         }
         return cell
     }
@@ -156,10 +160,10 @@ extension SubscriptionDetailController: UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: SubscriptionDetailHeaderView.identifier) as? SubscriptionDetailHeaderView else { return UITableViewHeaderFooterView() }
         headerView.delegate = self
-        if let image = viewModel.subscriptionViewModel?.image {
+        if let image = viewModel.updatedSubscriptionViewModel?.image {
             headerView.image = image
         } else {
-            headerView.imageUrl = viewModel.subscriptionViewModel?.imageUrl
+            headerView.imageUrl = viewModel.updatedSubscriptionViewModel?.imageUrl
         }
         return headerView
     }

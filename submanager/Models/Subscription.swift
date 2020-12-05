@@ -8,6 +8,7 @@
 
 struct Subscription: Codable {
     var id: String?
+    var typeId: String?
     var title: String?
     var description: String?
     var price: String?
@@ -16,6 +17,7 @@ struct Subscription: Codable {
     
     private enum CodingKeys: String, CodingKey {
         case id
+        case typeId
         case title
         case description
         case price
@@ -31,5 +33,11 @@ struct Subscription: Codable {
         price = try? container?.decode(String.self, forKey: CodingKeys.price)
         startDate = try? container?.decode(String.self, forKey: CodingKeys.startDate)
         imageUrl = try? container?.decode(String.self, forKey: CodingKeys.imageUrl)
+    }
+    
+    init(subscriptionType: SubscriptionType) {
+        self.typeId = subscriptionType.id
+        self.title = subscriptionType.title
+        self.imageUrl = subscriptionType.imageUrl
     }
 }

@@ -23,9 +23,4 @@ struct SubscriptionType: Codable {
         title = try? container?.decode(String.self, forKey: CodingKeys.title)
         imageUrl = try? container?.decode(String.self, forKey: CodingKeys.imageUrl)
     }
-    
-    init() {
-        id = "0"
-        title = "subscription_selection_add_custom".localized
-    }
 }

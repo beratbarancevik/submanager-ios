@@ -27,8 +27,8 @@ class LogManager {
         
         var body = ""
         var bodyParameters = [String]()
-        for value in request.body ?? [:] {
-            bodyParameters.append("\(value.key): \(type(of: value))(\(value))")
+        (request.body ?? [:]).forEach {
+            bodyParameters.append("\($0.key): \(type(of: $0))(\($0))")
         }
         body = bodyParameters.joined(separator: ", ")
 
@@ -52,7 +52,7 @@ class LogManager {
     class func res<Res: Response>(path: String, _ response: Res) {
         guard isLoggingEnabled else { return }
 
-        var log = "URL: \(ServiceManager.getBaseUrl(from: path)?.absoluteString ?? "URL not found")"
+        var log = "URL: \(path)"
         
         log += "\nCode: \(response.code)"
         

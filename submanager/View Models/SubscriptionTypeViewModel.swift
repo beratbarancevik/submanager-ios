@@ -10,7 +10,7 @@ import Foundation
 
 class SubscriptionTypeViewModel {
     // MARK: - Properties
-    private let subscriptionType: SubscriptionType
+    let subscriptionType: SubscriptionType
     
     var id: String {
         return subscriptionType.id ?? ""

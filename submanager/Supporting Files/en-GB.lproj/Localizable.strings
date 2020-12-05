@@ -56,7 +56,6 @@ subscription_detail_title_name = "Title";
 subscription_detail_title_placeholder = "title";
 
 // MARK: - SubscriptionSelectionController
-subscription_selection_add_custom = "Add Custom";
 subscription_selection_navigation_bar = "Subscription Selection Navigation Bar";
 subscription_selection_title = "Add Subscription";
 subscription_types_table_view = "Subscription Types Table";
