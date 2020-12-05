@@ -23,6 +23,6 @@ class ErrorTests: XCTestCase {
     }
     
     func testStaticImages() {
-        XCTAssertEqual(sut.allCases.count, 2)
+        XCTAssertEqual(sut.allCases.count, 3)
     }
 }
