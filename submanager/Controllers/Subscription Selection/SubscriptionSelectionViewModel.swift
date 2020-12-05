@@ -34,10 +34,16 @@ private extension SubscriptionSelectionViewModel {
             self?.loading.onNext(false)
             switch result {
             case .success(let response):
-                self?.subscriptionTypeViewModels = response.data.map { SubscriptionTypeViewModel(subscriptionType: $0) }
+                self?.addAllSubscriptionOptions(response.data)
             case .failure(let error):
                 self?.error.onNext(error)
             }
         }
+    }
+    
+    func addAllSubscriptionOptions(_ subscriptionTypes: [SubscriptionType]) {
+        var newSubscriptionTypes = subscriptionTypes
+        newSubscriptionTypes.insert(SubscriptionType(), at: 0)
+        subscriptionTypeViewModels = newSubscriptionTypes.map { SubscriptionTypeViewModel(subscriptionType: $0) }
     }
 }
