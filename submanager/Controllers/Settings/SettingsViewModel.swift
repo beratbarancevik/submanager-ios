@@ -12,7 +12,7 @@ class SettingsViewModel: BaseControllerViewModel {
 
 // MARK: - SettingType
 enum SettingType: CaseIterable {
-    case notifications
+//    case notifications
     case share
     case appStore
     case feedback
@@ -22,8 +22,8 @@ enum SettingType: CaseIterable {
     
     var icon: Images {
         switch self {
-        case .notifications:
-            return .notifications
+//        case .notifications:
+//            return .notifications
         case .share:
             return .share
         case .appStore:
@@ -41,8 +41,8 @@ enum SettingType: CaseIterable {
     
     var title: String {
         switch self {
-        case .notifications:
-            return "settings_notifications"
+//        case .notifications:
+//            return "settings_notifications"
         case .share:
             return "settings_share"
         case .appStore:

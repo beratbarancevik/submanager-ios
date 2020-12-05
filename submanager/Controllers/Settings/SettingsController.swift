@@ -72,8 +72,8 @@ extension SettingsController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         switch SettingType.allCases[indexPath.row] {
-        case .notifications:
-            UserNotificationsManager().askForNotificationPermissionIfNecessary()
+//        case .notifications:
+//            UserNotificationsManager().askForNotificationPermissionIfNecessary()
         case .share:
             let activityViewController = UIActivityViewController(activityItems: ["app_promotion".localized], applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view
