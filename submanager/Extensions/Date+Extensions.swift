@@ -9,5 +9,15 @@
 import Foundation
 
 extension Date {
+    var dateFormatter: DateFormatter {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh:mm:ss"
+        dateFormatter.locale = Locale.current
+        dateFormatter.timeZone = TimeZone.current
+        return dateFormatter
+    }
     
+    var description: String {
+        return dateFormatter.string(from: self)
+    }
 }

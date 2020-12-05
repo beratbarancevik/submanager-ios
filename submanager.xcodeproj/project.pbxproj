@@ -93,6 +93,8 @@
 		F4ACCD162561A3B00059063A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4ACCD152561A3B00059063A /* SnapKit */; };
 		F4BBAEB7256A370F0018544D /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBAEB6256A370F0018544D /* TestConstants.swift */; };
 		F4BBAEBC256A3E640018544D /* SubscriptionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BBAEBB256A3E640018544D /* SubscriptionsService.swift */; };
+		F4BF81FC257B74250004D55D /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF81FB257B74250004D55D /* LogManager.swift */; };
+		F4BF8204257B77080004D55D /* LogManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BF8203257B77080004D55D /* LogManagerTests.swift */; };
 		F4D41759256AC46000F9D9AC /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D41758256AC46000F9D9AC /* BaseTableCell.swift */; };
 		F4D41766256AC49300F9D9AC /* SubscriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D41765256AC49300F9D9AC /* SubscriptionCell.swift */; };
 		F4D81D79257224AF0060E81F /* SubscriptionTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D81D78257224AF0060E81F /* SubscriptionTypeViewModel.swift */; };
@@ -269,6 +271,8 @@
 		F4ACCCEF25619A520059063A /* SubscriptionDetailControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDetailControllerUITests.swift; sourceTree = "<group>"; };
 		F4BBAEB6256A370F0018544D /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
 		F4BBAEBB256A3E640018544D /* SubscriptionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsService.swift; sourceTree = "<group>"; };
+		F4BF81FB257B74250004D55D /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		F4BF8203257B77080004D55D /* LogManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManagerTests.swift; sourceTree = "<group>"; };
 		F4D41758256AC46000F9D9AC /* BaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
 		F4D41765256AC49300F9D9AC /* SubscriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionCell.swift; sourceTree = "<group>"; };
 		F4D81D78257224AF0060E81F /* SubscriptionTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTypeViewModel.swift; sourceTree = "<group>"; };
@@ -802,6 +806,7 @@
 				F459A4DC256A9790009C4ABE /* BaseManager.swift */,
 				F459A4B5256A8C42009C4ABE /* AuthenticationManager.swift */,
 				F4580FF42573B611006697E6 /* FirebaseStorageManager.swift */,
+				F4BF81FB257B74250004D55D /* LogManager.swift */,
 				F453351E2573F1C600605A6F /* NavigationManager.swift */,
 				F4580FE82573AD88006697E6 /* PhotoLibraryManager.swift */,
 				F46950532572ABAB00059BEB /* UserNotificationsManager.swift */,
@@ -832,6 +837,7 @@
 				F469507C2572B6AB00059BEB /* BaseManagerTests.swift */,
 				F459A4BA256A8CAA009C4ABE /* AuthenticationManagerTests.swift */,
 				F458100A2573C76E006697E6 /* FirebaseStorageManagerTests.swift */,
+				F4BF8203257B77080004D55D /* LogManagerTests.swift */,
 				F45335282574001C00605A6F /* NavigationManagerTests.swift */,
 				F4580FEE2573AD9E006697E6 /* PhotoLibraryManagerTests.swift */,
 				F469505C2572B68400059BEB /* UserNotificationsManagerTest.swift */,
@@ -1316,6 +1322,7 @@
 				F4EB84A925690EBC00ADF19C /* ServiceManager.swift in Sources */,
 				F4ACCCE3256197520059063A /* SubscriptionDetailController.swift in Sources */,
 				F4580FFB2573C5B8006697E6 /* Error.swift in Sources */,
+				F4BF81FC257B74250004D55D /* LogManager.swift in Sources */,
 				F4EB85202569171800ADF19C /* GetAllSubscriptionsResponse.swift in Sources */,
 				F4D81D9D257229980060E81F /* Theme.swift in Sources */,
 				F459A4E6256A9B16009C4ABE /* BaseController.swift in Sources */,
@@ -1378,6 +1385,7 @@
 				F4D81DAA257229CD0060E81F /* SubscriptionSelectionViewModelTests.swift in Sources */,
 				F4E1B18125775BBA0039F022 /* Date+ExtensionsTests.swift in Sources */,
 				F4494B5B2572390B005A4FA4 /* SettingsViewModelTests.swift in Sources */,
+				F4BF8204257B77080004D55D /* LogManagerTests.swift in Sources */,
 				F469507D2572B6AB00059BEB /* BaseManagerTests.swift in Sources */,
 				F4494B622572391B005A4FA4 /* BaseControllerTests.swift in Sources */,
 				F45810192573C914006697E6 /* ConstantsTests.swift in Sources */,

@@ -23,7 +23,7 @@ protocol Response: Codable {
     var data: T { get }
 }
 
-enum HttpMethod: CaseIterable {
+enum HttpMethod: String, CaseIterable {
     case get
     case post
     case put

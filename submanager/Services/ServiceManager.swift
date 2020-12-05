@@ -15,6 +15,8 @@ class ServiceManager {
     
     // MARK: - Service Request
     static func sendRequest<Req: Request, Res: Response>(_ request: Req, _ responseType: Res.Type, completion: @escaping (Result<Res, Error>) -> Void) {
+        LogManager.req(request)
+        
         guard let url = getBaseUrl(from: request.path) else {
             completion(Result.failure(ServiceError.invalidUrl))
             return
@@ -30,11 +32,14 @@ class ServiceManager {
             case .success(let data):
                 do {
                     let responseModel = try JSONDecoder().decode(responseType, from: data)
+                    LogManager.res(path: url.absoluteString, responseModel)
                     completion(Result.success(responseModel))
                 } catch {
+                    LogManager.err(ServiceError.jsonDecodingFailed)
                     completion(Result.failure(ServiceError.jsonDecodingFailed))
                 }
             case .failure(let error):
+                LogManager.err(error)
                 switch response.response?.statusCode {
                 case 401:
                     completion(Result.failure(ServiceError.unauthorized))
