@@ -10,11 +10,11 @@ target 'submanager' do
   pod 'RxRelay', '6.0.0-rc.2'
   pod 'RxSwift', '6.0.0-rc.2'
 
-  pod 'Firebase/Analytics', '7.2.0'
-  pod 'Firebase/Auth', '7.2.0'
-  pod 'Firebase/Crashlytics', '7.2.0'
-  pod 'Firebase/Performance', '7.2.0'
-  pod 'Firebase/Storage', '7.2.0'
+  pod 'Firebase/Analytics', '7.3.0'
+  pod 'Firebase/Auth', '7.3.0'
+  pod 'Firebase/Crashlytics', '7.3.0'
+  pod 'Firebase/Performance', '7.3.0'
+  pod 'Firebase/Storage', '7.3.0'
 
   target 'submanagerTests' do
     inherit! :search_paths
