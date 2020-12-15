@@ -2,6 +2,6 @@
 
 Subscription manager app for iOS
 
-Currently rewriting app using Clean Swift (VIP), it was originally written in MVVM.
+Currently developing this app using MVVM.
 
-You can join the beta using this link: https://testflight.apple.com/join/45EsTNd3
+You can join the public beta using this link: https://testflight.apple.com/join/45EsTNd3
