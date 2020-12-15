@@ -246,7 +246,7 @@
 		F45F6A5E256905BA001C7718 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
 		F469504F2572984D00059BEB /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		F46950532572ABAB00059BEB /* UserNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsManager.swift; sourceTree = "<group>"; };
-		F46950572572B13300059BEB /* SM Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SM Debug.entitlements"; sourceTree = "<group>"; };
+		F46950572572B13300059BEB /* submanager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = submanager.entitlements; sourceTree = "<group>"; };
 		F469505C2572B68400059BEB /* UserNotificationsManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsManagerTest.swift; sourceTree = "<group>"; };
 		F469507C2572B6AB00059BEB /* BaseManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseManagerTests.swift; sourceTree = "<group>"; };
 		F469509C2572B6F500059BEB /* UtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTests.swift; sourceTree = "<group>"; };
@@ -665,7 +665,7 @@
 		F4A417A625611539009B92C7 /* submanager */ = {
 			isa = PBXGroup;
 			children = (
-				F46950572572B13300059BEB /* SM Debug.entitlements */,
+				F46950572572B13300059BEB /* submanager.entitlements */,
 				F4EB84B025690F1400ADF19C /* Models */,
 				F4D41754256AC44900F9D9AC /* Views */,
 				F4197E29256AC8C6003103C2 /* View Models */,
@@ -1579,9 +1579,9 @@
 			baseConfigurationReference = 1A5FBA97A502F40079F5D054 /* Pods-submanager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-debug";
-				CODE_SIGN_ENTITLEMENTS = "submanager/SM Debug.entitlements";
+				CODE_SIGN_ENTITLEMENTS = submanager/submanager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/submanager/Supporting Files/Info-Debug.plist";
@@ -1603,9 +1603,9 @@
 			baseConfigurationReference = B10F0B7EF6E8C12BEC31A5FA /* Pods-submanager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-release";
-				CODE_SIGN_ENTITLEMENTS = "submanager/SM Debug.entitlements";
+				CODE_SIGN_ENTITLEMENTS = submanager/submanager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/submanager/Supporting Files/Info-Release.plist";
