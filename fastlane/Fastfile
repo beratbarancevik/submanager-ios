@@ -23,7 +23,7 @@ platform :ios do
   desc "Upload a new development build to TestFlight"
   lane :testflightdev do
     increment_build_number(xcodeproj: "submanager.xcodeproj")
-    build_app(workspace: "submanager.xcworkspace", scheme: "submanager")
+    build_app(workspace: "submanager.xcworkspace", scheme: "submanager Debug")
     upload_to_testflight
     skip_waiting_for_build_processing
   end
