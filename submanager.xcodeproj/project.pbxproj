@@ -1772,7 +1772,7 @@
 			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
 			requirement = {
 				kind = exactVersion;
-				version = 8.0.3;
+				version = 8.0.4;
 			};
 		};
 		F45F6A1E25690386001C7718 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
