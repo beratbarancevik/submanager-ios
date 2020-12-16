@@ -1581,7 +1581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-debug";
 				CODE_SIGN_ENTITLEMENTS = submanager/submanager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/submanager/Supporting Files/Info-Debug.plist";
@@ -1605,7 +1605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-release";
 				CODE_SIGN_ENTITLEMENTS = submanager/submanager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 3978A7VN36;
 				ENABLE_TESTING_SEARCH_PATHS = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/submanager/Supporting Files/Info-Release.plist";
