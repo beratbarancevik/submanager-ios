@@ -114,18 +114,18 @@ PODS:
     - nanopb/encode (= 2.30906.0)
   - nanopb/decode (2.30906.0)
   - nanopb/encode (2.30906.0)
-  - PromisesObjC (1.2.11)
+  - PromisesObjC (1.2.12)
   - Protobuf (3.14.0)
-  - RxBlocking (6.0.0-rc.2):
-    - RxSwift (= 6.0.0-rc.2)
-  - RxCocoa (6.0.0-rc.2):
-    - RxRelay (= 6.0.0-rc.2)
-    - RxSwift (= 6.0.0-rc.2)
-  - RxRelay (6.0.0-rc.2):
-    - RxSwift (= 6.0.0-rc.2)
-  - RxSwift (6.0.0-rc.2)
-  - RxTest (6.0.0-rc.2):
-    - RxSwift (= 6.0.0-rc.2)
+  - RxBlocking (6.0.0):
+    - RxSwift (= 6.0.0)
+  - RxCocoa (6.0.0):
+    - RxRelay (= 6.0.0)
+    - RxSwift (= 6.0.0)
+  - RxRelay (6.0.0):
+    - RxSwift (= 6.0.0)
+  - RxSwift (6.0.0)
+  - RxTest (6.0.0):
+    - RxSwift (= 6.0.0)
 
 DEPENDENCIES:
   - Firebase/Analytics (= 7.3.0)
@@ -133,11 +133,11 @@ DEPENDENCIES:
   - Firebase/Crashlytics (= 7.3.0)
   - Firebase/Performance (= 7.3.0)
   - Firebase/Storage (= 7.3.0)
-  - RxBlocking (= 6.0.0-rc.2)
-  - RxCocoa (= 6.0.0-rc.2)
-  - RxRelay (= 6.0.0-rc.2)
-  - RxSwift (= 6.0.0-rc.2)
-  - RxTest (= 6.0.0-rc.2)
+  - RxBlocking (= 6.0.0)
+  - RxCocoa (= 6.0.0)
+  - RxRelay (= 6.0.0)
+  - RxSwift (= 6.0.0)
+  - RxTest (= 6.0.0)
 
 SPEC REPOS:
   trunk:
@@ -184,14 +184,14 @@ SPEC CHECKSUMS:
   GoogleUtilities: 3dc4ff0d5e4840e2fa8eef0889620e8c33d4218c
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
-  PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Protobuf: 0cde852566359049847168e51bd1c690e0f70056
-  RxBlocking: 548aa3ba93a330d49c2b2e78d1b0d4d322adba49
-  RxCocoa: 38445a25751be5907f52f7ea02c137f52ce2e7f2
-  RxRelay: b9e2483e83f46e4e7bf1234c6fe418e5c2eaf825
-  RxSwift: ada35be6643bedf6881cdbd6bbfb27aeea527670
-  RxTest: 979a97b4c55e9fcb5e6b32fb86cb432a819883b4
+  RxBlocking: c025b8c6fe08c5b18c039b5b11d41ec413f8a59e
+  RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
+  RxRelay: 8d593be109c06ea850df027351beba614b012ffb
+  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
+  RxTest: ddef4052e63cb116f5b73510488c3113c37c62e5
 
-PODFILE CHECKSUM: 58e7c0941d3a90242ec53f49412ffaf7fcd7dbac
+PODFILE CHECKSUM: 6aa028c4a7e8adfebfbe98d8484dd1a96c986dc8
 
 COCOAPODS: 1.10.0
